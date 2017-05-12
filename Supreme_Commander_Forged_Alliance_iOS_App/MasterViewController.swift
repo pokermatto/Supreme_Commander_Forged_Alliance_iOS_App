@@ -12,6 +12,35 @@ class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
+    
+    
+    
+    
+    
+    
+    
+    //=================
+    var names = [ "Friends": ["My Friends", "Add Friends"], "My Stats": ["Game Stats", "Unit Stats"]]
+    
+    struct Objects {
+        
+        var sectionName : String!
+        var sectionObjects : [String]!
+    }
+    
+    var objectArray = [Objects]()
+    
+
+    
+    // MARK: - Table view data source
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        return objectArray[section].sectionName
+    }
+    //=================
+    
+    
+    
 
 
     override func viewDidLoad() {
@@ -24,6 +53,11 @@ class MasterViewController: UITableViewController {
         if let split = splitViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+        }
+        
+        for (key, value) in names {
+            //println("\(key) -> \(value)")
+            objectArray.append(Objects(sectionName: key, sectionObjects: value))
         }
     }
 
@@ -48,9 +82,9 @@ class MasterViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let object = objects[indexPath.row] as! NSDate
+                //DF let object = objects[indexPath.row] as! NSDate
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = object
+                //DF controller.detailItem = object
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
@@ -60,18 +94,23 @@ class MasterViewController: UITableViewController {
     // MARK: - Table View
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        
+        //DEFAULT return 1
+        return objectArray.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        
+        //DEFAULT return objects.count
+        return objectArray[section].sectionObjects.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
+        //DEFAULT let object = objects[indexPath.row] as! NSDate
+        //DEFAULT cell.textLabel!.text = object.description
+        cell.textLabel?.text = objectArray[indexPath.section].sectionObjects[indexPath.row]
         return cell
     }
 
