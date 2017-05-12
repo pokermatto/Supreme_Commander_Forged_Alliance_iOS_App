@@ -16,49 +16,50 @@ class MasterViewController: UITableViewController {
     
     
     
+    var mainPageNames = [ "Friends": ["My Friends", "Add Friends"], "My Stats": ["Game Stats", "Unit Stats"]]
     
-    
-    
-    //=================
-    var names = [ "Friends": ["My Friends", "Add Friends"], "My Stats": ["Game Stats", "Unit Stats"]]
-    
-    struct Objects {
+    struct sectionDataObject {
         
         var sectionName : String!
-        var sectionObjects : [String]!
+        var sectionCategories : [String]!
     }
     
-    var objectArray = [Objects]()
+    var sectionArray = [sectionDataObject]()
     
 
     
-    // MARK: - Table view data source
+    //Returns name of the section
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
-        return objectArray[section].sectionName
+        return sectionArray[section].sectionName
     }
-    //=================
     
     
     
 
-
-    override func viewDidLoad() {
+     //Runs when screen loads, use as main setup function
+    override func viewDidLoad()
+    {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        //navigationItem.leftBarButtonItem = editButtonItem
-
-        //let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
-        //navigationItem.rightBarButtonItem = addButton
-        if let split = splitViewController {
+        
+        /*DF Do any additional setup after loading the view, typically from a nib.
+         navigationItem.leftBarButtonItem = editButtonItem
+         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
+         navigationItem.rightBarButtonItem = addButton*/
+        
+        if let split = splitViewController
+        {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
         
-        for (key, value) in names {
+        for (key, value) in mainPageNames
+        {
             //println("\(key) -> \(value)")
-            objectArray.append(Objects(sectionName: key, sectionObjects: value))
+            sectionArray.append(sectionDataObject(sectionName: key, sectionCategories: value))
         }
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -71,20 +72,23 @@ class MasterViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func insertNewObject(_ sender: Any) {
+    /*
+     DF
+     func insertNewObject(_ sender: Any) {
         objects.insert(NSDate(), at: 0)
         let indexPath = IndexPath(row: 0, section: 0)
         tableView.insertRows(at: [indexPath], with: .automatic)
-    }
+    }*/
 
     // MARK: - Segues
-
+    //Transitions to Detail View on UITableViewCell Click
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-            if let indexPath = tableView.indexPathForSelectedRow {
-                //DF let object = objects[indexPath.row] as! NSDate
+            if tableView.indexPathForSelectedRow != nil
+            {
+                //let object = objects[indexPath.row] as! NSDate
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                //DF controller.detailItem = object
+                //controller.detailItem = indexPath
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
@@ -96,13 +100,13 @@ class MasterViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         
         //DEFAULT return 1
-        return objectArray.count
+        return sectionArray.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         //DEFAULT return objects.count
-        return objectArray[section].sectionObjects.count
+        return sectionArray[section].sectionCategories.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -110,7 +114,7 @@ class MasterViewController: UITableViewController {
 
         //DEFAULT let object = objects[indexPath.row] as! NSDate
         //DEFAULT cell.textLabel!.text = object.description
-        cell.textLabel?.text = objectArray[indexPath.section].sectionObjects[indexPath.row]
+        cell.textLabel?.text = sectionArray[indexPath.section].sectionCategories[indexPath.row]
         return cell
     }
 
