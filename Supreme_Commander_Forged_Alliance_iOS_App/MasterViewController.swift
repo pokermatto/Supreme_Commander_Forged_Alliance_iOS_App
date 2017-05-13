@@ -16,7 +16,7 @@ class MasterViewController: UITableViewController {
     
     
     
-    var mainPageNames = [ "Command Units": ["ACU", "Support ACU"], "Engineers": ["Engineer T1", "Engineer T2", "Engineer T3"]]
+    var mainPageNames = [ "Engineer": ["T1 Engineer", "T2 Engineer", "T3 Engineer"], "Command": ["Armored Command Unit", "T3 Support Armored Command Unit"]]
     
     struct sectionDataObject {
         
@@ -29,7 +29,7 @@ class MasterViewController: UITableViewController {
 
     
     //Returns name of the section
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         return sectionArray[section].sectionName
         // "abc"
@@ -40,23 +40,7 @@ class MasterViewController: UITableViewController {
         return 61.0
     }
     
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
-    {
-        
-        let header = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell1")!
-    
-        let sectionLabel: UILabel? = nil
-        sectionLabel?.text = "Section Label"
-        
-        //TODO finish this method
-        //header.set
-        //header._lblGroupName.text = ""
-        //header._btnExpand.addTarget(self, action: "hideSection:", forControlEvents: .TouchUpInside)
-            
-        //header._lblTotalCount.text = ""
-        return header.contentView
-    }
-    
+
     
     
     
