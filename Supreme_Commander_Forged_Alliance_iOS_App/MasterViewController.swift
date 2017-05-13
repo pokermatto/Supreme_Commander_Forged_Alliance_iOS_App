@@ -16,7 +16,7 @@ class MasterViewController: UITableViewController {
     
     
     
-    var mainPageNames = [ "Friends": ["My Friends", "Add Friends"], "My Stats": ["Game Stats", "Unit Stats"]]
+    var mainPageNames = [ "Command Units": ["ACU", "Support ACU"], "Engineers": ["Engineer T1", "Engineer T2", "Engineer T3"]]
     
     struct sectionDataObject {
         
@@ -32,7 +32,32 @@ class MasterViewController: UITableViewController {
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         return sectionArray[section].sectionName
+        // "abc"
     }
+    
+    //Returns the height of the section
+    public override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 61.0
+    }
+    
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
+    {
+        
+        let header = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell1")!
+    
+        let sectionLabel: UILabel? = nil
+        sectionLabel?.text = "Section Label"
+        
+        //TODO finish this method
+        //header.set
+        //header._lblGroupName.text = ""
+        //header._btnExpand.addTarget(self, action: "hideSection:", forControlEvents: .TouchUpInside)
+            
+        //header._lblTotalCount.text = ""
+        return header.contentView
+    }
+    
+    
     
     
     
@@ -48,15 +73,16 @@ class MasterViewController: UITableViewController {
          let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
          navigationItem.rightBarButtonItem = addButton*/
         
+        //Set up split view controller
         if let split = splitViewController
         {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
         
+        //Add section data to the section array
         for (key, value) in mainPageNames
         {
-            //println("\(key) -> \(value)")
             sectionArray.append(sectionDataObject(sectionName: key, sectionCategories: value))
         }
         
@@ -67,7 +93,8 @@ class MasterViewController: UITableViewController {
         super.viewWillAppear(animated)
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -97,28 +124,34 @@ class MasterViewController: UITableViewController {
 
     // MARK: - Table View
 
+    //Returns the number of sections
     override func numberOfSections(in tableView: UITableView) -> Int {
         
-        //DEFAULT return 1
+        //DF return 1
         return sectionArray.count
     }
 
+    //Returns number of rows in a given section
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        //DEFAULT return objects.count
+        //DF return objects.count
         return sectionArray[section].sectionCategories.count
     }
 
+    //Creates main page cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        //DEFAULT let object = objects[indexPath.row] as! NSDate
-        //DEFAULT cell.textLabel!.text = object.description
+        //DF let object = objects[indexPath.row] as! NSDate
+        //DF cell.textLabel!.text = object.description
         cell.textLabel?.text = sectionArray[indexPath.section].sectionCategories[indexPath.row]
         return cell
     }
 
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+    
+    /*
+     DF
+     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
@@ -130,7 +163,7 @@ class MasterViewController: UITableViewController {
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
-    }
+    }*/
 
 
 }
