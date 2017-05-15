@@ -13,10 +13,26 @@ class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
     var objects = [Any]()
     
+    var selectedLabel:String?
+
+    
+    
+    /*var oldData = [ "Building - Factory": ["T1 Land Factory", "T1 Air Factory", "T1 Naval Factory"],"Engineer": ["T1 Engineer","T2 Engineering Station: The Kennel", "T2 Engineer","T2 Field Engineer: Sparky","T3 Engineering Station: The Kennel", "T3 Engineer"], "Command": ["Armored Command Unit", "T3 Support Armored Command Unit"]]
+    
+    var mainPageNames = ["Support": ["Support"],"Mobile": ["Aircraft", "Vehicle", "Ship"],"Buildings": ["Factory", "Economy", "Weapon", "Defense", "Sensor"],"Command & Engineer": ["Command", "Engineer"]]*/
     
     
     
-    var mainPageNames = [ "Engineer": ["T1 Engineer", "T2 Engineer", "T3 Engineer"], "Command": ["Armored Command Unit", "T3 Support Armored Command Unit"]]
+    var sectionTitles = ["Command & Engineer", "Buildings", "Mobile Units", "Support Units"]
+    var commandAndEngineerUnits : [String] = ["Command", "Engineer"]
+    var buildingUnits : [String] = ["Factory", "Economy", "Weapon", "Defense", "Sensor"]
+    var mobileUnits : [String] = ["Aircraft", "Vehicle", "Ship"]
+    var supportUnits : [String] = ["Support"]
+    var unitCategories: [[String]] = []
+    
+    lazy var searchBar:UISearchBar = UISearchBar()
+
+    
     
     struct sectionDataObject {
         
@@ -52,6 +68,20 @@ class MasterViewController: UITableViewController {
         
         super.viewDidLoad()
         
+        
+        searchBar.searchBarStyle = UISearchBarStyle.prominent
+        searchBar.placeholder = " Search UEF..."
+        searchBar.sizeToFit()
+        searchBar.isTranslucent = false
+        searchBar.backgroundImage = UIImage()
+        searchBar.delegate = self as? UISearchBarDelegate
+        navigationItem.titleView = searchBar
+        
+        
+        
+        
+        unitCategories = [commandAndEngineerUnits, buildingUnits, mobileUnits, supportUnits]
+        
         /*DF Do any additional setup after loading the view, typically from a nib.
          navigationItem.leftBarButtonItem = editButtonItem
          let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
@@ -64,10 +94,15 @@ class MasterViewController: UITableViewController {
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
         
-        //Add section data to the section array
+        /*Add section data to the section array
         for (key, value) in mainPageNames
         {
-            sectionArray.append(sectionDataObject(sectionName: key, sectionCategories: value))
+            
+        }*/
+        
+        let numberOfSections = sectionTitles.count
+        for index in 0..<numberOfSections {
+            sectionArray.append(sectionDataObject(sectionName: sectionTitles[index], sectionCategories: unitCategories[index]))
         }
         
     }
@@ -76,6 +111,13 @@ class MasterViewController: UITableViewController {
         clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
         super.viewWillAppear(animated)
     }
+    
+    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let currentCell = tableView.cellForRow(at: indexPath)!
+        selectedLabel = currentCell.textLabel!.text
+        
+    }*/
 
     override func didReceiveMemoryWarning()
     {
@@ -97,9 +139,13 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if tableView.indexPathForSelectedRow != nil
             {
+                
+                let currentCell = tableView.cellForRow(at: tableView.indexPathForSelectedRow!)!
+                selectedLabel = currentCell.textLabel!.text
                 //let object = objects[indexPath.row] as! NSDate
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                //controller.detailItem = indexPath
+                //controller.detailItem
+                controller.dataPassed = selectedLabel
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
@@ -113,6 +159,12 @@ class MasterViewController: UITableViewController {
         
         //DF return 1
         return sectionArray.count
+    }
+    
+    
+    func searchBar(searchBar: UISearchBar, textDidChange textSearched: String)
+    {
+        //...your code...
     }
 
     //Returns number of rows in a given section

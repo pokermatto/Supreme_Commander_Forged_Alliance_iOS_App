@@ -9,23 +9,29 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
+    
+    var dataPassed: String!
+    
+    
+    var detailItem: NSDate?
+    @IBOutlet weak var topLabel: UINavigationItem!
+   
+    @IBOutlet weak var detailTableView: UITableView!
 
 
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
-            }
-        }
+        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         configureView()
+        
+        topLabel.title = dataPassed
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,12 +39,24 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    var detailItem: NSDate? {
-        didSet {
-            // Update the view.
-            configureView()
-        }
+    
+    
+    //Returns name of the section
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        return "SectionName"
+        // "abc"
     }
+    
+    //Returns the height of the section
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 61.0
+    }
+    
+
+    
+    
+    
 
 
 }
