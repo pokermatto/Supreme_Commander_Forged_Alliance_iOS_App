@@ -164,7 +164,7 @@ class MasterViewController: UITableViewController {
     
     func searchBar(searchBar: UISearchBar, textDidChange textSearched: String)
     {
-        //...your code...
+        
     }
 
     //Returns number of rows in a given section
