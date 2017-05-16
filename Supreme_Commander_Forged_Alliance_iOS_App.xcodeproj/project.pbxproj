@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFCD45671ECAB7FA004EBC5E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD45661ECAB7FA004EBC5E /* InfoViewController.swift */; };
 		BFE7E7C51EC53A8300D3BF65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE7E7C41EC53A8300D3BF65 /* AppDelegate.swift */; };
 		BFE7E7C71EC53A8300D3BF65 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE7E7C61EC53A8300D3BF65 /* MasterViewController.swift */; };
 		BFE7E7C91EC53A8300D3BF65 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE7E7C81EC53A8300D3BF65 /* DetailViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BFCD45661ECAB7FA004EBC5E /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		BFE7E7C11EC53A8300D3BF65 /* Supreme_Commander_Forged_Alliance_iOS_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Supreme_Commander_Forged_Alliance_iOS_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE7E7C41EC53A8300D3BF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE7E7C61EC53A8300D3BF65 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				BFE7E7CD1EC53A8300D3BF65 /* Assets.xcassets */,
 				BFE7E7CF1EC53A8400D3BF65 /* LaunchScreen.storyboard */,
 				BFE7E7D21EC53A8400D3BF65 /* Info.plist */,
+				BFCD45661ECAB7FA004EBC5E /* InfoViewController.swift */,
 			);
 			path = Supreme_Commander_Forged_Alliance_iOS_App;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				BFE7E7C91EC53A8300D3BF65 /* DetailViewController.swift in Sources */,
 				BFE7E7C71EC53A8300D3BF65 /* MasterViewController.swift in Sources */,
+				BFCD45671ECAB7FA004EBC5E /* InfoViewController.swift in Sources */,
 				BFE7E7C51EC53A8300D3BF65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +515,7 @@
 				BFE7E7ED1EC53A8600D3BF65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFE7E7EE1EC53A8600D3BF65 /* Build configuration list for PBXNativeTarget "Supreme_Commander_Forged_Alliance_iOS_AppTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +524,7 @@
 				BFE7E7F01EC53A8600D3BF65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFE7E7F11EC53A8600D3BF65 /* Build configuration list for PBXNativeTarget "Supreme_Commander_Forged_Alliance_iOS_AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +533,7 @@
 				BFE7E7F31EC53A8600D3BF65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

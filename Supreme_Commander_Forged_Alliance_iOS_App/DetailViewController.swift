@@ -39,6 +39,25 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
         
         
     }
+    
+    //Transitions to Detail View on UITableViewCell Click
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail2" {
+            if detailTableView.indexPathForSelectedRow != nil
+            {
+                
+                //let currentCell = detailTableView.cellForRow(at: detailTableView.indexPathForSelectedRow!)!
+                //selectedLabel = currentCell.textLabel!.text
+                //let object = objects[indexPath.row] as! NSDate
+                let controller = (segue.destination as! UINavigationController).topViewController as! InfoViewController
+                //controller.detailItem
+                //controller.dataPassed = selectedLabel
+                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+        }
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
