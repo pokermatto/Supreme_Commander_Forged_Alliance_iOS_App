@@ -37,15 +37,6 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
         
         topLabel.title = dataPassed
         
-        detailTableView.beginUpdates()
-        if dataPassed == "Engineer"
-        {
-            print("Here")
-            detailTableView.insertRows(at: [IndexPath(row: engineers.count-1, section: 0)], with: .automatic)
-          
-        }
-        
-        detailTableView.endUpdates()
         
     }
 
@@ -56,16 +47,9 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
 
     
     
-    //Returns name of the section
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
-        return "SectionName"
-        // "abc"
-    }
-    
     //Returns the height of the section
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 61.0
+        return 0
     }
     
     
@@ -81,7 +65,11 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         //DF return objects.count
-        return engineers.count
+        if dataPassed == "Engineer"
+        {
+             return engineers.count
+        }
+        return 0
     }
     
     //Creates main page cell
