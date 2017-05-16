@@ -34,8 +34,8 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
         detailTableView.dataSource = self
         
         configureView()
-        print(unitName)
-        topLabel.title = "UNITNAME"
+       
+        topLabel.title = unitName
         
         
     }
@@ -80,8 +80,6 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        //DF let object = objects[indexPath.row] as! NSDate
-        //DF cell.textLabel!.text = object.description
         cell.textLabel?.text = engineers[indexPath.row]
         return cell
     }

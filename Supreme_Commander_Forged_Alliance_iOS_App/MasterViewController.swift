@@ -10,9 +10,10 @@ import UIKit
 
 class MasterViewController: UITableViewController {
 
+    //The detail view controller
     var detailViewController: DetailViewController? = nil
-    var objects = [Any]()
     
+    //Selected cell's label, used to pass to detail view
     var selectedLabel:String?
 
     
@@ -22,40 +23,39 @@ class MasterViewController: UITableViewController {
     var mainPageNames = ["Support": ["Support"],"Mobile": ["Aircraft", "Vehicle", "Ship"],"Buildings": ["Factory", "Economy", "Weapon", "Defense", "Sensor"],"Command & Engineer": ["Command", "Engineer"]]*/
     
     
-    
+    //Titles of sections for the TableView
     var sectionTitles = ["Command & Engineer", "Buildings", "Mobile Units", "Support Units"]
+    
+    //Titles of cells for each section in TableView COMMENT CODE: A
     var commandAndEngineerUnits : [String] = ["Command", "Engineer"]
     var buildingUnits : [String] = ["Factory", "Economy", "Weapon", "Defense", "Sensor"]
     var mobileUnits : [String] = ["Aircraft", "Vehicle", "Ship"]
     var supportUnits : [String] = ["Support"]
+    
+    //Array of the above arrays of cell names, initialized in viewDidLoad
     var unitCategories: [[String]] = []
     
+    
+    //Search bar, initialized in viewDidLoad
     lazy var searchBar:UISearchBar = UISearchBar()
 
     
     
+    //object that contains the sectionName from 'sectionTitles' array and the corresponding array of cell names from on of the four arrays initialized above (under COMMENT CODE: A)
     struct sectionDataObject {
         
+        //Name of the section from 'sectionTitles' array
         var sectionName : String!
+        //corresponding array of cell names from on of the four arrays initialized above (under COMMENT CODE: A)
         var sectionCategories : [String]!
     }
     
+    //The array of the sectionDataObject's , this array contains all data TableView sections and cells in order
     var sectionArray = [sectionDataObject]()
     
 
     
-    //Returns name of the section
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
-        return sectionArray[section].sectionName
-        // "abc"
-    }
-    
-    //Returns the height of the section
-    public override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 61.0
-    }
-    
+ 
 
     
     
@@ -65,10 +65,12 @@ class MasterViewController: UITableViewController {
      //Runs when screen loads, use as main setup function
     override func viewDidLoad()
     {
-        
+        //Call super
         super.viewDidLoad()
         
         
+        
+        //Search Bar setup
         searchBar.searchBarStyle = UISearchBarStyle.prominent
         searchBar.placeholder = " Search UEF..."
         searchBar.sizeToFit()
@@ -79,28 +81,23 @@ class MasterViewController: UITableViewController {
         
         
         
-        
-        unitCategories = [commandAndEngineerUnits, buildingUnits, mobileUnits, supportUnits]
-        
-        /*DF Do any additional setup after loading the view, typically from a nib.
-         navigationItem.leftBarButtonItem = editButtonItem
-         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
-         navigationItem.rightBarButtonItem = addButton*/
-        
-        //Set up split view controller
+        //Set up splitViewController
         if let split = splitViewController
         {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
         
-        /*Add section data to the section array
-        for (key, value) in mainPageNames
-        {
-            
-        }*/
         
+        //Initialize unitCategories
+        unitCategories = [commandAndEngineerUnits, buildingUnits, mobileUnits, supportUnits]
+        
+        
+        //Number of sections in TableView based on number of section titles
         let numberOfSections = sectionTitles.count
+        
+        
+        //Loop to append sectionName/cellNameArray pairs to sectionArray object
         for index in 0..<numberOfSections {
             sectionArray.append(sectionDataObject(sectionName: sectionTitles[index], sectionCategories: unitCategories[index]))
         }
@@ -112,12 +109,7 @@ class MasterViewController: UITableViewController {
         super.viewWillAppear(animated)
     }
     
-    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let currentCell = tableView.cellForRow(at: indexPath)!
-        selectedLabel = currentCell.textLabel!.text
-        
-    }*/
+  
 
     override func didReceiveMemoryWarning()
     {
@@ -125,81 +117,99 @@ class MasterViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
-     DF
-     func insertNewObject(_ sender: Any) {
-        objects.insert(NSDate(), at: 0)
-        let indexPath = IndexPath(row: 0, section: 0)
-        tableView.insertRows(at: [indexPath], with: .automatic)
-    }*/
+  
 
     // MARK: - Segues
     //Transitions to Detail View on UITableViewCell Click
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //Check that seque is the one going to Nav2 in storyboard
         if segue.identifier == "showDetail" {
+            
+            //If a row was selected (the only case for transition at this time)
             if tableView.indexPathForSelectedRow != nil
             {
                 
+                //The user-selected cell
                 let currentCell = tableView.cellForRow(at: tableView.indexPathForSelectedRow!)!
+                
+                //The text of the user-selected cell
                 selectedLabel = currentCell.textLabel!.text
-                //let object = objects[indexPath.row] as! NSDate
+             
+                //Storyboard Table2 DetailViewController
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                //controller.detailItem
+             
+                //Pass the title of the user-selected cell to the detail view so it knows what to load in its table
                 controller.dataPassed = selectedLabel
+                
+                //Navigation backbutton
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
     }
 
+    
+    
+    
+    // MARK: - Search Bar
+    /*func searchBar(searchBar: UISearchBar, textDidChange textSearched: String)
+     {
+     
+     }*/
+    
+    
+    
+    
+    
+    
     // MARK: - Table View
 
     //Returns the number of sections
     override func numberOfSections(in tableView: UITableView) -> Int {
         
-        //DF return 1
+        //Note: TableView's require at least on section to populate, though no section header is needed
         return sectionArray.count
     }
     
-    
-    func searchBar(searchBar: UISearchBar, textDidChange textSearched: String)
-    {
-        
-    }
 
     //Returns number of rows in a given section
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        //DF return objects.count
+        //The number of rows is the count of the corresponding section array initialized near the top
         return sectionArray[section].sectionCategories.count
     }
 
-    //Creates main page cell
+    //Creates and returns cell based on prototype
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        //Create cell based on prototype
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        //DF let object = objects[indexPath.row] as! NSDate
-        //DF cell.textLabel!.text = object.description
+        //Set new cell's label based on row/section location (i.e. indexPath)
         cell.textLabel?.text = sectionArray[indexPath.section].sectionCategories[indexPath.row]
+        
+        //Return the newly-created cell
         return cell
     }
+    
+    //Returns name of the section
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        //Return section name based on section number (called 'section')
+        return sectionArray[section].sectionName
+    }
+    
+    //Returns the height of the section
+    public override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        //Return preferred height value for all sections
+        return 61.0
+    }
+    
 
     
-    /*
-     DF
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            objects.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-        }
-    }*/
+ 
 
 
 }
