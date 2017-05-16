@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
     //, UITableViewDataSource, UITableViewDelegate
     var dataPassed: String!
     
@@ -30,8 +30,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //detailTableView.delegate = self
-        //detailTableView.dataSource = self
+        detailTableView.delegate = self
+        detailTableView.dataSource = self
         
         configureView()
         
@@ -55,7 +55,7 @@ class DetailViewController: UIViewController {
     }
 
     
-    /*
+    
     //Returns name of the section
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
@@ -90,9 +90,9 @@ class DetailViewController: UIViewController {
         
         //DF let object = objects[indexPath.row] as! NSDate
         //DF cell.textLabel!.text = object.description
-        cell.textLabel?.text = "A cell"
+        cell.textLabel?.text = engineers[indexPath.row]
         return cell
-    }*/
+    }
     
 
     
