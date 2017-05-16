@@ -9,49 +9,61 @@
 import UIKit
 
 class InfoViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
-    //, UITableViewDataSource, UITableViewDelegate
+ 
+    //Title of cell selected on DetailViewController
     var unitName: String!
     
-    
+    //TODO delete this var, unused, ??problem??: still required to be kept here by other xcode file
     var detailItem: NSDate?
+    
+    //Outlet to label at top of InfoViewController in storyboard
     @IBOutlet weak var topLabel: UINavigationItem!
     
+    //Outlet to TableView in InfoViewController in storyboard
     @IBOutlet weak var detailTableView: UITableView!
     
     
     
     var engineers: [String] = ["T1 Engineer","T2 Engineering Station: The Kennel", "T2 Engineer","T2 Field Engineer: Sparky","T3 Engineering Station: The Kennel", "T3 Engineer"]
     
+    //TODO possibly delete
     func configureView() {
         // Update the user interface for the detail item.
         
     }
     
+    //Runs when view has loaded, use as main set-up function
     override func viewDidLoad() {
+        //Call super
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Set up TableView delegate and datasource as self
         detailTableView.delegate = self
         detailTableView.dataSource = self
         
+        //TODO possibly delete
         configureView()
        
+        //Label at top of InfoViewController in storyboard. name based on selected cell title from DetailViewController
         topLabel.title = unitName
-        
-        
     }
     
   
     
+    //Runs when a memory warning has been received
     override func didReceiveMemoryWarning() {
+        
+        //Call super
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     
+    // MARK: - TableView
     
     //Returns the height of the section
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0
+        return 61.0
     }
     
     
@@ -66,7 +78,7 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
     //Returns number of rows in a given section
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        //DF return objects.count
+
         /*CURRENTLY NOT PASSED
          
          if dataPassed == "Engineer"

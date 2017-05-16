@@ -62,7 +62,7 @@ class MasterViewController: UITableViewController {
     
     
 
-     //Runs when screen loads, use as main setup function
+    //Runs when view has loaded, use as main set-up function
     override func viewDidLoad()
     {
         //Call super
@@ -111,6 +111,7 @@ class MasterViewController: UITableViewController {
     
   
 
+    //Runs when a memory warning has been received
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
@@ -140,7 +141,7 @@ class MasterViewController: UITableViewController {
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
              
                 //Pass the title of the user-selected cell to the detail view so it knows what to load in its table
-                controller.dataPassed = selectedLabel
+                controller.nameOfSelectedUnitCategory = selectedLabel
                 
                 //Navigation backbutton
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
