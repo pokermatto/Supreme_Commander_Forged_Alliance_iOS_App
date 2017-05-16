@@ -23,9 +23,31 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
     @IBOutlet weak var detailTableView: UITableView!
 
     
-    //Arrays of cell titles for the detailTableView based on cells in MasterViewController
-    var engineers: [String] = ["T1 Engineer","T2 Engineering Station: The Kennel", "T2 Engineer","T2 Field Engineer: Sparky","T3 Engineering Station: The Kennel", "T3 Engineer"]
-
+    
+    
+    
+    //Category Data filled in by setTableDataForSelectedUnit(_ nameOfUnit: String!) method
+    var unitSectionNames: [String] = []
+    var unitSectionCells: [[String]] = []
+    
+    
+    //Set variables unitSectionNames and unitSectionCells according to the passed unit name
+    func setTableDataForSelectedUnit(_ nameOfUnit: String!)
+    {
+        if nameOfUnit == "Engineer"
+        {
+            unitSectionNames = ["Tech 1", "Tech 2", "Tech 3"]
+            
+            let engineer1: [String] =  ["T1 Engineer"]
+            let engineer2: [String] =  ["T2 Engineering Station: The Kennel", "T2 Engineer", "T2 Field Engineer: Sparky"]
+            let engineer3: [String] = ["T3 Engineering Station: The Kennel", "T3 Engineer"]
+            
+            
+            unitSectionCells = [engineer1, engineer2, engineer3]
+        }
+    }
+    
+    
     
     //TODO possibly delete
     func configureView() {
@@ -42,6 +64,9 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
         //Set up TableView delegate and datasource as self
         detailTableView.delegate = self
         detailTableView.dataSource = self
+        
+        //Set TableView data based on unit name
+        setTableDataForSelectedUnit(nameOfSelectedUnitCategory)
         
         //TODO possibly delete
         configureView()
@@ -93,29 +118,51 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
         //Return preferred height value for all sections
-        return 61.0
+        return 45.0
     }
     
     
     //Returns the number of sections
     func numberOfSections(in tableView: UITableView) -> Int {
         
-        //TODO will be changed to correspond to actual needed number of sections
+        //Gets number of sections if it is greater than 0
+        if(unitSectionNames.count > 0)
+        {
+            return unitSectionNames.count
+        }
+        
+        //return 1 in case no data is passed (should not happen once all data has been filled in)
         return 1
+    }
+    
+    //Returns name of the section
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        //Gets name of section (if none is present, this method uses default value at end of this method)
+        if(unitSectionNames.count > 0)
+        {
+            return unitSectionNames[section]
+        }
+        
+        
+        //Default value if no unit category matches
+        return "ERROR: NO SECTION NAME FOUND"
     }
     
     
     //Returns number of rows in a given section
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-       // Returns number of rows in the section based on the section number and count of the array for the unit category currently shown
-        if nameOfSelectedUnitCategory == "Engineer"
+       // Return number of rows in the section based on the section number and count of the array for the unit category currently shown
+        if !unitSectionCells.isEmpty
         {
-             return engineers.count
+            return unitSectionCells[section].count
+        }
+        else
+        {
+            return 0
         }
         
-        //Return zero for categories for which data has not been entered
-        return 0
     }
     
     //Creates TableView cell
@@ -125,15 +172,9 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
         
-        //Set new cell's label based on row/section location (i.e. indexPath) and name of selected cell from MasterViewController (i.e. what category of unit we are in)
-        if nameOfSelectedUnitCategory == "Engineer"
-        {
-            cell.textLabel?.text = engineers[indexPath.row]
-        }
-        else
-        {
-            cell.textLabel?.text = "ERROR: NO CATEGORY FOUND"
-        }
+        //Set new cell's label based on row/section location (i.e. indexPath)
+        cell.textLabel?.text = unitSectionCells[indexPath.section][indexPath.row]
+        
         
         //Return the newly-created cell
         return cell
