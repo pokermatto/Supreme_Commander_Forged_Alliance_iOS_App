@@ -37,7 +37,7 @@ class MasterViewController: UITableViewController {
     
     
     //Search bar, initialized in viewDidLoad
-    lazy var searchBar:UISearchBar = UISearchBar()
+    // FR lazy var searchBar:UISearchBar = UISearchBar()
 
     
     
@@ -70,7 +70,7 @@ class MasterViewController: UITableViewController {
         
         
         
-        //Search Bar setup
+        /* FR Search Bar setup
         searchBar.searchBarStyle = UISearchBarStyle.prominent
         searchBar.placeholder = " Search UEF..."
         searchBar.sizeToFit()
@@ -78,6 +78,7 @@ class MasterViewController: UITableViewController {
         searchBar.backgroundImage = UIImage()
         searchBar.delegate = self as? UISearchBarDelegate
         navigationItem.titleView = searchBar
+         */
         
         
         
