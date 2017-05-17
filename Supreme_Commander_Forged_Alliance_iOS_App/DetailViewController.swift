@@ -34,16 +34,43 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
     //Set variables unitSectionNames and unitSectionCells according to the passed unit name
     func setTableDataForSelectedUnit(_ nameOfUnit: String!)
     {
-        if nameOfUnit == "Engineer"
+        
+        switch nameOfUnit
         {
-            unitSectionNames = ["Tech 1", "Tech 2", "Tech 3"]
             
+        case "Command":
+            unitSectionNames = ["Armored Command Units"]
+            let command1: [String] =  ["ACU", "T3 Support ACU"]
+            unitSectionCells = [command1]
+            
+        case "Engineer":
+            unitSectionNames = ["Tech 1", "Tech 2", "Tech 3"]
             let engineer1: [String] =  ["T1 Engineer"]
             let engineer2: [String] =  ["T2 Engineering Station: The Kennel", "T2 Engineer", "T2 Field Engineer: Sparky"]
             let engineer3: [String] = ["T3 Engineering Station: The Kennel", "T3 Engineer"]
-            
-            
             unitSectionCells = [engineer1, engineer2, engineer3]
+        case "Factory":
+            unitSectionNames = ["Tech 1", "Tech 2", "Tech 3"]
+            let factory1: [String] =  ["T1 Land Factory", "T1 Air Factory", "T1 Naval Factory"]
+            let factory2: [String] =  ["T2 Land Factory HQ", "T2 Air Factory HQ", "T2 Naval Factory HQ", "T2 Land Factory", "T2 Air Factory", "T2 Naval Factory"]
+            let factory3: [String] = ["T3 Land Factory HQ", "T3 Air Factory HQ", "T3 Naval Factory HQ","T3 Quantum Gateway: QGW R-32", "T3 Land Factory", "T3 Air Factory", "T3 Naval Factory"]
+            unitSectionCells = [factory1, factory2, factory3]
+        case "Economy":
+            unitSectionNames = ["Tech 1", "Tech 2", "Tech 3"]
+            let economy1: [String] =  ["T1 Power Generator", "T1 Hydrocarbon Power Plant: HCPP - X1000", "T1 Mass Extractor: Mass Pump 1", "T1 Energy Storage", "T1 Mass Storage"]
+            let economy2: [String] =  ["T2 Mass Fabricator", "T2 Power Generator: EG-200 Fusion Reactor", "T2 Mass Extractor: Mass Pump 2"]
+            let economy3: [String] = ["T3 Power Generator: EG-900 Fusion Reactor", "T3 Mass Extractor: Mass Pump 3", "T3 Mass Fabricator"]
+            unitSectionCells = [economy1, economy2, economy3]
+        case "Weapon":
+            unitSectionNames = ["Tech 1", "Tech 2", "Tech 3", "Experimental"]
+            let weapon1: [String] =  ["T1 Point Defense: DM1 Plasma Cannon", "T1 Anti-Air Turret: DA1 Railgun", "T1 Torpedo Launcher: DN1"]
+            let weapon2: [String] =  ["T2 Tactical Missile Launcher: Aloha", "T2 Anti-Air Flak Artillery: Air Cleaner", "T2 Torpedo Launcher: Tsunami", "T2 Point Defense: Triad", "T2 Artillery Installation: Klink Hammer"]
+            let weapon3: [String] = ["T3 Heavy Artillery Installation: Duke", "T3 Anti-Air SAM Launcher: Flayer", "T3 Strategic Missile Launcher: Stonager", "T3 Heavy Point Defense: Ravager"]
+            let weapon4: [String] = ["Experimental Artillery: Mavor"]
+            unitSectionCells = [weapon1, weapon2, weapon3, weapon4]
+        default:
+            print("Warning: Name of unit Category Not Found in setTableDataForSelectedUnit(_ nameOfUnit: String!)")
+            
         }
     }
     
