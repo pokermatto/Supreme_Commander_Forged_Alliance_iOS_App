@@ -95,6 +95,20 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
                 let vehicle3: [String] = ["T3 Heavy Assault Bot: Titan", "T3 Mobile Heavy Artillery: Demolisher", "T3 Armored Assault Bot: Percival", "T3 Mobile Missile Platform: Spearhead"]
                 let vehicle4: [String] = ["Experimental Mobile Factory: Fatboy"]
                 unitSectionCells = [vehicle1, vehicle2, vehicle3, vehicle4]
+            case "Ship":
+                unitSectionNames = ["Tech 1", "Tech 2", "Tech 3", "Experimental"]
+                let ship1: [String] =  ["T1 Frigate: Thunderhead Class", "T1 Attack Submarine: Tigershark"]
+                let ship2: [String] =  ["T2 Destroyer: Valiant Class", "T2 Cruiser: Governor Class", "T2 Torpedo Boat: Cooper", "T2 Shield Boat:  Bulwark"]
+                let ship3: [String] = ["T3 Battleship: Summit Class", "T3 Strategic Missile Submarine: Ace", "T3 Battlecruiser: Neptune Class"]
+                let ship4: [String] = ["Experimental Aircraft Carrier: Atlantis"]
+                unitSectionCells = [ship1, ship2, ship3, ship4]
+            case "Support":
+                unitSectionNames = ["Tech 1", "Tech 2", "Experimental"]
+                let support1: [String] =  ["T1 Wall Section: Calcicrete"]
+                let support2: [String] =  ["T2 Air Staging Facility: Refuel & Repair"]
+                let support4: [String] = ["Experimental Satellite System: Novax Center"]
+                unitSectionCells = [support1, support2, support4]
+
             default:
                 print("Warning: Name of unit Category Not Found in setTableDataForSelectedUnit(_ nameOfUnit: String!)")
                 
