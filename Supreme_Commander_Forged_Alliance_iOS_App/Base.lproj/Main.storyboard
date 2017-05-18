@@ -13,7 +13,6 @@
         <!--Nav1-->
         <scene sceneID="pY4-Hu-kfo">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
                 <navigationController title="Nav1" id="RMx-3f-FxP" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -23,6 +22,7 @@
                         <segue destination="7bK-jq-Zjz" kind="relationship" relationship="rootViewController" id="tsl-Nk-0bq"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-38" y="-630"/>
         </scene>
@@ -46,7 +46,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gx8-q2-yly" id="oSA-ZZ-Mf8">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -79,7 +79,6 @@
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
                 <splitViewController id="H1p-Uh-vWS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <connections>
@@ -87,6 +86,7 @@
                         <segue destination="vC3-pB-5Vb" kind="relationship" relationship="detailViewController" id="Tll-UG-LXB"/>
                     </connections>
                 </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-856" y="-330"/>
         </scene>
@@ -162,10 +162,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j6p-nJ-Pv5">
-                                <rect key="frame" x="0.0" y="201" width="375" height="466"/>
+                                <rect key="frame" x="0.0" y="192" width="375" height="475"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="wWD-lI-72g">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="wWD-lI-72g">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wWD-lI-72g" id="Jo7-BZ-5XY">
@@ -176,19 +176,20 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PgC-77-E9o">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PgC-77-E9o">
                                 <rect key="frame" x="67" y="64" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.22903507737613785" green="0.56284224987030029" blue="0.25691249468655863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="qdc-3A-1Td"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="PgC-77-E9o" secondAttribute="trailing" constant="52" id="3IL-Si-EJE"/>
                             <constraint firstAttribute="trailing" secondItem="j6p-nJ-Pv5" secondAttribute="trailing" id="43D-9g-zIW"/>
                             <constraint firstItem="PgC-77-E9o" firstAttribute="leading" secondItem="r8Z-Zr-ERg" secondAttribute="leadingMargin" constant="51" id="FX7-IN-U1K"/>
-                            <constraint firstItem="j6p-nJ-Pv5" firstAttribute="top" secondItem="PgC-77-E9o" secondAttribute="bottom" constant="9" id="dFD-hq-438"/>
+                            <constraint firstItem="j6p-nJ-Pv5" firstAttribute="top" secondItem="PgC-77-E9o" secondAttribute="bottom" id="dFD-hq-438"/>
                             <constraint firstItem="j6p-nJ-Pv5" firstAttribute="leading" secondItem="r8Z-Zr-ERg" secondAttribute="leading" id="sVM-Uw-XR2"/>
                             <constraint firstItem="bwL-Yv-Cwc" firstAttribute="top" secondItem="j6p-nJ-Pv5" secondAttribute="bottom" id="sY8-Kz-ZcA"/>
                             <constraint firstItem="PgC-77-E9o" firstAttribute="top" secondItem="4Sd-ns-Qgb" secondAttribute="bottom" id="xxY-y0-UZN"/>
@@ -198,6 +199,7 @@
                     <navigationItem key="navigationItem" title="Detail" id="mxU-YK-nNu"/>
                     <connections>
                         <outlet property="detailTableView" destination="j6p-nJ-Pv5" id="mtM-At-QG0"/>
+                        <outlet property="imageView" destination="PgC-77-E9o" id="o0f-YN-67P"/>
                         <outlet property="topLabel" destination="mxU-YK-nNu" id="LLf-jo-aRY"/>
                     </connections>
                 </viewController>

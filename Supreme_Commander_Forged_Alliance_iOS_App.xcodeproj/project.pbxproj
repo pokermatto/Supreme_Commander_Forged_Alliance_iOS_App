@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF7FCEAF1ECD30EF0049EED3 /* images in Resources */ = {isa = PBXBuildFile; fileRef = BF7FCEAE1ECD30EF0049EED3 /* images */; };
 		BFCD45671ECAB7FA004EBC5E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD45661ECAB7FA004EBC5E /* InfoViewController.swift */; };
 		BFE7E7C51EC53A8300D3BF65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE7E7C41EC53A8300D3BF65 /* AppDelegate.swift */; };
 		BFE7E7C71EC53A8300D3BF65 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE7E7C61EC53A8300D3BF65 /* MasterViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF7FCEAE1ECD30EF0049EED3 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		BFCD45661ECAB7FA004EBC5E /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		BFE7E7C11EC53A8300D3BF65 /* Supreme_Commander_Forged_Alliance_iOS_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Supreme_Commander_Forged_Alliance_iOS_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE7E7C41EC53A8300D3BF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		BFE7E7C31EC53A8300D3BF65 /* Supreme_Commander_Forged_Alliance_iOS_App */ = {
 			isa = PBXGroup;
 			children = (
+				BF7FCEAE1ECD30EF0049EED3 /* images */,
 				BFE7E7C41EC53A8300D3BF65 /* AppDelegate.swift */,
 				BFE7E7C61EC53A8300D3BF65 /* MasterViewController.swift */,
 				BFE7E7C81EC53A8300D3BF65 /* DetailViewController.swift */,
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7FCEAF1ECD30EF0049EED3 /* images in Resources */,
 				BFE7E7D11EC53A8400D3BF65 /* LaunchScreen.storyboard in Resources */,
 				BFE7E7CE1EC53A8300D3BF65 /* Assets.xcassets in Resources */,
 				BFE7E7CC1EC53A8300D3BF65 /* Main.storyboard in Resources */,

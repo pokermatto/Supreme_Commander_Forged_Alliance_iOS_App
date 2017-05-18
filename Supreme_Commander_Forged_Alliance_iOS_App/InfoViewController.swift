@@ -11,10 +11,13 @@ import UIKit
 class InfoViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
  
     // MARK: - IBOutlets
-    //Outlet to label at top of InfoViewController in storyboard
+    //Outlet to label at top of Table 3 Scene in storyboard
     @IBOutlet weak var topLabel: UINavigationItem!
     
-    //Outlet to TableView in InfoViewController in storyboard
+    //Outlet to UIImageView in Table 3 Scene in Storyboard
+    @IBOutlet weak var imageView: UIImageView!
+    
+    //Outlet to TableView in Table 3 Scene in storyboard
     @IBOutlet weak var detailTableView: UITableView!
     
     
@@ -43,8 +46,12 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
             {
                 
             case "T1 Engineer":
+                
+                let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                imageView.image = unitImage
+                
                 unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel" , "Physics", "Wreckage"]
-                let bluePrintID = ["UE10105"]
+                let bluePrintID = ["UEL0105"]
                 let health: [String] =  ["HP: 150", "Regen Rate: 0 HP/s", "Armor Type: Normal"]
                 let abilities: [String] =  ["Amphibious", "Engineering Suite"]
                 let economy: [String] =  ["Mass: 53", "Mass Storage: 10", "Energy: 260", "Build Time: 260", "Build Rate: 5", "Build Radius: 5"]
