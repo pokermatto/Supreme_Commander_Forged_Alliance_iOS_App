@@ -30,12 +30,7 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
     var unitSectionNames: [String] = []
     var unitSectionCells: [[String]] = []
     
-    
-    
-    //var engineers: [String] = ["T1 Engineer","T2 Engineering Station: The Kennel", "T2 Engineer","T2 Field Engineer: Sparky","T3 Engineering Station: The Kennel", "T3 Engineer"]
-    
-    
-    
+
     
     //Set variables unitSectionNames and unitSectionCells according to the passed unit name
     func setTableDataForSelectedUnit(_ nameOfUnit: String!)
@@ -45,6 +40,42 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
             switch nameOfUnit
             {
                 
+            //COMMAND UNITS
+            case "ACU":
+                
+                let unitImage : UIImage = UIImage(named:"uel0001_icon")!
+                imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel" , "Physics", "Wreckage"]
+                let bluePrintID = ["UEL0001"]
+                let health: [String] =  ["HP: 12,000", "Regen Rate: 10 HP/s", "Armor Type: Commander"]
+                let abilities: [String] =  ["Amphibious", "Customizable", "Engineering Suite", "Not Capturable", "Omni Sensor", "Volatile"]
+                let economy: [String] =  ["Mass: 18,000", "Mass Storage: 650", "Energy: 5,000,000", "Build Time: 6,000,000", "Build Rate: 10", "Build Radius: 10"]
+                let intel: [String] =  ["Vision Radius: 26", "Omni Radius: 26", "Water Vision Radius: 26"]
+                let physics: [String] =  ["Max Speed: 1.7", "Turn Rate: 90"]
+                let wreckage: [String] =  ["Health: 135 HP", "Mass: 46"]
+                //TODO ADD VWE
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage]
+                
+            case "T3 Support ACU":
+                
+                let unitImage : UIImage = UIImage(named:"uel0301_icon")!
+                imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel" , "Physics", "Wreckage"]
+                let bluePrintID = ["UEL0301"]
+                let health: [String] =  ["HP: 16,000", "Regen Rate: 20 HP/s", "Armor Type: Normal"]
+                let abilities: [String] =  ["Amphibious", "Customizable", "Engineering Suite", "Not Capturable", "Omni Sensor", "Volatile"]
+                let economy: [String] =  ["Mass: 2,100", "Mass Storage: 275", "Energy: 25,200", "Build Time: 14,400", "Build Rate: 56", "Build Radius: 10"]
+                let intel: [String] =  ["Vision Radius: 26", "Omni Radius: 16", "Water Vision Radius: 26"]
+                let physics: [String] =  ["Max Speed: 2.2", "Turn Rate: 150"]
+                let wreckage: [String] =  ["Health: 14,400 HP", "Mass: 1890"]
+                //TODO ADD VWE
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage]
+                
+                
+                
+            //Engineering Units
             case "T1 Engineer":
                 
                 let unitImage : UIImage = UIImage(named:"uel0105_icon")!
@@ -59,8 +90,25 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let physics: [String] =  ["Max Speed: 1.9", "Turn Rate: 120"]
                 let wreckage: [String] =  ["Health: 135 HP", "Mass: 46"]
                 unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage]
+            case "T2 Engineering Station: The Kennel":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["XEB0104"]
+                let health: [String] =  ["HP: 1,000", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Engineering Suite", "Upgradeable"]
+                let economy: [String] =  ["Mass: 550", "Energy: 2750", "Build Time: 1,100", "Build Rate: 20"]
+                let intel: [String] =  ["Vision Radius: 15"]
+                let wreckage: [String] =  ["Health: 900 HP", "Mass: 495"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+                
+                
+                
+            //Default case
             default:
-                print("Warning: Name of unit Category Not Found in setTableDataForSelectedUnit(_ nameOfUnit: String!)")
+                print("Warning InfoView: Name of unit Category Not Found in setTableDataForSelectedUnit(_ nameOfUnit: String!)")
                 
             }
             

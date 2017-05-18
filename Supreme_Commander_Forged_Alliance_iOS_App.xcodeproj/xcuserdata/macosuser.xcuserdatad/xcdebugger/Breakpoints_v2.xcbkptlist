@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Supreme_Commander_Forged_Alliance_iOS_App/InfoViewController.swift"
-            timestampString = "516765552.247876"
+            timestampString = "516772300.963418"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "InfoViewController"
             landmarkType = "3">
          </BreakpointContent>
