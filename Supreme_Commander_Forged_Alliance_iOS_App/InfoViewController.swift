@@ -215,6 +215,71 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let intel: [String] =  ["Vision Radius: 20"]
                 let wreckage: [String] =  ["Health: 8,100 HP", "Mass: 936"]
                 unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+            case "T2 Air Factory HQ":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB0202"]
+                let health: [String] =  ["HP: 9,000", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Upgradeable"]
+                let economy: [String] =  ["Mass: 840", "Mass Storage: 160", "Energy: 14,100", "Build Time: 1,800", "Build Rate: 40"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 8,100 HP", "Mass: 756"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+            case "T2 Naval Factory HQ":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB0203"]
+                let health: [String] =  ["HP: 18,000", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Upgradeable"]
+                let economy: [String] =  ["Mass: 1,670", "Mass Storage: 160", "Energy: 8,100", "Build Time: 2,400", "Build Rate: 60"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 16,200 HP", "Mass: 1,503"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+            case "T2 Land Factory":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["ZEB9501"]
+                let health: [String] =  ["HP: 4,500", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Upgradeable"]
+                let economy: [String] =  ["Mass: 540", "Mass Storage: 160", "Energy: 4,800", "Build Time: 1,300", "Build Rate: 40"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 4,050 HP", "Mass: 486"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+            case "T2 Air Factory":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["ZEB9502"]
+                let health: [String] =  ["HP: 4,500", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Upgradeable"]
+                let economy: [String] =  ["Mass: 510", "Energy: 7,971", "Build Time: 1,300", "Build Rate: 40"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 4,050 HP", "Mass: 459"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+            case "T2 Naval Factory":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["ZEB9503"]
+                let health: [String] =  ["HP: 9,000", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Upgradeable"]
+                let economy: [String] =  ["Mass: 800", "Mass Storage: 160", "Energy: 4,000", "Build Time: 2,000", "Build Rate: 60"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 8,100 HP", "Mass: 720"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
                 
 
                 
