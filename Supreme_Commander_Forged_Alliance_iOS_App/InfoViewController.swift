@@ -50,7 +50,7 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let bluePrintID = ["UEL0001"]
                 let health: [String] =  ["HP: 12,000", "Regen Rate: 10 HP/s", "Armor Type: Commander"]
                 let abilities: [String] =  ["Amphibious", "Customizable", "Engineering Suite", "Not Capturable", "Omni Sensor", "Volatile"]
-                let economy: [String] =  ["Mass: 18,000", "Mass Storage: 650", "Energy: 5,000,000", "Build Time: 6,000,000", "Build Rate: 10", "Build Radius: 10"]
+                let economy: [String] =  ["Mass: 18,000 (+1)", "Mass Storage: 650", "Energy: 5,000,000 (+20)", "Build Time: 6,000,000", "Build Rate: 10", "Build Radius: 10"]
                 let intel: [String] =  ["Vision Radius: 26", "Omni Radius: 26", "Water Vision Radius: 26"]
                 let physics: [String] =  ["Max Speed: 1.7", "Turn Rate: 90"]
                 let wreckage: [String] =  ["Health: 135 HP", "Mass: 46"]
@@ -66,7 +66,7 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let bluePrintID = ["UEL0301"]
                 let health: [String] =  ["HP: 16,000", "Regen Rate: 20 HP/s", "Armor Type: Normal"]
                 let abilities: [String] =  ["Amphibious", "Customizable", "Engineering Suite", "Not Capturable", "Omni Sensor", "Volatile"]
-                let economy: [String] =  ["Mass: 2,100", "Mass Storage: 275", "Energy: 25,200", "Build Time: 14,400", "Build Rate: 56", "Build Radius: 10"]
+                let economy: [String] =  ["Mass: 2,100 (+1)", "Mass Storage: 275", "Energy: 25,200 (+20)", "Build Time: 14,400", "Build Rate: 56", "Build Radius: 10"]
                 let intel: [String] =  ["Vision Radius: 26", "Omni Radius: 16", "Water Vision Radius: 26"]
                 let physics: [String] =  ["Max Speed: 2.2", "Turn Rate: 150"]
                 let wreckage: [String] =  ["Health: 14,400 HP", "Mass: 1890"]
@@ -280,7 +280,245 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let intel: [String] =  ["Vision Radius: 20"]
                 let wreckage: [String] =  ["Health: 8,100 HP", "Mass: 720"]
                 unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+            case "T3 Land Factory HQ":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
                 
+                unitSectionNames = ["Blueprint ID","Health", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB0301"]
+                let health: [String] =  ["HP: 22,000", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let economy: [String] =  ["Mass: 4,400", "Energy: 39,900", "Build Time: 9,400", "Build Rate: 90"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 19,800 HP", "Mass: 3,996"]
+                unitSectionCells = [bluePrintID, health, economy, intel, wreckage]
+            case "T3 Air Factory HQ":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB0302"]
+                let health: [String] =  ["HP: 22,000", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let economy: [String] =  ["Mass: 4,090", "Energy: 99,191", "Build Time: 10,400", "Build Rate: 120"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 19,800 HP", "Mass: 3,681"]
+                unitSectionCells = [bluePrintID, health, economy, intel, wreckage]
+            case "T3 Naval Factory HQ":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB0303"]
+                let health: [String] =  ["HP: 40,000", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let economy: [String] =  ["Mass: 7,120", "Energy: 32,572", "Build Time: 9,200", "Build Rate: 120"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 19,800 HP", "Mass: 3,681"]
+                unitSectionCells = [bluePrintID, health, economy, intel, wreckage]
+            case "T3 Quantum Gateway: QGW R-32":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB0304"]
+                let health: [String] =  ["HP: 10,000", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let economy: [String] =  ["Mass: 3,000", "Energy: 30,000", "Build Time: 4,097", "Build Rate: 120"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 9,000 HP", "Mass: 2,700"]
+                unitSectionCells = [bluePrintID, health, economy, intel, wreckage]
+            case "T3 Land Factory":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["ZEB9601"]
+                let health: [String] =  ["HP: 11,000", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let economy: [String] =  ["Mass: 1,290", "Energy: 11,550", "Build Time: 3,000", "Build Rate: 90"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 9,900 HP", "Mass: 1,161"]
+                unitSectionCells = [bluePrintID, health, economy, intel, wreckage]
+            case "T3 Air Factory":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["ZEB9602"]
+                let health: [String] =  ["HP: 11,000", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let economy: [String] =  ["Mass: 1,510", "Energy: 34,153", "Build Time: 4,000", "Build Rate: 120"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 9,900 HP", "Mass: 1,359"]
+                unitSectionCells = [bluePrintID, health, economy, intel, wreckage]
+            case "T3 Naval Factory":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["ZEB9603"]
+                let health: [String] =  ["HP: 20,000", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let economy: [String] =  ["Mass: 1,600", "Energy: 7,429", "Build Time: 4,000", "Build Rate: 120"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 18,000 HP", "Mass: 1,440"]
+                unitSectionCells = [bluePrintID, health, economy, intel, wreckage]
+                
+            //Economy Units
+            case "T1 Power Generator":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Wreckage"]
+                let bluePrintID = ["UEB1101"]
+                let health: [String] =  ["HP: 4,500", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Volatile"]
+                let economy: [String] =  ["Mass: 75", "Energy: 750 (+20)", "Build Time: 125"]
+                let wreckage: [String] =  ["Health: 540 HP", "Mass: 67"]
+                //TODO add Weapon cell
+                unitSectionCells = [bluePrintID, health, abilities, economy, wreckage]
+            case "T1 Hydrocarbon Power Plant: HCPP - X1000":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Economy", "Wreckage"]
+                let bluePrintID = ["UEB1102"]
+                let health: [String] =  ["HP: 1,600", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let economy: [String] =  ["Mass: 160", "Energy: 800 (+100)", "Build Time: 400"]
+                let wreckage: [String] =  ["Health: 1,440 HP", "Mass: 144"]
+                unitSectionCells = [bluePrintID, health, economy, wreckage]
+            case "T1 Mass Extractor: Mass Pump 1":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Wreckage"]
+                let bluePrintID = ["UEB1103"]
+                let health: [String] =  ["HP: 600", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Upgradeable"]
+                let economy: [String] =  ["Mass: 36 (+2)", "Energy: 360 (-2)", "Build Time: 60", "Build Rate: 13.01"]
+                let wreckage: [String] =  ["Health: 540 HP", "Mass: 32"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, wreckage]
+            case "T1 Energy Storage":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Wreckage"]
+                let bluePrintID = ["UEB1105"]
+                let health: [String] =  ["HP: 500", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Volatile"]
+                let economy: [String] =  ["Mass: 250", "Energy: 1,200", "Build Time: 200",]
+                let wreckage: [String] =  ["Health: 450 HP", "Mass: 225"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, wreckage]
+            case "T1 Mass Storage":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Economy", "Wreckage"]
+                let bluePrintID = ["UEB1106"]
+                let health: [String] =  ["HP: 1,600", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let economy: [String] =  ["Mass: 200", "Mass Storage: 500", "Energy: 1,500", "Build Time: 250",]
+                let wreckage: [String] =  ["Health: 1,440 HP", "Mass: 180"]
+                unitSectionCells = [bluePrintID, health, economy, wreckage]
+            case "T2 Mass Fabricator":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Wreckage"]
+                let bluePrintID = ["UEB1104"]
+                let health: [String] =  ["HP: 360", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Volatile"]
+                let economy: [String] =  ["Mass: 100 (+1)", "Energy: 4,000 (-150)", "Build Time: 500",]
+                let wreckage: [String] =  ["Health: 324 HP", "Mass: 90"]
+                //TODO add Weapons
+                unitSectionCells = [bluePrintID, health, abilities, economy, wreckage]
+            case "T2 Power Generator: EG-200 Fusion Reactor":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB1201"]
+                let health: [String] =  ["HP: 2,160", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Volatile"]
+                let economy: [String] =  ["Mass: 1,200", "Energy: 12,000 (+500)", "Build Time: 2,198",]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 1,944 HP", "Mass: 1,080"]
+                //TODO add Weapons
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+            case "T2 Mass Extractor: Mass Pump 2":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB1202"]
+                let health: [String] =  ["HP: 3,000", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Upgradeable"]
+                let economy: [String] =  ["Mass: 900 (+6)", "Energy: 5,400 (-9)", "Build Time: 1,171", "Build Rate: 20.58"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 2,700 HP", "Mass: 810"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+            case "T3 Power Generator: EG-900 Fusion Reactor":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB1301"]
+                let health: [String] =  ["HP: 9,720", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Volatile"]
+                let economy: [String] =  ["Mass: 3,240", "Energy: 57,600 (+2,500)", "Build Time: 6,824"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 8,748 HP", "Mass: 2,916"]
+                //TODO add Weapons
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+            case "T3 Mass Extractor: Mass Pump 3":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID", "Health", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB1302"]
+                let health: [String] =  ["HP: 8,400", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let economy: [String] =  ["Mass: 4,600 (+18)", "Energy: 31,625 (-54)", "Build Time: 3,944"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 7,560 HP", "Mass: 4,140"]
+                unitSectionCells = [bluePrintID, health, economy, intel, wreckage]
+            case "T3 Mass Fabricator":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB1303"]
+                let health: [String] =  ["HP: 6,000", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Volatile"]
+                let economy: [String] =  ["Mass: 3,000 (+12)", "Energy: 65,000 (-3,500)", "Build Time: 4,988"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 5,400 HP", "Mass: 2,700"]
+                //TODO add Weapons
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+            case "T3 Mass Fabricator":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB1303"]
+                let health: [String] =  ["HP: 6,000", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Volatile"]
+                let economy: [String] =  ["Mass: 3,000 (+12)", "Energy: 65,000 (-3,500)", "Build Time: 4,988"]
+                let intel: [String] =  ["Vision Radius: 20"]
+                let wreckage: [String] =  ["Health: 5,400 HP", "Mass: 2,700"]
+                //TODO add Weapons
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
 
                 
                 
