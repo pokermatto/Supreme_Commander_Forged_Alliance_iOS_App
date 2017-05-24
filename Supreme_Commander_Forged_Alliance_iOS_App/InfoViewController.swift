@@ -757,6 +757,87 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let wreckage: [String] =  ["Health: 3,420 HP", "Mass: 6,750"]
                 //TODO add Weapons
                 unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+                
+            //Sensor Units
+            case "T1 Radar System: SA1-1000":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB3101"]
+                let health: [String] =  ["HP: 10", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Radar", "Upgradeable"]
+                let economy: [String] =  ["Mass: 80", "Energy: 720 (-20)", "Build Time: 80", "Build Rate: 14.08"]
+                let intel: [String] =  ["Vision Radius: 20", "Radar Radius: 115"]
+                let wreckage: [String] =  ["Health: 9 HP", "Mass: 72"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+            case "T1 Sonar System: SP1-1000":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB3102"]
+                let health: [String] =  ["HP: 600", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Sonar", "Upgradeable"]
+                let economy: [String] =  ["Mass: 64", "Energy: 544 (-10)", "Build Time: 80", "Build Rate: 14.08"]
+                let intel: [String] =  ["Vision Radius: 20", "Sonar Radius: 115"]
+                let wreckage: [String] =  ["Health: 540 HP", "Mass: 57"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+            case "T2 Radar System: SA2-2000":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB3201"]
+                let health: [String] =  ["HP: 50", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Radar", "Upgradeable"]
+                let economy: [String] =  ["Mass: 180", "Energy: 3,600 (-250)", "Build Time: 845", "Build Rate: 21.46"]
+                let intel: [String] =  ["Vision Radius: 25", "Radar Radius: 200"]
+                let wreckage: [String] =  ["Health: 45 HP", "Mass: 162"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+            case "T2 Sonar System: SP2-2000":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB3202"]
+                let health: [String] =  ["HP: 1,400", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Sonar", "Upgradeable"]
+                let economy: [String] =  ["Mass: 120", "Energy: 3,600 (-100)", "Build Time: 845", "Build Rate: 15"]
+                let intel: [String] =  ["Vision Radius: 25", "Sonar Radius: 230"]
+                let wreckage: [String] =  ["Health: 1,260 HP", "Mass: 108"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+            case "T3 Omni Sensor Array: SA3-Omni":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UEB3104"]
+                let health: [String] =  ["HP: 100", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
+                let abilities: [String] =  ["Omni Sensor", "Radar"]
+                let economy: [String] =  ["Mass: 2,400", "Energy: 30,000 (-2,000)", "Build Time: 2,575"]
+                let intel: [String] =  ["Vision Radius: 30", "Radar Radius: 600", "Omni Radius: 200"]
+                let wreckage: [String] =  ["Health: 90 HP", "Mass: 2,160"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+            case "T3 Sonar Platform: SP3-3000":
+                //TODO add image
+                //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
+                //imageView.image = unitImage
+                
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                let bluePrintID = ["UES0305"]
+                let health: [String] =  ["HP: 2,000", "Regen Rate: 0 HP/s", "Armor Type: Normal"]
+                let abilities: [String] =  ["Sonar", "Torpedoes"]
+                let economy: [String] =  ["Mass: 400", "Energy: 12,000 (-100)", "Build Time: 750"]
+                let intel: [String] =  ["Vision Radius: 32", "Sonar Radius: 450", "Water Vision Radius: 24"]
+                let wreckage: [String] =  ["Health: 1,800 HP", "Mass: 360"]
+                //Add Veterancy and Weapons
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
 
                 
                 
