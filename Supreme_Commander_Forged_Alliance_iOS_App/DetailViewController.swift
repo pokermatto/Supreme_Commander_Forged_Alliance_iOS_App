@@ -98,7 +98,7 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
             case "Ship":
                 unitSectionNames = ["Tech 1", "Tech 2", "Tech 3", "Experimental"]
                 let ship1: [String] =  ["T1 Frigate: Thunderhead Class", "T1 Attack Submarine: Tigershark"]
-                let ship2: [String] =  ["T2 Destroyer: Valiant Class", "T2 Cruiser: Governor Class", "T2 Torpedo Boat: Cooper", "T2 Shield Boat:  Bulwark"]
+                let ship2: [String] =  ["T2 Destroyer: Valiant Class", "T2 Cruiser: Governor Class", "T2 Torpedo Boat: Cooper", "T2 Shield Boat: Bulwark"]
                 let ship3: [String] = ["T3 Battleship: Summit Class", "T3 Strategic Missile Submarine: Ace", "T3 Battlecruiser: Neptune Class"]
                 let ship4: [String] = ["Experimental Aircraft Carrier: Atlantis"]
                 unitSectionCells = [ship1, ship2, ship3, ship4]
