@@ -91,7 +91,7 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
             case "Vehicle":
                 unitSectionNames = ["Tech 1", "Tech 2", "Tech 3", "Experimental"]
                 let vehicle1: [String] =  ["T1 Land Scout: Snoop", "T1 Mobile Light Artillery: Lobo", "T1 Mobile Anti-Air Gun: Archer", "T1 Light Assault Bot: Mech Marine", "T1 Medium Tank: MA12 Striker"]
-                let vehicle2: [String] =  ["T2 Gating Bot: Mongoose", "T2 Mobile Missile Launcher: Flapjack", "T2 Heavy Tank: Pillar", "T2 Amphibious Tank: Riptide", "T2 Mobile AA Flak Artillery: Sky Boxer", "T2 Mobile Shield Generator: Parashield"]
+                let vehicle2: [String] =  ["T2 Gatling Bot: Mongoose", "T2 Mobile Missile Launcher: Flapjack", "T2 Heavy Tank: Pillar", "T2 Amphibious Tank: Riptide", "T2 Mobile AA Flak Artillery: Sky Boxer", "T2 Mobile Shield Generator: Parashield"]
                 let vehicle3: [String] = ["T3 Heavy Assault Bot: Titan", "T3 Mobile Heavy Artillery: Demolisher", "T3 Armored Assault Bot: Percival", "T3 Mobile Missile Platform: Spearhead"]
                 let vehicle4: [String] = ["Experimental Mobile Factory: Fatboy"]
                 unitSectionCells = [vehicle1, vehicle2, vehicle3, vehicle4]
