@@ -15,12 +15,6 @@ class MasterViewController: UITableViewController {
     
     //Selected cell's label, used to pass to detail view
     var selectedLabel:String?
-
-    
-    
-    /*var oldData = [ "Building - Factory": ["T1 Land Factory", "T1 Air Factory", "T1 Naval Factory"],"Engineer": ["T1 Engineer","T2 Engineering Station: The Kennel", "T2 Engineer","T2 Field Engineer: Sparky","T3 Engineering Station: The Kennel", "T3 Engineer"], "Command": ["Armored Command Unit", "T3 Support Armored Command Unit"]]
-    
-    var mainPageNames = ["Support": ["Support"],"Mobile": ["Aircraft", "Vehicle", "Ship"],"Buildings": ["Factory", "Economy", "Weapon", "Defense", "Sensor"],"Command & Engineer": ["Command", "Engineer"]]*/
     
     
     //Titles of sections for the TableView
@@ -208,8 +202,6 @@ class MasterViewController: UITableViewController {
         //Return preferred height value for all sections
         return 61.0
     }
-    
-
     
  
 

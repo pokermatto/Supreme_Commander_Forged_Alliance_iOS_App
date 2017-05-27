@@ -11,6 +11,7 @@ import UIKit
 class InfoViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
  
     // MARK: - IBOutlets
+    
     //Outlet to label at top of Table 3 Scene in storyboard
     @IBOutlet weak var topLabel: UINavigationItem!
     
@@ -19,6 +20,13 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
     
     //Outlet to TableView in Table 3 Scene in storyboard
     @IBOutlet weak var detailTableView: UITableView!
+    
+    
+    /*
+     The selected cell on this page (Will be Veterancy, Weapons, or Enhancements cell)
+    used for setting and resetting cell selection style
+     */
+    var selectedCell: UITableViewCell? = nil
     
     
     
@@ -46,7 +54,7 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let unitImage : UIImage = UIImage(named:"uel0001_icon")!
                 imageView.image = unitImage
                 
-                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel" , "Physics", "Wreckage"]
+                unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel" , "Physics", "Wreckage", "Veterancy, Weapons, Enhancements"]
                 let bluePrintID = ["UEL0001"]
                 let health: [String] =  ["HP: 12,000", "Regen Rate: 10 HP/s", "Armor Type: Commander"]
                 let abilities: [String] =  ["Amphibious", "Customizable", "Engineering Suite", "Not Capturable", "Omni Sensor", "Volatile"]
@@ -54,8 +62,8 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let intel: [String] =  ["Vision Radius: 26", "Omni Radius: 26", "Water Vision Radius: 26"]
                 let physics: [String] =  ["Max Speed: 1.7", "Turn Rate: 90"]
                 let wreckage: [String] =  ["Health: 135 HP", "Mass: 46"]
-                //TODO ADD VWE
-                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage]
+                let vwe: [String] = ["Veterancy", "Weapons", "Enhancements"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage, vwe]
                 
             case "T3 Support ACU":
                 
@@ -1515,16 +1523,12 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
     
     
     
-    //TODO possibly delete
-    func configureView() {
-        // Update the user interface for the detail item.
-        
-    }
-    
     //Runs when view has loaded, use as main set-up function
     override func viewDidLoad() {
+        
         //Call super
         super.viewDidLoad()
+        
         
         //Set up TableView delegate and datasource as self
         detailTableView.delegate = self
@@ -1533,8 +1537,6 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
         //Set TableView data based on unit name
         setTableDataForSelectedUnit(unitName)
         
-        //TODO possibly delete
-        configureView()
        
         //Label at top of InfoViewController in storyboard. name based on selected cell title from DetailViewController
         topLabel.title = unitName
@@ -1549,6 +1551,67 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
+    
+    
+    
+    //Transitions to WeaponsView on UITableViewCell Click
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //If the segue is the one going from Table3 to Nav4 in storyboard
+        if segue.identifier == "showExtra" {
+            
+            //If a row was selected (the only case for transition on this segue at this time)
+            if detailTableView.indexPathForSelectedRow != nil
+            {
+                
+                //The user-selected cell
+                let currentCell = detailTableView.cellForRow(at: detailTableView.indexPathForSelectedRow!)!
+                
+                //The text of the user-selected cell
+                let selectedLabel = currentCell.textLabel!.text
+                
+                //Storyboard Table4 WeaponsViewController
+                let controller = (segue.destination as! UINavigationController).topViewController as! WeaponsViewController
+                
+                //Pass the title of the user-selected cell to the info view so it knows what unit info to load in its view and hence, table
+                controller.unitName = unitName
+                
+                //Selected cell's label name (Veterancy,Weapons, or Enhancements)
+                controller.vweName = selectedLabel
+                
+                
+                //Navigation backbutton
+                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //Runs when the view appears
+    override func viewWillAppear(_ animated: Bool) {
+        
+        //Call super
+        super.viewWillAppear(animated)
+        
+        //Reset previously-selected cell back to default selection style
+        selectedCell?.selectionStyle = UITableViewCellSelectionStyle.default
+        
+    }
+    
+    
+    
     
     
     // MARK: - TableView
@@ -1613,8 +1676,53 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
         cell.textLabel?.text = unitSectionCells[indexPath.section][indexPath.row]
         
         
+        //If the cell is selectable for more data to show
+        if (cell.textLabel?.text == "Veterancy" ||
+            cell.textLabel?.text == "Weapons" ||
+            cell.textLabel?.text == "Enhancements") {
+            //Add disclosure indicator to cell
+            cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+        }
+        else{
+            /*IMPORTANT set other cells to NOT have any accessory type
+             This is important because, although by default the cells have no accessory type,
+             random cells will acquire the disclosure indicator because of tableview bugs if this line is not executed for said cells*/
+            cell.accessoryType = UITableViewCellAccessoryType.none
+        }
+        
+
+        
         //Return the newly-created cell
         return cell
+    }
+    
+    
+
+    
+    //Runs when a cell is selected
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?{
+        // Determine if row is selectable based on the NSIndexPath.
+        
+        //The title of the selected cell
+        let selectedCellTitle = unitSectionCells[indexPath.section][indexPath.row]
+        
+        //If the title is equal to a cell that segues to another view...
+        if (selectedCellTitle == "Veterancy" ||
+            selectedCellTitle == "Weapons" ||
+            selectedCellTitle == "Enhancements") {
+            
+            //Save selected cell
+            selectedCell = (tableView.cellForRow(at: indexPath))!
+            //Set selected cell selection style to gray
+            selectedCell?.selectionStyle = UITableViewCellSelectionStyle.gray
+            
+            
+            //Return index path so segue can occur
+            return indexPath
+        }
+        
+        //Return nil to prevent unwanted segue
+        return nil
     }
     
     

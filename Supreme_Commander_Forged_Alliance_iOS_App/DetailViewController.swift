@@ -250,6 +250,8 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
         return cell
     }
     
+    
+    
 
     
     

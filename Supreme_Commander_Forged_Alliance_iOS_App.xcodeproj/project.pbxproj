@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF7FCEAF1ECD30EF0049EED3 /* images in Resources */ = {isa = PBXBuildFile; fileRef = BF7FCEAE1ECD30EF0049EED3 /* images */; };
+		BF829EC11ED8D2F3006BBD20 /* WeaponsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF829EC01ED8D2F3006BBD20 /* WeaponsViewController.swift */; };
 		BFCD45671ECAB7FA004EBC5E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD45661ECAB7FA004EBC5E /* InfoViewController.swift */; };
 		BFE7E7C51EC53A8300D3BF65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE7E7C41EC53A8300D3BF65 /* AppDelegate.swift */; };
 		BFE7E7C71EC53A8300D3BF65 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE7E7C61EC53A8300D3BF65 /* MasterViewController.swift */; };
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BF7FCEAE1ECD30EF0049EED3 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		BF829EC01ED8D2F3006BBD20 /* WeaponsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponsViewController.swift; sourceTree = "<group>"; };
 		BFCD45661ECAB7FA004EBC5E /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		BFE7E7C11EC53A8300D3BF65 /* Supreme_Commander_Forged_Alliance_iOS_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Supreme_Commander_Forged_Alliance_iOS_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE7E7C41EC53A8300D3BF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,15 +103,15 @@
 		BFE7E7C31EC53A8300D3BF65 /* Supreme_Commander_Forged_Alliance_iOS_App */ = {
 			isa = PBXGroup;
 			children = (
-				BF7FCEAE1ECD30EF0049EED3 /* images */,
+				BFE7E7D21EC53A8400D3BF65 /* Info.plist */,
 				BFE7E7C41EC53A8300D3BF65 /* AppDelegate.swift */,
-				BFE7E7C61EC53A8300D3BF65 /* MasterViewController.swift */,
 				BFE7E7C81EC53A8300D3BF65 /* DetailViewController.swift */,
-				BFE7E7CA1EC53A8300D3BF65 /* Main.storyboard */,
+				BFCD45661ECAB7FA004EBC5E /* InfoViewController.swift */,
+				BFE7E7C61EC53A8300D3BF65 /* MasterViewController.swift */,
+				BF829EC01ED8D2F3006BBD20 /* WeaponsViewController.swift */,
 				BFE7E7CD1EC53A8300D3BF65 /* Assets.xcassets */,
 				BFE7E7CF1EC53A8400D3BF65 /* LaunchScreen.storyboard */,
-				BFE7E7D21EC53A8400D3BF65 /* Info.plist */,
-				BFCD45661ECAB7FA004EBC5E /* InfoViewController.swift */,
+				BFE7E7CA1EC53A8300D3BF65 /* Main.storyboard */,
 			);
 			path = Supreme_Commander_Forged_Alliance_iOS_App;
 			sourceTree = "<group>";
@@ -202,6 +202,7 @@
 				TargetAttributes = {
 					BFE7E7C01EC53A8300D3BF65 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 52APW7BYS8;
 						ProvisioningStyle = Automatic;
 					};
 					BFE7E7D61EC53A8400D3BF65 = {
@@ -241,7 +242,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF7FCEAF1ECD30EF0049EED3 /* images in Resources */,
 				BFE7E7D11EC53A8400D3BF65 /* LaunchScreen.storyboard in Resources */,
 				BFE7E7CE1EC53A8300D3BF65 /* Assets.xcassets in Resources */,
 				BFE7E7CC1EC53A8300D3BF65 /* Main.storyboard in Resources */,
@@ -272,6 +272,7 @@
 				BFE7E7C91EC53A8300D3BF65 /* DetailViewController.swift in Sources */,
 				BFE7E7C71EC53A8300D3BF65 /* MasterViewController.swift in Sources */,
 				BFCD45671ECAB7FA004EBC5E /* InfoViewController.swift in Sources */,
+				BF829EC11ED8D2F3006BBD20 /* WeaponsViewController.swift in Sources */,
 				BFE7E7C51EC53A8300D3BF65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 52APW7BYS8;
 				INFOPLIST_FILE = Supreme_Commander_Forged_Alliance_iOS_App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MitchHickox.Supreme-Commander-Forged-Alliance-iOS-App";
@@ -438,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 52APW7BYS8;
 				INFOPLIST_FILE = Supreme_Commander_Forged_Alliance_iOS_App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MitchHickox.Supreme-Commander-Forged-Alliance-iOS-App";
