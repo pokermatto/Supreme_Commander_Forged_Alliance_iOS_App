@@ -698,15 +698,15 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                 //imageView.image = unitImage
                 
-                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Wreckage", "Weapons"]
                 let bluePrintID = ["UEB4201"]
                 let health: [String] =  ["HP: 1,000", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
                 let abilities: [String] =  ["Aquatic", "Tactile Missile Defense"]
                 let economy: [String] =  ["Mass: 280", "Energy: 3,200", "Build Time: 600"]
                 let intel: [String] =  ["Vision Radius: 20"]
                 let wreckage: [String] =  ["Health: 900 HP", "Mass: 252"]
-                //TODO add Weapons
-                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+                let vwe: [String] = ["Weapons"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage, vwe]
             case "T2 Shield Generator: SD-Pulse":
                 //TODO add image
                 //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
@@ -720,7 +720,6 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let economy: [String] =  ["Mass: 600", "Energy: 6,000 (-200)", "Build Time: 845", "Build Rate: 19.95"]
                 let intel: [String] =  ["Vision Radius: 20"]
                 let wreckage: [String] =  ["Health: 225 HP", "Mass: 540"]
-                //TODO add Weapons
                 unitSectionCells = [bluePrintID, health, shield, abilities, economy, intel, wreckage]
             case "T2 Stealth Field Generator: Scattershield":
                 //TODO add image
@@ -734,7 +733,6 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let economy: [String] =  ["Mass: 360", "Energy: 5,400 (-125)", "Build Time: 664"]
                 let intel: [String] =  ["Vision Radius: 20", "Radar Stealth Field Radius: 24", "Sonar Stealth Field Radius: 24"]
                 let wreckage: [String] =  ["Health: 202 HP", "Mass: 324"]
-                //TODO add Weapons
                 unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
             case "T3 Heavy Shield Generator: HSD Pulse":
                 //TODO add image
@@ -749,22 +747,21 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let economy: [String] =  ["Mass: 3,000", "Energy: 50,000 (-400)", "Build Time: 4,988"]
                 let intel: [String] =  ["Vision Radius: 20"]
                 let wreckage: [String] =  ["Health: 450 HP", "Mass: 2,700"]
-                //TODO add Weapons
                 unitSectionCells = [bluePrintID, health, shield, abilities, economy, intel, wreckage]
             case "T3 Strategic Missile Defense: Nuke Eliminator":
                 //TODO add image
                 //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                 //imageView.image = unitImage
                 
-                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Wreckage", "Weapons"]
                 let bluePrintID = ["UEB4302"]
                 let health: [String] =  ["HP: 3,800", "Regen Rate: 0 HP/s", "Armor Type: Structure"]
                 let abilities: [String] =  ["Strategic Missile Defense"]
                 let economy: [String] =  ["Mass: 7,500", "Energy: 105,000", "Build Time: 5,814", "Build Rate: 1,080"]
                 let intel: [String] =  ["Vision Radius: 20"]
                 let wreckage: [String] =  ["Health: 3,420 HP", "Mass: 6,750"]
-                //TODO add Weapons
-                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+                let vwe: [String] = ["Weapons"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage, vwe]
                 
             //Sensor Units
             case "T1 Radar System: SA1-1000":

@@ -351,6 +351,16 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let w1: [String] =  ["Type: Artillery, Normal", "DPS: 1,500", "Range: 150-4,000", "Area Damage Radius: 7",  "Projectile: 12,000 damage", "Muzzle Velocity: 160", "Lifetime: 1,000", "Fire Cycle: 1 projectile every 8 seconds",  "Energy Required: 30,000 (-7,500)", "Firing Randomness: 0.22°", "Firing Tolerance: 0.5°"]
                     unitSectionCells = [w1]
                     
+                case "T2 Tactical Missile Defense: Buzzkill":
+                    unitSectionNames = ["Phalanx Anti Missile"]
+                    let w1: [String] =  ["Type: Defense, Normal", "DPS: 0.5", "Range: 0-30", "Projectile: 1 damage (Destroys Missile)", "Muzzle Velocity: 100", "Fire Cycle: 1 projectile every 2 seconds"]
+                    unitSectionCells = [w1]
+              
+                case "T3 Strategic Missile Defense: Nuke Eliminator":
+                    unitSectionNames = ["Anti-Nuke"]
+                    let w1: [String] =  ["Type: Defense, Normal", "Range: 0-90", "Tactile Missile: 30 damage", "Muzzle Velocity: 90", "Firing Tolerance: 60°"]
+                    unitSectionCells = [w1]
+                    
                    
                     
                 default:
