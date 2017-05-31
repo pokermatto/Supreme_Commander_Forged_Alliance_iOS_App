@@ -214,6 +214,16 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let l5: [String] =  ["Kills Required: 250", "New HP: 12,000 (+4,000)", "New Regen Rate: 50 HP/s (+50 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
+                case "T3 Sonar Platform: SP3-3000":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    
+                    let l1: [String] =  ["Kills Required: 16", "New HP: 2,200 (+200)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 32", "New HP: 2,400 (+400)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 48", "New HP: 2,600 (+600)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 64", "New HP: 2,800 (+800)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 80", "New HP: 3,000 (+1,000)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                    
                     
                 default:
                     print("WeaponsView Error:" + factionName + "/" + unitName + "/" + vweName)
@@ -360,6 +370,12 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     unitSectionNames = ["Anti-Nuke"]
                     let w1: [String] =  ["Type: Defense, Normal", "Range: 0-90", "Tactile Missile: 30 damage", "Muzzle Velocity: 90", "Firing Tolerance: 60°"]
                     unitSectionCells = [w1]
+                    
+                case "T3 Sonar Platform: SP3-3000":
+                    unitSectionNames = ["Angler Torpedo"]
+                    let w1: [String] =  ["Type: Anti-Navy, Normal", "DPS: 37.5", "Range: 0-45", "Projectile: 75 damage", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 2 projectiles every 4 seconds", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                    
                     
                    
                     

@@ -834,15 +834,15 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                 //imageView.image = unitImage
                 
-                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Wreckage"]
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Wreckage", "Veterancy & Weapons"]
                 let bluePrintID = ["UES0305"]
                 let health: [String] =  ["HP: 2,000", "Regen Rate: 0 HP/s", "Armor Type: Normal"]
                 let abilities: [String] =  ["Sonar", "Torpedoes"]
                 let economy: [String] =  ["Mass: 400", "Energy: 12,000 (-100)", "Build Time: 750"]
                 let intel: [String] =  ["Vision Radius: 32", "Sonar Radius: 450", "Water Vision Radius: 24"]
                 let wreckage: [String] =  ["Health: 1,800 HP", "Mass: 360"]
-                //Add Veterancy and Weapons
-                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
+                let vwe: [String] = ["Veterancy", "Weapons"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage, vwe]
             
             //Air Units
             case "T1 Air Scout: Hummingbird":
