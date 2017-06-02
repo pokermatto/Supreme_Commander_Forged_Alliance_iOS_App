@@ -224,6 +224,111 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let l5: [String] =  ["Kills Required: 80", "New HP: 3,000 (+1,000)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
+                case "T1 Interceptor: Cyclone":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    
+                    let l1: [String] =  ["Kills Required: 2", "New HP: 324 (+29)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 4", "New HP: 354 (+59)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 6", "New HP: 383 (+88)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 8", "New HP: 413 (+118)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 10", "New HP: 442 (+147)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                    
+                case "T1 Attack Bomber: Scorcher":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    
+                    let l1: [String] =  ["Kills Required: 3", "New HP: 236 (+21)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 6", "New HP: 258 (+43)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 9", "New HP: 279 (+64)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 12", "New HP: 301 (+86)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 15", "New HP: 322 (+107)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                    
+                case "T2 Fighter/Bomber: Janus":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    
+                    let l1: [String] =  ["Kills Required: 6", "New HP: 1,320 (+120)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 12", "New HP: 1,440 (+240)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 18", "New HP: 1,560 (+360)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 24", "New HP: 1,680 (+480)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 30", "New HP: 1,800 (+600)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                    
+                case "T2 Air Transport: C14 Star Lifter":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    
+                    let l1: [String] =  ["Kills Required: 3", "New HP: 1,842 (+167)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 6", "New HP: 2,010 (+335)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 9", "New HP: 2,177 (+502)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 12", "New HP: 2,345 (+670)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 15", "New HP: 2,512 (+837)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                
+                case "T2 Gunship: Stinger":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    
+                    let l1: [String] =  ["Kills Required: 6", "New HP: 968 (+88)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 12", "New HP: 1,056 (+176)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 18", "New HP: 1,144 (+264)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 24", "New HP: 1,232 (+352)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 30", "New HP: 1,320 (+440)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+
+                case "T2 Torpedo Bomber: Stork":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    
+                    let l1: [String] =  ["Kills Required: 2", "New HP: 946 (+86)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 4", "New HP: 1,032 (+172)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 6", "New HP: 1,118 (+258)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 8", "New HP: 1,204 (+344)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 10", "New HP: 1,290 (+430)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                    
+                case "T3 Air-Superiority Fighter: Wasp":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 12", "New HP: 1,980 (+180)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 24", "New HP: 2,160 (+360)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 36", "New HP: 2,340 (+540)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 48", "New HP: 2,520 (+720)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 60", "New HP: 2,700 (+900)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                    
+                case "T3 Strategic Bomber: Ambassador":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 12", "New HP: 4,400 (+400)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 24", "New HP: 4,800 (+800)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 36", "New HP: 5,200 (+1,200)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 48", "New HP: 5,600 (+1,600)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 60", "New HP: 6,000 (+2,000)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                
+                case "T3 Heavy Gunship: Broadship":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 12", "New HP: 6,600 (+600)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 24", "New HP: 7,200 (+1,200)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 36", "New HP: 7,800 (+1,800)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 48", "New HP: 8,400 (+2,400)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 60", "New HP: 9,000 (+3,000)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+
+                case "T3 Heavy Air Transport: Continental":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 12", "New HP: 4,950 (+450)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 24", "New HP: 5,400 (+900)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 36", "New HP: 5,850 (+1,350)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 48", "New HP: 6,300 (+1,800)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 60", "New HP: 6,750 (+2,250)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                    
+                case "Defense Satellite":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 25", "New HP: 110 (+10)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 50", "New HP: 120 (+20)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 75", "New HP: 130 (+30)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 100", "New HP: 140 (+40)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 125", "New HP: 150 (+50)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                    
                     
                 default:
                     print("WeaponsView Error:" + factionName + "/" + unitName + "/" + vweName)
@@ -322,7 +427,7 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     
                 case "T2 Torpedo Launcher: Tsunami":
                     unitSectionNames = ["Angler Torpedo"]
-                    let w1: [String] =  ["Type: Anti-Nacy, Normal", "DPS: 150", "Range: 0-60", "Projectile: 150 damage", "Muzzle Velocity: 5", "Lifetime: 12", "Fire Cycle: 1 projectile per second", "Firing Tolerance: 60°"]
+                    let w1: [String] =  ["Type: Anti-Navy, Normal", "DPS: 150", "Range: 0-60", "Projectile: 150 damage", "Muzzle Velocity: 5", "Lifetime: 12", "Fire Cycle: 1 projectile per second", "Firing Tolerance: 60°"]
                     unitSectionCells = [w1]
                     
                 case "T2 Point Defense: Triad":
@@ -376,6 +481,91 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let w1: [String] =  ["Type: Anti-Navy, Normal", "DPS: 37.5", "Range: 0-45", "Projectile: 75 damage", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 2 projectiles every 4 seconds", "Firing Tolerance: 2°"]
                     unitSectionCells = [w1]
                     
+                case "T1 Air Scout: Hummingbird":
+                    unitSectionNames = ["Air Crash"]
+                    let w1: [String] =  ["Type: Death, Normal", "Damage: 10", "Area Damage Radius: 1", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                    
+                case "T1 Interceptor: Cyclone":
+                    unitSectionNames = ["Linked Railgun", "Air Crash"]
+                    let w1: [String] =  ["Type: Anti-Air, Normal", "DPS: 50", "Range: 0-25", "Projectile: 50 damage", "Muzzle Velocity: 120", "Fire Cycle: 1 projectile per second"]
+                    let w2: [String] =  ["Type: Death, Normal", "Damage: 25", "Area Damage Radius: 1", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1, w2]
+
+                case "T1 Attack Bomber: Scorcher":
+                    unitSectionNames = ["Napalm Carpet Bomb", "Air Crash"]
+                    let w1: [String] =  ["Type: Bomb, Normal", "DPS: 40", "Range: 0-40", "Area Damage Radius: 3", "Projectile: 4 damage", "Muzzle Velocity: 0", "Fire Cycle: 40 projectiles every  4 seconds", "Firing Randomness: 3°", "Firing Tolerance: 6°"]
+                    let w2: [String] =  ["Type: Death, Normal", "Damage: 100", "Area Damage Radius: 1", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1, w2]
+
+                case "T1 Light Air Transport: C-6 Courier":
+                    unitSectionNames = ["Air Crash"]
+                    let w1: [String] =  ["Type: Death, Normal", "Damage: 100", "Area Damage Radius: 1", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                    
+                case "T2 Fighter/Bomber: Janus":
+                    unitSectionNames = ["Linked Railgun (2)", "Napalm Carpet Bomb", "Air Crash"]
+                    let w1: [String] =  ["Type: Anti-Air, Normal", "DPS: 75", "Range: 0-30", "Area Damage Radius: 0", "Projectile: 75 damage", "Muzzle Velocity: 120", "Fire Cycle: 1 projectile per second", "Firing Tolerance: 1°"]
+                    let w2: [String] =  ["Type: Bomb, Normal", "DPS: 60", "Range: 0-60", "Area Damage Radius: 3", "Projectile: 75 damage", "Muzzle Velocity: 0", "Fire Cycle: 8 times 1 projectile every 0.2 seconds + 8.6 seconds reload", "Firing Randomness: 0.1°", "Firing Tolerance: 6°"]
+                    let w3: [String] =  ["Type: Death, Normal", "Damage: 200", "Area Damage Radius: 1", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1, w2, w3]
+                
+                case "T2 Air Transport: C14 Star Lifter":
+                    unitSectionNames = ["Hell's Fury Riot Gun (2)", "Linked Railgun (2)", "Air Crash"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 10", "Range 0-22", "Projectile: 3 damage", "Muzzle Velocity: 13", "Fire Cycle: 1 projectile every 0.3 seconds", "Firing Tolerance: 0.1°"]
+                    let w2: [String] =  ["Type: Anti-Air, Normal", "DPS: 24", "Range: 0-20", "Projectile: 12 damage", "Muzzle Velocity: 35", "Fire Cycle: 2 projectiles every second", "Firing Tolerance: 2°"]
+                    let w3: [String] =  ["Type: Death, Normal", "Damage: 25", "Area Damage Radius: 1", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1, w2, w3]
+                    
+                case "T2 Gunship: Stinger":
+                    unitSectionNames = ["Hell's Fury Riot Gun", "Air Crash"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 66.67", "Range 0-22", "Projectile: 20 damage", "Muzzle Velocity: 40", "Fire Cycle: 1 projectile every 0.3 seconds", "Firing Randomness: 0.2°", "Firing Tolerance: 2°"]
+                    let w2: [String] =  ["Type: Death, Normal", "Damage: 100", "Area Damage Radius: 1", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1, w2]
+                
+                case "T2 Torpedo Bomber: Stork":
+                    unitSectionNames = ["Angler Torpedo", "Air Crash"]
+                    let w1: [String] =  ["Type: Anti-Navy, Normal", "DPS: 60", "Range 4-42", "Projectile: 375 damage", "Muzzle Velocity: 14", "Lifetime: 20", "Fire Cycle: 2 times 1 projectile every 1.7 seconds + 10.8 second reload", "Firing Randomness: 3°", "Firing Tolerance: 6°"]
+                    let w2: [String] =  ["Type: Death, Normal", "Damage: 150", "Area Damage Radius: 1", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1, w2]
+                    
+                case "T3 Spy Plane: SR90 Blackbird":
+                    unitSectionNames = ["Air Crash"]
+                    let w1: [String] =  ["Type: Death, Normal", "Damage: 100", "Area Damage Radius: 1", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                
+                case "T3 Air-Superiority Fighter: Wasp":
+                    unitSectionNames = ["Ginsu Pulse Beam (2)", "Air Crash"]
+                    let w1: [String] =  ["Type: Anti-Air, Normal", "DPS: 200", "Range: 0-30", "Area Damage Radius: 0", "Projectile: 200 damage", "Muzzle Velocity: 120", "Fire Cycle: 1 projectile per second"]
+                    let w2: [String] =  ["Type: Death, Normal", "Damage: 200", "Area Damage Radius: 1", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1, w2]
+                    
+                case "T3 Strategic Bomber: Ambassador":
+                    unitSectionNames = ["Small Yield Nuclear Bomb", "Linked Railgun (2)", "Air Crash"]
+                    let w1: [String] =  ["Type: Bomb, Normal", "DPS: 600", "Range: 0-90", "Area Damage Radius: 6", "Projectile: 3,000 damage", "Muzzle Velocity: 0", "Fire Cycle: 1 projectile every 0.5 seconds", "Firing Tolerance: 6°"]
+                    let w2: [String] =  ["Type: Anti-Air, Normal", "DPS: 22.86", "Range: 0-44", "Projectile: 16 damage", "Muzzle Velocity: 45", "Fire Cycle: 1 projectile every 0.7 seconds"]
+                    let w3: [String] =  ["Type: Death, Normal", "Damage: 500", "Area Damage Radius: 1", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1, w2, w3]
+                
+                case "T3 Heavy Gunship: Broadship":
+                    unitSectionNames = ["Heavy Plasma Cannon", "Linked Railgun", "Air Crash"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 225", "Range: 0-25", "Projectile: 90 damage", "Muzzle Velocity: 40", "Fire Cycle: 1 projectile every 0.4 seconds", "Firing Randomness: 0.3°", "Firing Tolerance: 2°"]
+                    let w2: [String] =  ["Type: Anti-Air, Normal", "DPS: 12.31", "Range: 0-44", "Projectile: 8 damage", "Muzzle Velocity: 45", "Fire Cycle: 2 projectiles every 1.3 seconds", "Firing Tolerance: 2°"]
+                    let w3: [String] =  ["Type: Death, Normal", "Damage: 300", "Area Damage Radius: 1", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1, w2, w3]
+
+                case "T3 Heavy Air Transport: Continental":
+                    unitSectionNames = ["Heavy Plasma Cannon (2)", "Flayer SAM Launcher (4)", "Air Crash"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 30", "Range: 0-25", "Projectile: 15 damage", "Muzzle Velocity: 12", "Fire Cycle: 1 projectile every 0.5 seconds", "Firing Tolerance: 2°"]
+                    let w2: [String] =  ["Type: Anti-Air, Normal", "DPS: 66.67", "Range: 0-50", "Projectile: 20 damage", "Muzzle Velocity: 30", "Lifetime: 6", "Fire Cycle: 1 projectiles every 0.3 seconds", "Firing Tolerance: 10°"]
+                    let w3: [String] =  ["Type: Death, Normal", "Damage: 25", "Area Damage Radius: 3", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1, w2, w3]
+                    
+                case "Defense Satellite":
+                    unitSectionNames = ["Orbital Death Laser", "Air Crash"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 200", "Range: 0-32", "Area Damage Radius: 1", "Beam: 50 damage", "Fire Cycle: 1 beam every 20 second"]
+                    let w2: [String] =  ["Type: Death, Normal", "Damage: 3,000", "Area Damage Radius: 2"]
+                    unitSectionCells = [w1, w2]
                     
                    
                     
@@ -514,7 +704,7 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
         configureView()
         
         //Label at top of WeaponsViewController in storyboard
-        topLabel.title = unitName + ": " + vweName
+        topLabel.title =  vweName
     }
     
    
