@@ -548,6 +548,15 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let l4: [String] =  ["Kills Required: 120", "New HP: 56,000 (+16,000)", "New Regen Rate: 40 HP/s (+40 HP/s)"]
                     let l5: [String] =  ["Kills Required: 150", "New HP: 60,000 (+20,000)", "New Regen Rate: 50 HP/s (+50 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
+
+                case "Experimental Satellite System: Novax Center":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 25", "New HP: 9,900 (+900)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 50", "New HP: 10,800 (+1,800)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 75", "New HP: 11,700 (+2,700)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 100", "New HP: 12,600 (+3,600)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 125", "New HP: 13,500 (+4,500)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
                     
                     
                     
