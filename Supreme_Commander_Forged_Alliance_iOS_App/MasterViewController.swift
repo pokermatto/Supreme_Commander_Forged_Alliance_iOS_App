@@ -196,6 +196,9 @@ class MasterViewController: UITableViewController {
         return sectionArray[section].sectionName
     }
     
+    
+    
+    
     //Returns the height of the section
     public override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         

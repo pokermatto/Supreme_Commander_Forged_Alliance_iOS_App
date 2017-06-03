@@ -642,7 +642,7 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     
                 case "T1 Torpedo Launcher: DN1":
                     unitSectionNames = ["Angler Torpedo"]
-                    let w1: [String] =  ["Type: Anti-Navy, Normal", "DPS: 75", "Range: 0-50", "Projectile: 150 damage", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 2 projectiles every 4 seconds", "Firing Tolerance: 30°"]
+                    let w1: [String] =  ["Type: Anti-Navy, Normal", "DPS: 75", "Range: 0-50", "Projectile: 150 damage", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 2 times 1 projectile every 4s", "Reload: 3.3 seconds", "Firing Tolerance: 30°"]
                     unitSectionCells = [w1]
                     
                 case "T2 Tactical Missile Launcher: Aloha":
@@ -657,7 +657,7 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     
                 case "T2 Torpedo Launcher: Tsunami":
                     unitSectionNames = ["Angler Torpedo"]
-                    let w1: [String] =  ["Type: Anti-Navy, Normal", "DPS: 150", "Range: 0-60", "Projectile: 150 damage", "Muzzle Velocity: 5", "Lifetime: 12", "Fire Cycle: 1 projectile per second", "Firing Tolerance: 60°"]
+                    let w1: [String] =  ["Type: Anti-Navy, Normal", "DPS: 150", "Range: 0-60", "Projectile: 150 damage", "Muzzle Velocity: 5", "Lifetime: 12", "Fire Cycle: 4 times 1 projectile every 0.5s", "Reload: 2.5 seconds", "Firing Tolerance: 60°"]
                     unitSectionCells = [w1]
                     
                 case "T2 Point Defense: Triad":
@@ -677,7 +677,7 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     
                 case "T3 Anti-Air SAM Launcher: Flayer":
                     unitSectionNames = ["Flayer SAM Launcher"]
-                    let w1: [String] =  ["Type: Anti-Air, Normal", "DPS: 333.33", "Range: 0-60", "Area Damage Radius: 1.5",  "Projectile: 200 damage", "Muzzle Velocity: 45", "Lifetime: 6", "Fire Cycle: 6 projectiles every 3.6 seconds", "Firing Tolerance: 10°"]
+                    let w1: [String] =  ["Type: Anti-Air, Normal", "DPS: 333.33", "Range: 0-60", "Area Damage Radius: 1.5",  "Projectile: 200 damage", "Muzzle Velocity: 45", "Lifetime: 6", "Fire Cycle: 6 times 1 projectile every 0.1s", "Reload: 3.1 seconds", "Firing Tolerance: 10°"]
                     unitSectionCells = [w1]
     
                 case "T3 Strategic Missile Launcher: Stonager":
@@ -688,7 +688,7 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     
                 case "T3 Heavy Point Defense: Ravager":
                     unitSectionNames = ["Heavy Plasma Gatling Gun"]
-                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 328.13", "Range: 0-70", "Area Damage Radius: 1",  "Projectile: 175 damage", "Muzzle Velocity: 32", "Fire Cycle: 15 projectiles every 8 seconds",  "Energy Required: 50 (-50)", "Firing Randomness: 0.2°", "Firing Tolerance: 2°"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 328.13", "Range: 0-70", "Area Damage Radius: 1",  "Projectile: 175 damage", "Muzzle Velocity: 32", "Fire Cycle: 15 times 1 projectile every 0.2s", "Reload: 5.2 seconds",  "Energy Required: 50 (-50)", "Firing Randomness: 0.2°", "Firing Tolerance: 2°"]
                     unitSectionCells = [w1]
                     
                 case "Experimental Artillery: Mavor":
@@ -708,7 +708,7 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     
                 case "T3 Sonar Platform: SP3-3000":
                     unitSectionNames = ["Angler Torpedo"]
-                    let w1: [String] =  ["Type: Anti-Navy, Normal", "DPS: 37.5", "Range: 0-45", "Projectile: 75 damage", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 2 projectiles every 4 seconds", "Firing Tolerance: 2°"]
+                    let w1: [String] =  ["Type: Anti-Navy, Normal", "DPS: 37.5", "Range: 0-45", "Projectile: 75 damage", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 2 times 1 projectile every 0.7s", "Reload: 3.3 seconds", "Firing Tolerance: 2°"]
                     unitSectionCells = [w1]
                     
                 case "T1 Air Scout: Hummingbird":
@@ -724,7 +724,8 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
 
                 case "T1 Attack Bomber: Scorcher":
                     unitSectionNames = ["Napalm Carpet Bomb", "Air Crash"]
-                    let w1: [String] =  ["Type: Bomb, Normal", "DPS: 40", "Range: 0-40", "Area Damage Radius: 3", "Projectile: 4 damage", "Muzzle Velocity: 0", "Fire Cycle: 40 projectiles every  4 seconds", "Firing Randomness: 3°", "Firing Tolerance: 6°"]
+                    //TODO edit this weapon projectile?
+                    let w1: [String] =  ["Type: Bomb, Normal", "DPS: 40", "Range: 0-40", "Area Damage Radius: 3", "Projectile: 4 damage", "Muzzle Velocity: 0", "Fire Cycle: 5 times 1 projectile every  0.2s", "Reload: 3.4 seconds", "Firing Randomness: 3°", "Firing Tolerance: 6°"]
                     let w2: [String] =  ["Type: Death, Normal", "Damage: 100", "Area Damage Radius: 1", "Firing Tolerance: 2°"]
                     unitSectionCells = [w1, w2]
 
@@ -736,6 +737,7 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                 case "T2 Fighter/Bomber: Janus":
                     unitSectionNames = ["Linked Railgun (2)", "Napalm Carpet Bomb", "Air Crash"]
                     let w1: [String] =  ["Type: Anti-Air, Normal", "DPS: 75", "Range: 0-30", "Area Damage Radius: 0", "Projectile: 75 damage", "Muzzle Velocity: 120", "Fire Cycle: 1 projectile per second", "Firing Tolerance: 1°"]
+                    //TODO edit this weapon projectile?
                     let w2: [String] =  ["Type: Bomb, Normal", "DPS: 60", "Range: 0-60", "Area Damage Radius: 3", "Projectile: 75 damage", "Muzzle Velocity: 0", "Fire Cycle: 8 times 1 projectile every 0.2s", "Reload: 8.6 seconds", "Firing Randomness: 0.1°", "Firing Tolerance: 6°"]
                     let w3: [String] =  ["Type: Death, Normal", "Damage: 200", "Area Damage Radius: 1", "Firing Tolerance: 2°"]
                     unitSectionCells = [w1, w2, w3]
