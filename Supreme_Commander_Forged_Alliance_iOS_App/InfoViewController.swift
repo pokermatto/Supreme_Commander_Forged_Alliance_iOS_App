@@ -1313,7 +1313,7 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                 //imageView.image = unitImage
                 
-                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage"]
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage", "Veterancy & Weapons"]
                 let bluePrintID = ["UES0103"]
                 let health: [String] =  ["HP: 2,120", "Regen Rate: 0 HP/s", "Armor Type: Normal"]
                 let abilities: [String] =  ["Anti-Air", "Jamming", "Radar", "Sonar"]
@@ -1321,14 +1321,14 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let intel: [String] =  ["Vision Radius: 32", "Radar Radius: 80", "Sonar Radius: 82", "Water Vision Radius: 16"]
                 let physics: [String] =  ["Max Speed: 6.0", "Turn Rate: 60"]
                 let wreckage: [String] =  ["Health: 1,908 HP", "Mass: 252"]
-                //Add Veterancy and Weapons
-                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage]
+                let vwe: [String] = ["Veterancy", "Weapons"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage, vwe]
             case "T1 Attack Submarine: Tigershark":
                 //TODO add image
                 //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                 //imageView.image = unitImage
                 
-                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage"]
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage", "Veterancy & Weapons"]
                 let bluePrintID = ["UES0203"]
                 let health: [String] =  ["HP: 600", "Regen Rate: 0 HP/s", "Armor Type: Normal"]
                 let abilities: [String] =  ["Sonar", "Submersible", "Torpedoes"]
@@ -1336,14 +1336,14 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let intel: [String] =  ["Vision Radius: 32", "Sonar Radius: 60", "Water Vision Radius: 32"]
                 let physics: [String] =  ["Max Speed: 6.0", "Turn Rate: 80"]
                 let wreckage: [String] =  ["Health: 540 HP", "Mass: 324"]
-                //Add Veterancy and Weapons
-                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage]
+                let vwe: [String] = ["Veterancy", "Weapons"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage, vwe]
             case "T2 Destroyer: Valiant Class":
                 //TODO add image
                 //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                 //imageView.image = unitImage
                 
-                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage"]
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage", "Veterancy & Weapons"]
                 let bluePrintID = ["UES0201"]
                 let health: [String] =  ["HP: 7,200", "Regen Rate: 0 HP/s", "Armor Type: Normal"]
                 let abilities: [String] =  ["Anti-Air", "Radar", "Sonar", "Torpedoes", "Torpedo Defense"]
@@ -1351,14 +1351,14 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let intel: [String] =  ["Vision Radius: 32",  "Radar Radius: 35", "Sonar Radius: 37", "Water Vision Radius: 45"]
                 let physics: [String] =  ["Max Speed: 5.0", "Turn Rate: 50"]
                 let wreckage: [String] =  ["Health: 6,480 HP", "Mass: 2,025"]
-                //Add Veterancy and Weapons
-                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage]
+                let vwe: [String] = ["Veterancy", "Weapons"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage, vwe]
             case "T2 Cruiser: Governor Class":
                 //TODO add image
                 //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                 //imageView.image = unitImage
                 
-                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage"]
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage", "Veterancy & Weapons"]
                 let bluePrintID = ["UES0202"]
                 let health: [String] =  ["HP: 2,500", "Regen Rate: 0 HP/s", "Armor Type: Normal"]
                 let abilities: [String] =  ["Anti-Air", "Radar", "Sonar", "Tactical Missile Defense"]
@@ -1366,14 +1366,14 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let intel: [String] =  ["Vision Radius: 65",  "Radar Radius: 150", "Sonar Radius: 120", "Water Vision Radius: 60"]
                 let physics: [String] =  ["Max Speed: 4.5", "Turn Rate: 40"]
                 let wreckage: [String] =  ["Health: 2,250 HP", "Mass: 1,800"]
-                //Add Veterancy and Weapons
-                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage]
+                let vwe: [String] = ["Veterancy", "Weapons"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage, vwe]
             case "T2 Torpedo Boat: Cooper":
                 //TODO add image
                 //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                 //imageView.image = unitImage
                 
-                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage"]
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage", "Veterancy & Weapons"]
                 let bluePrintID = ["XES0102"]
                 let health: [String] =  ["HP: 1,750", "Regen Rate: 0 HP/s", "Armor Type: Normal"]
                 let abilities: [String] =  ["Sonar", "Torpedoes", "Torpedo Defense"]
@@ -1381,8 +1381,8 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let intel: [String] =  ["Vision Radius: 32", "Sonar Radius: 35", "Water Vision Radius: 45"]
                 let physics: [String] =  ["Max Speed: 6.0", "Turn Rate: 100"]
                 let wreckage: [String] =  ["Health: 1,575 HP", "Mass: 810"]
-                //Add Veterancy and Weapons
-                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage]
+                let vwe: [String] = ["Veterancy", "Weapons"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage, vwe]
             case "T2 Shield Boat: Bulwark":
                 //TODO add image
                 //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
@@ -1397,14 +1397,14 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let intel: [String] =  ["Vision Radius: 32"]
                 let physics: [String] =  ["Max Speed: 7.0", "Turn Rate: 60"]
                 let wreckage: [String] =  ["Health: 675 HP", "Mass: 1,170"]
-                //Add Weapons???
+                //TODO Add Weapons???
                 unitSectionCells = [bluePrintID, health, shield, abilities, economy, intel, physics, wreckage]
             case "T3 Battleship: Summit Class":
                 //TODO add image
                 //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                 //imageView.image = unitImage
                 
-                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage"]
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage", "Veterancy & Weapons"]
                 let bluePrintID = ["UES0302"]
                 let health: [String] =  ["HP: 51,000", "Regen Rate: 0 HP/s", "Armor Type: Normal"]
                 let abilities: [String] =  ["Anti-Air", "Radar", "Sonar", "Tactile Missile Defense"]
@@ -1412,14 +1412,14 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let intel: [String] =  ["Vision Radius: 50", "Radar Radius: 50", "Sonar Radius: 20", "Water Vision Radius: 50"]
                 let physics: [String] =  ["Max Speed: 2.5", "Turn Rate: 25"]
                 let wreckage: [String] =  ["Health: 45,900 HP", "Mass: 8,100"]
-                //Add Veterancy and Weapons
-                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage]
+                let vwe: [String] = ["Veterancy", "Weapons"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage, vwe]
             case "T3 Strategic Missile Submarine: Ace":
                 //TODO add image
                 //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                 //imageView.image = unitImage
                 
-                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage"]
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage", "Veterancy & Weapons"]
                 let bluePrintID = ["UES0304"]
                 let health: [String] =  ["HP: 4,000", "Regen Rate: 0 HP/s", "Armor Type: Normal"]
                 let abilities: [String] =  ["Manual Launch", "Sonar", "Submersible"]
@@ -1427,14 +1427,14 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let intel: [String] =  ["Vision Radius: 16", "Sonar Radius: 60", "Water Vision Radius: 35"]
                 let physics: [String] =  ["Max Speed: 3.3", "Turn Rate: 50"]
                 let wreckage: [String] =  ["Health: 3,600 HP", "Mass: 8,100"]
-                //Add Veterancy and Weapons
-                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage]
+                let vwe: [String] = ["Veterancy", "Weapons"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage, vwe]
             case "T3 Battlecruiser: Neptune Class":
                 //TODO add image
                 //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                 //imageView.image = unitImage
                 
-                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage"]
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage", "Veterancy & Weapons"]
                 let bluePrintID = ["XES0307"]
                 let health: [String] =  ["HP: 25,000", "Regen Rate: 0 HP/s", "Armor Type: Normal"]
                 let abilities: [String] =  ["Radar", "Sonar", "Tactical Missile Defense", "Torpedoes", "Torpedo Defense"]
@@ -1442,14 +1442,14 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let intel: [String] =  ["Vision Radius: 40", "Radar Radius: 50", "Sonar Radius: 20", "Water Vision Radius: 50"]
                 let physics: [String] =  ["Max Speed: 4.25", "Turn Rate: 35"]
                 let wreckage: [String] =  ["Health: 22,500 HP", "Mass: 6,300"]
-                //Add Veterancy and Weapons
-                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage]
+                let vwe: [String] = ["Veterancy", "Weapons"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage, vwe]
             case "Experimental Aircraft Carrier: Atlantis":
                 //TODO add image
                 //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                 //imageView.image = unitImage
                 
-                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage"]
+                unitSectionNames = ["Blueprint ID", "Health", "Abilities", "Economy", "Intel", "Physics", "Wreckage", "Veterancy & Weapons"]
                 let bluePrintID = ["UES0401"]
                 let health: [String] =  ["HP: 40,000", "Regen Rate: 0 HP/s", "Armor Type: Normal"]
                 let abilities: [String] =  ["Anti-Air", "Carrier", "Factory", "Radar", "Sonar", "Submersible", "Torpedoes"]
@@ -1457,8 +1457,8 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 let intel: [String] =  ["Vision Radius: 100", "Radar Radius: 250", "Sonar Radius: 252", "Water Vision Radius: 100"]
                 let physics: [String] =  ["Max Speed: 2.8", "Turn Rate: 12"]
                 let wreckage: [String] =  ["Health: 36,000 HP", "Mass: 10,800"]
-                //Add Veterancy and Weapons
-                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage]
+                let vwe: [String] = ["Veterancy", "Weapons"]
+                unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, wreckage, vwe]
                 
             //Support Units
             case "T1 Wall Section: Calcicrete":
