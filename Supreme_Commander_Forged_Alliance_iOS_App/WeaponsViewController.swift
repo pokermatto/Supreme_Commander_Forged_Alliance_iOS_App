@@ -12,6 +12,10 @@ import UIKit
 
 class WeaponsViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
     
+    
+    //TODO for some reason, when going to weapons view from Snoop or Pillar, the back button text is the unit title but should say "Back"
+    
+    
     //Title of cell selected on InfoViewController
     var vweName: String!
     
@@ -328,7 +332,141 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let l4: [String] =  ["Kills Required: 100", "New HP: 140 (+40)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
                     let l5: [String] =  ["Kills Required: 125", "New HP: 150 (+50)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
+
+                case "T1 Land Scout: Snoop":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 2", "New HP: 31 (+2)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 4", "New HP: 34 (+5)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 6", "New HP: 37 (+8)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 8", "New HP: 40 (+11)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 10", "New HP: 43 (+14)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                
+                case "T1 Mobile Light Artillery: Lobo":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 3", "New HP: 220 (+20)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 6", "New HP: 240 (+40)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 9", "New HP: 260 (+60)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 12", "New HP: 280 (+80)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 15", "New HP: 300 (+100)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                
+                case "T1 Mobile Anti-Air Gun: Archer":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 2", "New HP: 220 (+20)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 4", "New HP: 240 (+40)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 6", "New HP: 260 (+60)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 8", "New HP: 280 (+80)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 10", "New HP: 300 (+100)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
                     
+                case "T1 Light Assault Bot: Mech Marine":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 2", "New HP: 82 (+7)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 4", "New HP: 90 (+15)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 6", "New HP: 97 (+22)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 8", "New HP: 105 (+30)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 10", "New HP: 112 (+37)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+
+                case "T1 Medium Tank: MA12 Striker":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 3", "New HP: 330 (+30)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 6", "New HP: 360 (+60)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 9", "New HP: 390 (+90)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 12", "New HP: 420 (+120)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 15", "New HP: 450 (+150)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+
+                case "T2 Gatling Bot: Mongoose":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 6", "New HP: 715 (+65)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 12", "New HP: 780 (+130)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 18", "New HP: 845 (+195)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 24", "New HP: 910 (+260)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 30", "New HP: 975 (+325)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+
+                case "T2 Mobile Missile Launcher: Flapjack":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 3", "New HP: 907 (+82)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 6", "New HP: 990 (+165)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 9", "New HP: 1,072 (+247)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 12", "New HP: 1,155 (+330)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 15", "New HP: 1,237 (+412)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+
+                case "T2 Heavy Tank: Pillar":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 6", "New HP: 1,650 (+150)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 12", "New HP: 1,800 (+300)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 18", "New HP: 1,950 (+450)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 24", "New HP: 2,100 (+600)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 30", "New HP: 2,250 (+750)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+
+                case "T2 Amphibious Tank: Riptide":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 7", "New HP: 1,870 (+170)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 14", "New HP: 2,040 (+340)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 21", "New HP: 2,210 (+510)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 28", "New HP: 2,380 (+680)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 35", "New HP: 2,550 (+850)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                
+                case "T2 Mobile AA Flak Artillery: Sky Boxer":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 4", "New HP: 1,100 (+100)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 8", "New HP: 1,200 (+200)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 12", "New HP: 1,300 (+300)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 16", "New HP: 1,400 (+400)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 20", "New HP: 1,500 (+500)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+
+                case "T3 Heavy Assault Bot: Titan":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 9", "New HP: 2,420 (+220)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 18", "New HP: 2,640 (+440)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 27", "New HP: 2,860 (+660)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 36", "New HP: 3,080 (+880)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 45", "New HP: 3,300 (+1,100)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                    
+                case "T3 Mobile Heavy Artillery: Demolisher":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 9", "New HP: 1,045 (+95)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 18", "New HP: 1,140 (+190)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 27", "New HP: 1,235 (+285)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 36", "New HP: 1,330 (+380)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 45", "New HP: 1,425 (+475)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                    
+                case "T3 Armored Assault Bot: Percival":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 20", "New HP: 10,230 (+930)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 40", "New HP: 11,160 (+1,860)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 60", "New HP: 12,090 (+2,790)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 80", "New HP: 13,020 (+3,720)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 100", "New HP: 13,950 (+4,650)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                    
+                case "T3 Mobile Missile Platform: Spearhead":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 6", "New HP: 1,870 (+170)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 12", "New HP: 2,040 (+340)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 18", "New HP: 2,210 (+510)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 24", "New HP: 2,380 (+680)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 30", "New HP: 2,550 (+850)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                    
+                case "Experimental Mobile Factory: Fatboy":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 40", "New HP: 13,750 (+1,250)", "New Regen Rate: 35 HP/s (+35 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 80", "New HP: 15,000 (+2,500)", "New Regen Rate: 50 HP/s (+50 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 120", "New HP: 16,250 (+3,750)", "New Regen Rate: 65 HP/s (+65 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 160", "New HP: 17,500 (+5,000)", "New Regen Rate: 80 HP/s (+80 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 200", "New HP: 18,750 (+6,250)", "New Regen Rate: 95 HP/s (+95 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
                     
                 default:
                     print("WeaponsView Error:" + factionName + "/" + unitName + "/" + vweName)
@@ -563,11 +701,96 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     
                 case "Defense Satellite":
                     unitSectionNames = ["Orbital Death Laser", "Air Crash"]
-                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 200", "Range: 0-32", "Area Damage Radius: 1", "Beam: 50 damage", "Fire Cycle: 1 beam every 20 second"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 200", "Range: 0-32", "Area Damage Radius: 1", "Beam: 50 damage", "Fire Cycle: 1 beam every 20 seconds"]
                     let w2: [String] =  ["Type: Death, Normal", "Damage: 3,000", "Area Damage Radius: 2"]
                     unitSectionCells = [w1, w2]
                     
-                   
+                case "T1 Land Scout: Snoop":
+                    unitSectionNames = ["Tom Cat Machinegun"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 2", "Range: 0-25", "Projectile: 4 damage", "Muzzle Velocity: 25", "Fire Cycle: 1 projectile every 2 seconds", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                    
+                case "T1 Mobile Light Artillery: Lobo":
+                    unitSectionNames = ["Fragmentation Artillery"]
+                    let w1: [String] =  ["Type: Artillery, Normal", "DPS: 60.24", "Range: 5-30", "Area Damage Radius: 1", "Projectile: 100 damage", "Muzzle Velocity: 14", "Fire Cycle: 5 projectiles every 8.3 seconds", "Firing Randomness: 0.5°", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                    
+                case "T1 Mobile Anti-Air Gun: Archer":
+                    unitSectionNames = ["Linked Railgun"]
+                    let w1: [String] =  ["Type: Anti-Air, Normal", "DPS: 16", "Range: 0-32", "Projectile: 8 damage", "Muzzle Velocity: 45", "Fire Cycle: 2 projectiles per second", "Firing Tolerance: 1°"]
+                    unitSectionCells = [w1]
+
+                case "T1 Light Assault Bot: Mech Marine":
+                    unitSectionNames = ["Tom Cat Machinegun"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 23.33", "Range: 0-14", "Projectile: 7 damage", "Muzzle Velocity: 25", "Fire Cycle: 1 projectile every 0.3 seconds", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                    
+                case "T1 Medium Tank: MA12 Striker":
+                    unitSectionNames = ["Gauss Cannon"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 24", "Range: 0-18", "Area Damage Radius: 0", "Projectile: 24 damage", "Muzzle Velocity: 25", "Fire Cycle: 1 projectile per second", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                    
+                case "T2 Gatling Bot: Mongoose":
+                    unitSectionNames = ["Gatling Plasma Cannon", "Heavy Fragmentation Grenade Launcher"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 32.14", "Range: 0-34", "Projectile: 15 damage", "Muzzle Velocity: 25", "Fire Cycle: 15 times 1 projectile every 0.2 seconds + 4.2 seconds reload", "Firing Randomness: 0.4°", "Firing Tolerance: 1°"]
+                    let w2: [String] =  ["Type: Direct Fire, Normal", "DPS: 29.85", "Range: 0-34", "Area Damage Radius: 2", "Projectile: 50 damage", "Muzzle Velocity: 12.8", "Fire Cycle: 4 times 1 projectile every 0.2 seconds + 6.1 seconds reload", "Firing Randomness: 2.5°", "Firing Tolerance: 1°"]
+                    unitSectionCells = [w1, w2]
+               
+                case "T2 Mobile Missile Launcher: Flapjack":
+                    unitSectionNames = ["Long Range Cruise Missile"]
+                    let w1: [String] =  ["Type: Missile, Normal", "DPS: 60", "Range: 5-60", "Area Damage Radius: 0.5", "Projectile: 300 damage", "Muzzle Velocity: 3", "Lifetime: 20", "Fire Cycle: 1 projectile every 5 seconds", "Firing Tolerance: 5°"]
+                    unitSectionCells = [w1]
+                    
+                case "T2 Heavy Tank: Pillar":
+                    unitSectionNames = ["Gauss Cannon"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 53.85", "Range: 0-23", "Area Damage Radius: 0", "Projectile: 35 damage", "Muzzle Velocity: 30", "Fire Cycle: 2 projectiles every 1.3 seconds", "Firing Tolerance: 1°"]
+                    unitSectionCells = [w1]
+                
+                case "T2 Amphibious Tank: Riptide":
+                    unitSectionNames = ["Hell's Fury Riot Gun"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 90", "Range 0-18", "Projectile: 13.5 damage", "Muzzle Velocity: 40", "Fire Cycle: 2 projectiles every 0.3 seconds", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                    
+                case "T2 Mobile AA Flak Artillery: Sky Boxer":
+                    unitSectionNames = ["Fragmentation Flank"]
+                    let w1: [String] =  ["Type: Anti-Air, Normal", "DPS: 144", "Range 0-40", "Area Damage Radius: 4", "Projectile: 36 damage", "Muzzle Velocity: 20", "Fire Cycle: 2 projectiles every 0.5 seconds", "Firing Randomness: 2.5°", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                    
+                case "T3 Heavy Assault Bot: Titan":
+                    unitSectionNames = ["Heavy Plasma Cannon"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 166.67", "Range 0-20", "Projectile: 50 damage", "Muzzle Velocity: 30", "Fire Cycle: 1 projectile every 0.3 seconds", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                    
+                case "T3 Mobile Heavy Artillery: Demolisher":
+                    unitSectionNames = ["Anti-Matter Artillery"]
+                    let w1: [String] =  ["Type: Artillery, Normal", "DPS: 75", "Range 0-90", "Area Damage Radius: 4", "Projectile: 750 damage", "Muzzle Velocity: 22", "Lifetime: 20", "Fire Cycle: 1 projectile every 10 seconds", "Firing Randomness: 1.25°", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                    
+                case "T3 Armored Assault Bot: Percival":
+                    unitSectionNames = ["Ionized Plasma Cannon"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 400", "Range 0-35", "Area Damage Radius: 0", "Projectile: 160 damage", "Muzzle Velocity: 35", "Fire Cycle: 1 projectile every 4 seconds", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                    
+                case "T3 Mobile Missile Platform: Spearhead":
+                    unitSectionNames = ["Long Range Cruise Missile"]
+                    let w1: [String] =  ["Type: Missile, Normal", "DPS: 240", "Range: 5-80", "Area Damage Radius: 0.5", "Projectile: 800 damage", "Muzzle Velocity: 3", "Lifetime: 20", "Fire Cycle: 3 projectile every 10 seconds", "Firing Tolerance: 5°"]
+                    unitSectionCells = [w1]
+               
+                case "Experimental Mobile Factory: Fatboy":
+                    unitSectionNames = ["Gauss Cannon (4)", "Hell's Fury Riot Gun (2)", "Linked Railgun (2)", "Angler Torpedo", "Death Weapon"]
+                    
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 750", "Range: 0-100", "Area Damage Radius: 1.5", "Projectile: 250 damage", "Muzzle Velocity: 25", "Fire Cycle: 3 projectiles per second", "Firing Randomness: 1.1°", "Firing Tolerance: 2°"]
+                    
+                    let w2: [String] =  ["Type: Direct Fire, Normal", "DPS: 500", "Range: 0-45", "Projectile: 150 damage", "Muzzle Velocity: 45", "Fire Cycle: 1 projectile every 0.3 seconds", "Firing Tolerance: 2°"]
+                    
+                    let w3: [String] =  ["Type: Anti-Air, Normal", "DPS: 57.14", "Range: 0-45", "Projectile: 20 damage", "Muzzle Velocity: 90", "Fire Cycle: 2 projectiles every 0.7 seconds", "Firing Randomness: 0.01°", "Firing Tolerance: 0.05°"]
+                    
+                    let w4: [String] =  ["Type: Anti-Navy, Normal", "DPS: 75", "Range: 0-40", "Projectile: 75 damage", "Muzzle Velocity: 5", "Lifetime: 9", "Fire Cycle: 4 projectile every 4 seconds", "Firing Tolerance: 2°"]
+                    
+                    let w5: [String] =  ["Type: Death, Normal", "Damage: 4,000", "Area Damage Radius: 7"]
+                    unitSectionCells = [w1, w2, w3, w4, w5]
+                
+                    
                     
                 default:
                     print("WeaponsView Error:" + factionName + "/" + unitName + "/" + vweName)
@@ -718,6 +941,7 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
     
     
     // MARK: - TableView
+    
     //Returns the height of the section
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
