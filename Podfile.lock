@@ -1,0 +1,12 @@
+PODS:
+  - Floaty (3.0.0)
+
+DEPENDENCIES:
+  - Floaty (~> 3.0.0)
+
+SPEC CHECKSUMS:
+  Floaty: d1be5d323094f0de422bb615452d00ba26ac74dd
+
+PODFILE CHECKSUM: 90dab058bb482d7a9ac97a07c0cf94af68e6b4cf
+
+COCOAPODS: 1.2.1

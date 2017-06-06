@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Floaty
 
 class MasterViewController: UITableViewController {
 
@@ -33,6 +34,7 @@ class MasterViewController: UITableViewController {
     //Search bar, initialized in viewDidLoad
     // FR lazy var searchBar:UISearchBar = UISearchBar()
 
+    @IBOutlet weak var footerView: UIView!
     
     
     //object that contains the sectionName from 'sectionTitles' array and the corresponding array of cell names from on of the four arrays initialized above (under COMMENT CODE: A)
@@ -74,6 +76,14 @@ class MasterViewController: UITableViewController {
         navigationItem.titleView = searchBar
          */
         
+
+        
+        Floaty.global.button.addItem("Aeon", icon: UIImage(named: "uef.png")!)
+        Floaty.global.button.addItem("Cybran", icon: UIImage(named: "uef.png")!)
+        Floaty.global.button.addItem("UEF", icon: UIImage(named: "uef.png")!)
+        Floaty.global.button.addItem("Seraphim", icon: UIImage(named: "uef.png")!)
+        Floaty.global.show()
+      
         
         
         //Set up splitViewController
@@ -104,6 +114,7 @@ class MasterViewController: UITableViewController {
         super.viewWillAppear(animated)
     }
     
+
   
 
     //Runs when a memory warning has been received

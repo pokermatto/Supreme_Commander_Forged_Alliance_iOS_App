@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37ADA91F61BF72A8CE81CD83 /* Pods_Supreme_Commander_Forged_Alliance_iOS_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE557BD863678A72E1E5BDC /* Pods_Supreme_Commander_Forged_Alliance_iOS_App.framework */; };
 		BF829EC11ED8D2F3006BBD20 /* WeaponsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF829EC01ED8D2F3006BBD20 /* WeaponsViewController.swift */; };
 		BFCD45671ECAB7FA004EBC5E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD45661ECAB7FA004EBC5E /* InfoViewController.swift */; };
 		BFE7E7C51EC53A8300D3BF65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE7E7C41EC53A8300D3BF65 /* AppDelegate.swift */; };
@@ -37,8 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A87B0DF44BBF04C9556753C /* Pods-Supreme_Commander_Forged_Alliance_iOS_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Supreme_Commander_Forged_Alliance_iOS_App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Supreme_Commander_Forged_Alliance_iOS_App/Pods-Supreme_Commander_Forged_Alliance_iOS_App.release.xcconfig"; sourceTree = "<group>"; };
+		BB25F9DACDC1B1416E902AA0 /* Pods-Supreme_Commander_Forged_Alliance_iOS_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Supreme_Commander_Forged_Alliance_iOS_App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Supreme_Commander_Forged_Alliance_iOS_App/Pods-Supreme_Commander_Forged_Alliance_iOS_App.debug.xcconfig"; sourceTree = "<group>"; };
 		BF829EC01ED8D2F3006BBD20 /* WeaponsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponsViewController.swift; sourceTree = "<group>"; };
 		BFCD45661ECAB7FA004EBC5E /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		BFE557BD863678A72E1E5BDC /* Pods_Supreme_Commander_Forged_Alliance_iOS_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Supreme_Commander_Forged_Alliance_iOS_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE7E7C11EC53A8300D3BF65 /* Supreme_Commander_Forged_Alliance_iOS_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Supreme_Commander_Forged_Alliance_iOS_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE7E7C41EC53A8300D3BF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE7E7C61EC53A8300D3BF65 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37ADA91F61BF72A8CE81CD83 /* Pods_Supreme_Commander_Forged_Alliance_iOS_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4808A8A02ABA9A710D9649ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFE557BD863678A72E1E5BDC /* Pods_Supreme_Commander_Forged_Alliance_iOS_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFE7E7B81EC53A8300D3BF65 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +100,8 @@
 				BFE7E7DA1EC53A8500D3BF65 /* Supreme_Commander_Forged_Alliance_iOS_AppTests */,
 				BFE7E7E51EC53A8500D3BF65 /* Supreme_Commander_Forged_Alliance_iOS_AppUITests */,
 				BFE7E7C21EC53A8300D3BF65 /* Products */,
+				D39CEB1395C6080603B12183 /* Pods */,
+				4808A8A02ABA9A710D9649ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +149,15 @@
 			path = Supreme_Commander_Forged_Alliance_iOS_AppUITests;
 			sourceTree = "<group>";
 		};
+		D39CEB1395C6080603B12183 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB25F9DACDC1B1416E902AA0 /* Pods-Supreme_Commander_Forged_Alliance_iOS_App.debug.xcconfig */,
+				3A87B0DF44BBF04C9556753C /* Pods-Supreme_Commander_Forged_Alliance_iOS_App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFE7E7EB1EC53A8600D3BF65 /* Build configuration list for PBXNativeTarget "Supreme_Commander_Forged_Alliance_iOS_App" */;
 			buildPhases = (
+				9C9B34AC5FD1FE10D7BD7CF1 /* [CP] Check Pods Manifest.lock */,
 				BFE7E7BD1EC53A8300D3BF65 /* Sources */,
 				BFE7E7BE1EC53A8300D3BF65 /* Frameworks */,
 				BFE7E7BF1EC53A8300D3BF65 /* Resources */,
+				B8FE5C9F8AAE2D15752B17C6 /* [CP] Embed Pods Frameworks */,
+				7C9D0C0E72062918748434F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,6 +290,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C9D0C0E72062918748434F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Supreme_Commander_Forged_Alliance_iOS_App/Pods-Supreme_Commander_Forged_Alliance_iOS_App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C9B34AC5FD1FE10D7BD7CF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B8FE5C9F8AAE2D15752B17C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Supreme_Commander_Forged_Alliance_iOS_App/Pods-Supreme_Commander_Forged_Alliance_iOS_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFE7E7BD1EC53A8300D3BF65 /* Sources */ = {
@@ -425,6 +500,7 @@
 		};
 		BFE7E7EC1EC53A8600D3BF65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB25F9DACDC1B1416E902AA0 /* Pods-Supreme_Commander_Forged_Alliance_iOS_App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 52APW7BYS8;
@@ -438,6 +514,7 @@
 		};
 		BFE7E7ED1EC53A8600D3BF65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A87B0DF44BBF04C9556753C /* Pods-Supreme_Commander_Forged_Alliance_iOS_App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 52APW7BYS8;

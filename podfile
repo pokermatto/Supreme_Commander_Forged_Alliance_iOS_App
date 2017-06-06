@@ -1,0 +1,6 @@
+platform :ios, '8.0'
+use_frameworks!
+workspace 'Supreme_Commander_Forged_Alliance_iOS_App'
+target 'Supreme_Commander_Forged_Alliance_iOS_App' do
+  pod 'Floaty', '~> 3.0.0'
+end

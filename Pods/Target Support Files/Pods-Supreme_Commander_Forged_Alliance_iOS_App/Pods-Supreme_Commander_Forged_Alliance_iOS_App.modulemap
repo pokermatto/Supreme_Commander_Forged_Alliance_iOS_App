@@ -1,0 +1,6 @@
+framework module Pods_Supreme_Commander_Forged_Alliance_iOS_App {
+  umbrella header "Pods-Supreme_Commander_Forged_Alliance_iOS_App-umbrella.h"
+
+  export *
+  module * { export * }
+}
