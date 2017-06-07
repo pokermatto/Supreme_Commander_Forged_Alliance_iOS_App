@@ -8,7 +8,7 @@
 
 import UIKit
 
-import UIKit
+import Floaty
 
 class WeaponsViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
     
@@ -1074,6 +1074,15 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
         //Set TableView data based on unit name
         setTableDataForSelectedUnit()
         
+        
+        
+     
+        Floaty.global.hide(true)
+        
+        
+        
+        
+        
         //TODO possibly delete
         configureView()
         
@@ -1082,6 +1091,13 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
     }
     
    
+    
+    override func viewWillDisappear(_ animated: Bool)
+    {
+        Floaty.global.show(true)
+    }
+    
+    
     
     //Runs when a memory warning has been received
     override func didReceiveMemoryWarning() {

@@ -88,6 +88,7 @@
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
                 <splitViewController id="H1p-Uh-vWS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
@@ -96,7 +97,6 @@
                         <segue destination="vC3-pB-5Vb" kind="relationship" relationship="detailViewController" id="Tll-UG-LXB"/>
                     </connections>
                 </splitViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-856" y="-330"/>
         </scene>
@@ -138,6 +138,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="UEF" id="Zdf-7t-Un8"/>
+                    <connections>
+                        <outlet property="navItem" destination="Zdf-7t-Un8" id="bif-jS-p3t"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
                 <view contentMode="scaleToFill" id="Sac-i5-Wmc">
@@ -146,7 +149,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="708" y="-722"/>
+            <point key="canvasLocation" x="828" y="-722"/>
         </scene>
         <!--Nav2-->
         <scene sceneID="r7l-gg-dq7">
@@ -179,6 +182,13 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j6p-nJ-Pv5">
                                 <rect key="frame" x="0.0" y="192" width="375" height="475"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <label key="tableFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n4H-5o-Wcf">
+                                    <rect key="frame" x="0.0" y="72" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="wWD-lI-72g">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -186,19 +196,10 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="wWD-lI-72g" id="Jo7-BZ-5XY">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4H-5o-Wcf">
-                                                    <rect key="frame" x="25" y="0.0" width="325" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </label>
-                                            </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="g5d-FC-t3c" kind="showDetail" identifier="showExtra" id="4n8-SH-OTI"/>
+                                            <segue destination="dmk-nG-Kav" kind="showDetail" identifier="showExtra" id="c9Z-Xh-3cp"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -306,28 +307,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWi-Uu-CXA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3916" y="128"/>
+            <point key="canvasLocation" x="4100" y="125"/>
         </scene>
-        <!--Nav4-->
-        <scene sceneID="9VY-VS-h0X">
+        <!--Navigation Controller-->
+        <scene sceneID="HhO-gZ-zlO">
             <objects>
-                <navigationController title="Nav4" automaticallyAdjustsScrollViewInsets="NO" id="g5d-FC-t3c" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RDn-PK-Tji" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dmk-nG-Kav" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FhE-vh-mcG">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g3u-MP-gCf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="k8g-rP-inj" kind="relationship" relationship="rootViewController" id="aqv-05-PAB"/>
+                        <segue destination="k8g-rP-inj" kind="relationship" relationship="rootViewController" id="GT4-Eo-9yq"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7s-r3-48p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3137" y="128"/>
+            <point key="canvasLocation" x="3191" y="125"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Tll-UG-LXB"/>
+        <segue reference="6S0-TO-JiA"/>
     </inferredMetricsTieBreakers>
 </document>

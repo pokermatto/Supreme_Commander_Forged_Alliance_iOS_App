@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Floaty
+
 class InfoViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
  
     // MARK: - IBOutlets
@@ -1526,6 +1528,8 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
         //Call super
         super.viewDidLoad()
         
+   
+        
         
         //Set up TableView delegate and datasource as self
         detailTableView.delegate = self
@@ -1583,6 +1587,7 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 //Navigation backbutton
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
+                
             }
         }
     }

@@ -18,6 +18,17 @@ class MasterViewController: UITableViewController {
     var selectedLabel:String?
     
     
+    //Current faction
+    var faction: String? = "UEF"
+    
+    
+    
+    //Nav Item
+    @IBOutlet weak var navItem: UINavigationItem!
+    
+    
+    
+    
     //Titles of sections for the TableView
     var sectionTitles = ["Command & Engineer", "Buildings", "Mobile Units", "Support Units"]
     
@@ -78,6 +89,8 @@ class MasterViewController: UITableViewController {
         navigationItem.titleView = searchBar
          */
         
+        self.navItem.title = self.faction
+        
         Floaty.global.button.size = 75
 
         //Floaty.global.button.buttonImage = UIImage(named: "uef.png")!
@@ -85,28 +98,69 @@ class MasterViewController: UITableViewController {
         Floaty.global.button.addItem("Seraphim",icon: UIImage(named: "uef.png")! , handler: {item in
         
             print("Selected: " + item.title!)
-            //self.present(self, animated: true, completion: nil)
+            self.faction = "Seraphim"
+            self.navigationController!.popViewController(animated: true)
+            self.navigationController!.popViewController(animated: true)
+            self.navigationController!.popViewController(animated: true)
             
+            self.navItem.title = self.faction
+            
+            /*
+            var section: Int = 1
+            var row: Int = 1
+            
+            while (section < (self.tableView.numberOfSections))
+            {
+                
+                while (row < (self.tableView.numberOfRows(inSection: section)))
+                {
+                   
+            
+                    let indexPath = self.tableView.indexPathForRow(at: row)!
+                    
+                    let cell = self.tableView.cellForRow(at: indexPath)
+                    
+                    
+                    cell?.backgroundColor = UIColor.yellow
+                    
+                    row += 1
+                }
+                
+                 section += 1
+            }*/
             
         
         })
         Floaty.global.button.addItem("UEF",icon: UIImage(named: "uef.png")! , handler: {item in
             
             print("Selected: " + item.title!)
+            self.faction = "UEF"
+            self.navigationController!.popViewController(animated: true)
+            self.navigationController!.popViewController(animated: true)
+            self.navigationController!.popViewController(animated: true)
             
             
+            self.navItem.title = self.faction
         })
         Floaty.global.button.addItem("Cybran",icon: UIImage(named: "uef.png")! , handler: {item in
             
             print("Selected: " + item.title!)
+            self.faction = "Cybran"
+            self.navigationController!.popViewController(animated: true)
+            self.navigationController!.popViewController(animated: true)
+            self.navigationController!.popViewController(animated: true)
             
-            
+            self.navItem.title = self.faction
         })
         Floaty.global.button.addItem("Aeon",icon: UIImage(named: "uef.png")! , handler: {item in
             
             print("Selected: " + item.title!)
+            self.faction = "Aeon"
+            self.navigationController!.popViewController(animated: true)
+            self.navigationController!.popViewController(animated: true)
+            self.navigationController!.popViewController(animated: true)
             
-            
+            self.navItem.title = self.faction
         })
         
         
@@ -224,6 +278,10 @@ class MasterViewController: UITableViewController {
         //Set new cell's label based on row/section location (i.e. indexPath)
         cell.textLabel?.text = sectionArray[indexPath.section].sectionCategories[indexPath.row]
         
+        if(self.faction == "Aeon")
+        {
+            cell.backgroundColor = UIColor.green
+        }
         
         //Return the newly-created cell
         return cell
