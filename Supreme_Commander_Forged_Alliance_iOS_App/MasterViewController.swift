@@ -50,11 +50,13 @@ class MasterViewController: UITableViewController {
     var sectionArray = [sectionDataObject]()
     
 
-    
+
  
 
     
-    
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue){
+        
+    }
     
     
 
@@ -76,12 +78,38 @@ class MasterViewController: UITableViewController {
         navigationItem.titleView = searchBar
          */
         
+        Floaty.global.button.size = 75
 
+        //Floaty.global.button.buttonImage = UIImage(named: "uef.png")!
         
-        Floaty.global.button.addItem("Aeon", icon: UIImage(named: "uef.png")!)
-        Floaty.global.button.addItem("Cybran", icon: UIImage(named: "uef.png")!)
-        Floaty.global.button.addItem("UEF", icon: UIImage(named: "uef.png")!)
-        Floaty.global.button.addItem("Seraphim", icon: UIImage(named: "uef.png")!)
+        Floaty.global.button.addItem("Seraphim",icon: UIImage(named: "uef.png")! , handler: {item in
+        
+            print("Selected: " + item.title!)
+            //self.present(self, animated: true, completion: nil)
+            
+            
+        
+        })
+        Floaty.global.button.addItem("UEF",icon: UIImage(named: "uef.png")! , handler: {item in
+            
+            print("Selected: " + item.title!)
+            
+            
+        })
+        Floaty.global.button.addItem("Cybran",icon: UIImage(named: "uef.png")! , handler: {item in
+            
+            print("Selected: " + item.title!)
+            
+            
+        })
+        Floaty.global.button.addItem("Aeon",icon: UIImage(named: "uef.png")! , handler: {item in
+            
+            print("Selected: " + item.title!)
+            
+            
+        })
+        
+        
         Floaty.global.show()
       
         
@@ -195,6 +223,7 @@ class MasterViewController: UITableViewController {
 
         //Set new cell's label based on row/section location (i.e. indexPath)
         cell.textLabel?.text = sectionArray[indexPath.section].sectionCategories[indexPath.row]
+        
         
         //Return the newly-created cell
         return cell
