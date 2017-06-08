@@ -21,6 +21,19 @@ class MasterViewController: UITableViewController {
     //Current faction
     var faction: String? = "UEF"
     
+    //Faction Colors
+    var uefColor: UIColor? = UIColor(red: 0/255, green: 2/255, blue: 175/255, alpha: 1.0)
+    var cybranColor: UIColor? = UIColor(red: 168/255, green: 14/255, blue: 0/255, alpha: 1.0)
+    var seraphimColor: UIColor? = UIColor(red: 226/255, green: 226/255, blue: 0/255, alpha: 1.0)
+    var aeonColor: UIColor? = UIColor(red: 5/255, green: 150/255, blue: 0/255, alpha: 1.0)
+    
+    
+    //Current faction color for table cells
+    var factionColor: UIColor?
+    
+    
+    
+    
     
     
     //Nav Item
@@ -45,6 +58,8 @@ class MasterViewController: UITableViewController {
     //Search bar, initialized in viewDidLoad
     // FR lazy var searchBar:UISearchBar = UISearchBar()
 
+    
+    //TODO Delete this
     @IBOutlet weak var footerView: UIView!
     
     
@@ -63,12 +78,6 @@ class MasterViewController: UITableViewController {
 
 
  
-
-    
-    @IBAction func prepareForUnwind(segue: UIStoryboardSegue){
-        
-    }
-    
     
 
     //Runs when view has loaded, use as main set-up function
@@ -89,81 +98,41 @@ class MasterViewController: UITableViewController {
         navigationItem.titleView = searchBar
          */
         
+        //Default to UEF blue color
+        factionColor = uefColor
+        
+        //Set Nav bar title
         self.navItem.title = self.faction
+        
         
         Floaty.global.button.size = 75
 
         //Floaty.global.button.buttonImage = UIImage(named: "uef.png")!
         
+        
+        
+        //Set items for Floaty
         Floaty.global.button.addItem("Seraphim",icon: UIImage(named: "uef.png")! , handler: {item in
-        
-            print("Selected: " + item.title!)
-            self.faction = "Seraphim"
-            self.navigationController!.popViewController(animated: true)
-            self.navigationController!.popViewController(animated: true)
-            self.navigationController!.popViewController(animated: true)
             
-            self.navItem.title = self.faction
-            
-            /*
-            var section: Int = 1
-            var row: Int = 1
-            
-            while (section < (self.tableView.numberOfSections))
-            {
-                
-                while (row < (self.tableView.numberOfRows(inSection: section)))
-                {
-                   
-            
-                    let indexPath = self.tableView.indexPathForRow(at: row)!
-                    
-                    let cell = self.tableView.cellForRow(at: indexPath)
-                    
-                    
-                    cell?.backgroundColor = UIColor.yellow
-                    
-                    row += 1
-                }
-                
-                 section += 1
-            }*/
-            
-        
+            self.goToRootViewAndSetFaction(faction: "Seraphim")
         })
+        
         Floaty.global.button.addItem("UEF",icon: UIImage(named: "uef.png")! , handler: {item in
             
-            print("Selected: " + item.title!)
-            self.faction = "UEF"
-            self.navigationController!.popViewController(animated: true)
-            self.navigationController!.popViewController(animated: true)
-            self.navigationController!.popViewController(animated: true)
-            
-            
-            self.navItem.title = self.faction
+            self.goToRootViewAndSetFaction(faction: "UEF")
         })
+        
         Floaty.global.button.addItem("Cybran",icon: UIImage(named: "uef.png")! , handler: {item in
             
-            print("Selected: " + item.title!)
-            self.faction = "Cybran"
-            self.navigationController!.popViewController(animated: true)
-            self.navigationController!.popViewController(animated: true)
-            self.navigationController!.popViewController(animated: true)
-            
-            self.navItem.title = self.faction
+            self.goToRootViewAndSetFaction(faction: "Cybran")
         })
+        
         Floaty.global.button.addItem("Aeon",icon: UIImage(named: "uef.png")! , handler: {item in
             
-            print("Selected: " + item.title!)
-            self.faction = "Aeon"
-            self.navigationController!.popViewController(animated: true)
-            self.navigationController!.popViewController(animated: true)
-            self.navigationController!.popViewController(animated: true)
-            
-            self.navItem.title = self.faction
+            self.goToRootViewAndSetFaction(faction: "Aeon")
         })
         
-        
+        //Show Floaty
         Floaty.global.show()
       
         
@@ -191,6 +160,60 @@ class MasterViewController: UITableViewController {
         
     }
 
+    
+    
+    
+    
+    
+    
+    
+    //Function goes to root view and customizes it for passed faction
+    func goToRootViewAndSetFaction(faction currentFaction: String)
+    {
+        
+        //Print to console
+        print("Selected: " + currentFaction)
+        
+        //Set the current faction
+        self.faction = currentFaction
+        
+        //Pop back to root view controller
+        self.navigationController!.popViewController(animated: true)
+        self.navigationController!.popViewController(animated: true)
+        self.navigationController!.popViewController(animated: true)
+        
+        //Set nav bar title to current faction
+        self.navItem.title = currentFaction
+        
+        //Set current factionColor for table view cells
+        switch currentFaction
+        {
+        case "Seraphim":
+            self.factionColor = seraphimColor
+        case "UEF":
+            self.factionColor = uefColor
+        case "Cybran":
+            self.factionColor = cybranColor
+        case "Aeon":
+            self.factionColor = aeonColor
+        default:
+            print("Switch in goToRootViewAndSetFaction(faction currentFaction: String) got an incorrection faction: " + currentFaction)
+        }
+        
+        //Reload table view cells to update cell color
+        DispatchQueue.main.async{
+            self.tableView.reloadData()
+        }
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    //Runs when the view will appear
     override func viewWillAppear(_ animated: Bool) {
         clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
         super.viewWillAppear(animated)
@@ -231,6 +254,10 @@ class MasterViewController: UITableViewController {
                 //Pass the title of the user-selected cell to the detail view so it knows what to load in its table
                 controller.nameOfSelectedUnitCategory = selectedLabel
                 
+                
+                //Pass the faction name to the detail view
+                controller.factionName = faction
+                
                 //Navigation backbutton
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
@@ -254,12 +281,17 @@ class MasterViewController: UITableViewController {
     
     // MARK: - Table View
 
+    
+    
+    
     //Returns the number of sections
     override func numberOfSections(in tableView: UITableView) -> Int {
         
         //Note: TableView's require at least on section to populate, though no section header is needed
         return sectionArray.count
     }
+    
+    
     
 
     //Returns number of rows in a given section
@@ -269,6 +301,8 @@ class MasterViewController: UITableViewController {
         return sectionArray[section].sectionCategories.count
     }
 
+    
+    
     //Creates and returns cell based on prototype
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -278,14 +312,14 @@ class MasterViewController: UITableViewController {
         //Set new cell's label based on row/section location (i.e. indexPath)
         cell.textLabel?.text = sectionArray[indexPath.section].sectionCategories[indexPath.row]
         
-        if(self.faction == "Aeon")
-        {
-            cell.backgroundColor = UIColor.green
-        }
+        cell.backgroundColor = factionColor
         
         //Return the newly-created cell
         return cell
     }
+    
+    
+    
     
     //Returns name of the section
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
