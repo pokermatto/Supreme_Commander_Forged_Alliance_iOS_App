@@ -30,7 +30,7 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
     //Faction Colors
     var uefColor: UIColor? = UIColor(red: 0/255, green: 2/255, blue: 175/255, alpha: 1.0)
     var cybranColor: UIColor? = UIColor(red: 168/255, green: 14/255, blue: 0/255, alpha: 1.0)
-    var seraphimColor: UIColor? = UIColor(red: 226/255, green: 226/255, blue: 0/255, alpha: 1.0)
+    var seraphimColor: UIColor? = UIColor(red: 255/255, green: 215/255, blue: 125/255, alpha: 1.0)
     var aeonColor: UIColor? = UIColor(red: 5/255, green: 150/255, blue: 0/255, alpha: 1.0)
     
     //Current faction color for table cells
@@ -488,6 +488,9 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
                 
                 //Pass the title of the user-selected cell to the info view so it knows what unit info to load in its view and hence, table
                 controller.unitName = selectedLabel
+                
+                //pass the faction name to the info view controller
+                controller.factionName = factionName
                 
                 //Navigation backbutton
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
