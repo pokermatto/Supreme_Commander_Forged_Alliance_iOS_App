@@ -35,6 +35,16 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
     var factionName: String?
     
     
+    //Faction Colors
+    var uefColor: UIColor? = UIColor(red: 0/255, green: 2/255, blue: 175/255, alpha: 1.0)
+    var cybranColor: UIColor? = UIColor(red: 168/255, green: 14/255, blue: 0/255, alpha: 1.0)
+    var seraphimColor: UIColor? = UIColor(red: 255/255, green: 215/255, blue: 125/255, alpha: 1.0)
+    var aeonColor: UIColor? = UIColor(red: 5/255, green: 150/255, blue: 0/255, alpha: 1.0)
+    
+    //Current faction color for table cells
+    var factionColor: UIColor?
+    
+    
     // MARK: - Variables
     //Title of cell selected on DetailViewController
     var unitName: String!
@@ -1966,7 +1976,7 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                     let wreckage: [String] =  ["Health: 1,170 HP", "Mass: 225"]
                     let vwe: [String] = ["Veterancy", "Weapons"]
                     unitSectionCells = [bluePrintID, health, economy, intel, wreckage, vwe]
-                case "T1 Anti-Air Turret: Ialla":
+                case "T1 Anti-Air Defense: Ialla":
                     //TODO add image
                     //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                     //imageView.image = unitImage
@@ -5773,8 +5783,10 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
         //Call super
         super.viewDidLoad()
         
-   
+        //Set UEF color as default
+        factionColor = uefColor
         
+        setFactionColor(factionName: factionName!)
         
         //Set up TableView delegate and datasource as self
         detailTableView.delegate = self
@@ -5786,9 +5798,38 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
        
         //Label at top of InfoViewController in storyboard. name based on selected cell title from DetailViewController
         topLabel.title = unitName
+        
+        //Reload table view cells to update cell color
+        DispatchQueue.main.async{
+            
+            self.detailTableView.reloadData()
+        }
     }
     
   
+    //Sets color of cells based on faction
+    func setFactionColor(factionName currentFaction: String)
+    {
+        
+        //Set current factionColor for table view cells
+        switch currentFaction
+        {
+        case "Seraphim":
+            self.factionColor = seraphimColor
+        case "UEF":
+            self.factionColor = uefColor
+        case "Cybran":
+            self.factionColor = cybranColor
+        case "Aeon":
+            self.factionColor = aeonColor
+        default:
+            print("Switch in goToRootViewAndSetFaction(faction currentFaction: String) got an incorrection faction: " + currentFaction)
+        }
+        
+        
+    }
+    
+    
     
     //Runs when a memory warning has been received
     override func didReceiveMemoryWarning() {
@@ -5939,7 +5980,8 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
             cell.accessoryType = UITableViewCellAccessoryType.none
         }
         
-
+        //Set color according to faction
+        cell.backgroundColor = self.factionColor
         
         //Return the newly-created cell
         return cell
