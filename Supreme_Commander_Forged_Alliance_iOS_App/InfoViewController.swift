@@ -5870,6 +5870,10 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 controller.vweName = selectedLabel
                 
                 
+                //Pass the name of the faction to WeaponsViewController
+                controller.factionName = factionName
+                
+                
                 //Navigation backbutton
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
