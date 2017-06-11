@@ -9,6 +9,11 @@
 import UIKit
 import Floaty
 
+
+var floatyClicked: Bool? = false
+var movingToNextView : Bool? = false
+
+
 class MasterViewController: UITableViewController {
 
     //The detail view controller
@@ -173,6 +178,9 @@ class MasterViewController: UITableViewController {
     func goToRootViewAndSetFaction(faction currentFaction: String)
     {
         
+        //Set to false for running log
+        floatyClicked = true
+        
         //Print to console
         print("Selected: " + currentFaction)
         
@@ -207,8 +215,7 @@ class MasterViewController: UITableViewController {
             self.tableView.reloadData()
         }
         
-        
-        
+
     }
     
     
@@ -240,6 +247,9 @@ class MasterViewController: UITableViewController {
         //Check that seque is the one going to Nav2 in storyboard
         if segue.identifier == "showDetail" {
             
+            //Set for running log
+            movingToNextView = true
+            
             //If a row was selected (the only case for transition at this time)
             if tableView.indexPathForSelectedRow != nil
             {
@@ -257,6 +267,10 @@ class MasterViewController: UITableViewController {
                 controller.nameOfSelectedUnitCategory = selectedLabel
                 
                 
+                //Print for running log
+                print("Selected: " + selectedLabel!)
+                
+                
                 //Pass the faction name to the detail view
                 controller.factionName = faction
                 
@@ -264,6 +278,8 @@ class MasterViewController: UITableViewController {
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
+            //Set for running log
+            movingToNextView = false
         }
     }
 

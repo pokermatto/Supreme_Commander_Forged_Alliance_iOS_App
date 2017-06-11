@@ -2595,9 +2595,21 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
     }
     
    
+   
     
     override func viewWillDisappear(_ animated: Bool)
     {
+        super.viewWillDisappear(animated)
+        
+       
+        if(floatyClicked! == false)
+        {
+            print("Selected: Back Button")
+        }
+        
+        //Set for running log
+        floatyClicked = false
+        
         Floaty.global.show(true)
     }
     

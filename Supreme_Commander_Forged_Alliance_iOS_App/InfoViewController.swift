@@ -5850,6 +5850,9 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
         //If the segue is the one going from Table3 to Nav4 in storyboard
         if segue.identifier == "showExtra" {
             
+            
+            //Set for running log
+            movingToNextView = true
             //If a row was selected (the only case for transition on this segue at this time)
             if detailTableView.indexPathForSelectedRow != nil
             {
@@ -5873,6 +5876,9 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 //Pass the name of the faction to WeaponsViewController
                 controller.factionName = factionName
                 
+                //Print for running log
+                print("Selected: " + selectedLabel!)
+                
                 
                 //Navigation backbutton
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
@@ -5885,11 +5891,32 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 navigationItem.backBarButtonItem = backItem
                 
             }
+            
+           
         }
     }
     
     
     
+    
+    
+    
+    
+    
+    override func viewWillDisappear(_ animated : Bool) {
+        super.viewWillDisappear(animated)
+        
+       
+        if(floatyClicked! == true || movingToNextView! == true)
+        {}
+        else
+        {
+            print("Selected: Back Button")
+        }
+        //Set for running log
+        movingToNextView = false
+        floatyClicked = false
+    }
     
     
     //CODE AFTER

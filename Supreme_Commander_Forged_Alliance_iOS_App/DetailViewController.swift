@@ -473,6 +473,10 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
         //If the segue is the one going from Table2 to Nav3 in storyboard
         if segue.identifier == "showDetail2" {
            
+            
+            //Set for running log
+            movingToNextView = true
+            
             //If a row was selected (the only case for transition on this segue at this time)
             if detailTableView.indexPathForSelectedRow != nil
             {
@@ -492,13 +496,25 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
                 //pass the faction name to the info view controller
                 controller.factionName = factionName
                 
+                
+                //Print for running log
+                print("Selected: " + selectedLabel!)
+                
+                
                 //Navigation backbutton
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
+            
+            
         }
     }
     
+    
+    
+    
+    
+   
 
     //Runs when a memory warning has been received
     override func didReceiveMemoryWarning() {
@@ -578,7 +594,22 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
     
     
     
-
+    override func viewWillDisappear(_ animated : Bool) {
+        super.viewWillDisappear(animated)
+        
+       if(floatyClicked! == true || movingToNextView! == true)
+       {}
+       else
+       {
+            print("Selected: Back Button")
+        
+       }
+        
+        //Set for running log
+        movingToNextView = false
+        floatyClicked = false
+        
+    }
     
     
     
