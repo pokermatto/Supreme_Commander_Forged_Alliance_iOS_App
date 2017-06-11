@@ -88,6 +88,8 @@ class MasterViewController: UITableViewController {
         
         
         
+        
+        
         /* FR Search Bar setup
         searchBar.searchBarStyle = UISearchBarStyle.prominent
         searchBar.placeholder = " Search UEF..."

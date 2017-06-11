@@ -306,7 +306,7 @@
                     <navigationItem key="navigationItem" title="Detail" id="ISJ-8F-UeP"/>
                     <connections>
                         <outlet property="detailTableView" destination="vOT-wg-kcL" id="hj5-bR-BUK"/>
-                        <outlet property="topLabel" destination="ISJ-8F-UeP" id="9td-c8-gf4"/>
+                        <outlet property="navItem" destination="ISJ-8F-UeP" id="trO-CU-EFJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWi-Uu-CXA" sceneMemberID="firstResponder"/>

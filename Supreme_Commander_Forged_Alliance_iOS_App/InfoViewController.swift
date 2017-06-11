@@ -5878,6 +5878,12 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
                 
+                //Set back button text on next view to "Back"
+                //controller.navigationItem.leftBarButtonItem?.title = "Back"
+                let backItem = UIBarButtonItem()
+                backItem.title = "Back"
+                navigationItem.backBarButtonItem = backItem
+                
             }
         }
     }

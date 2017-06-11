@@ -443,8 +443,8 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
         setFactionColor(factionName: factionName!)
         
         
-       
-        
+        //Removes space between table view and nav bar
+        self.automaticallyAdjustsScrollViewInsets = false
         
         //Set up TableView delegate and datasource as self
         detailTableView.delegate = self

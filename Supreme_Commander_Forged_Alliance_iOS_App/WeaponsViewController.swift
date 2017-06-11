@@ -13,9 +13,6 @@ import Floaty
 class WeaponsViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
     
     
-    //TODO for some reason, when going to weapons view from Snoop or Pillar, the back button text is the unit title but should say "Back"
-    
-    
     //Title of cell selected on InfoViewController
     var vweName: String!
     
@@ -36,10 +33,11 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
     
     
  
-    //Outlet to label at top of DetailViewController in storyboard
-    @IBOutlet weak var topLabel: UINavigationItem!
+    //Outlet to nav bar at top of WeaponsViewController in storyboard
+    @IBOutlet weak var navItem: UINavigationItem!
+  
     
-    //Outlet to TableView in DetailViewController in storyboard
+    //Outlet to TableView in WeaponsViewController in storyboard
     @IBOutlet weak var detailTableView: UITableView!
     
     
@@ -2584,7 +2582,10 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
         configureView()
         
         //Label at top of WeaponsViewController in storyboard
-        topLabel.title =  vweName
+        navItem.title =  vweName
+        
+        
+        
         
         //Reload table view cells to update cell color
         DispatchQueue.main.async{
