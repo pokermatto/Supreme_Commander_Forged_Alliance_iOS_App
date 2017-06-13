@@ -275,10 +275,43 @@ open class Floaty: UIView {
                 options: UIViewAnimationOptions(), animations: { () -> Void in
                     self.plusLayer.transform = CATransform3DMakeRotation(self.degreesToRadians(self.rotationDegrees), 0.0, 0.0, 1.0)
                     self.buttonImageView.transform = CGAffineTransform(rotationAngle: self.degreesToRadians(self.rotationDegrees))
+                    
                     self.overlayView.alpha = 1
                 }, completion: {(f) -> Void in
-                    self.overlayViewDidCompleteOpenAnimation = true
+                    
+                    //Second animation flip-back
+                    self.overlayViewDidCompleteOpenAnimation = false
+                    UIView.animate(withDuration: 0.3, delay: 0,
+                                   usingSpringWithDamping: 0.55,
+                                   initialSpringVelocity: 0.3,
+                                   options: UIViewAnimationOptions(), animations: { () -> Void in
+                                    self.plusLayer.transform = CATransform3DMakeRotation(self.degreesToRadians(self.rotationDegrees), 0.0, 0.0, 1.0)
+                                    self.buttonImageView.transform = CGAffineTransform(rotationAngle: self.degreesToRadians(0))
+                                    
+                                    self.overlayView.alpha = 1
+                    }, completion: {(f) -> Void in
+                        self.overlayViewDidCompleteOpenAnimation = true
+                    })
+                    
             })
+            
+            
+            
+            /*overlayViewDidCompleteOpenAnimation = false
+            UIView.animate(withDuration: 0.3, delay: 0,
+                           usingSpringWithDamping: 0.55,
+                           initialSpringVelocity: 0.3,
+                           options: UIViewAnimationOptions(), animations: { () -> Void in
+                            self.plusLayer.transform = CATransform3DMakeRotation(self.degreesToRadians(self.rotationDegrees), 0.0, 0.0, 1.0)
+                            self.buttonImageView.transform = CGAffineTransform(rotationAngle: self.degreesToRadians(-self.rotationDegrees))
+                            
+                            self.overlayView.alpha = 1
+            }, completion: {(f) -> Void in
+                self.overlayViewDidCompleteOpenAnimation = true
+            })*/
+            
+            
+            
 
 
             switch openAnimationType {
@@ -516,7 +549,7 @@ open class Floaty: UIView {
     fileprivate func setButtonImage() {
         buttonImageView.removeFromSuperview()
         buttonImageView = UIImageView(image: buttonImage)
-		buttonImageView.tintColor = plusColor
+		buttonImageView.tintColor = UIColor.init(red: 1, green: 1, blue: 1, alpha: 0)
         buttonImageView.frame = CGRect(
             x: circleLayer.frame.origin.x + (size / 2 - buttonImageView.frame.size.width / 2),
             y: circleLayer.frame.origin.y + (size / 2 - buttonImageView.frame.size.height / 2),
@@ -531,7 +564,7 @@ open class Floaty: UIView {
         tintLayer.frame = CGRect(x: circleLayer.frame.origin.x, y: circleLayer.frame.origin.y, width: size, height: size)
         tintLayer.backgroundColor = UIColor.white.withAlphaComponent(0.2).cgColor
         tintLayer.cornerRadius = size/2
-        layer.addSublayer(tintLayer)
+        //layer.addSublayer(tintLayer)
     }
 
     fileprivate func setOverlayView() {
@@ -569,7 +602,7 @@ open class Floaty: UIView {
         item.buttonColor = itemButtonColor
 
 		/// Use separate color (if specified) for item button image, or default to the plusColor
-		item.iconImageView.tintColor = itemImageColor ?? plusColor
+		item.iconImageView.tintColor = UIColor.init(red: 1, green: 1, blue: 1, alpha: 0)
 
         item.titleColor = itemTitleColor
         item.circleShadowColor = itemShadowColor
@@ -623,13 +656,13 @@ open class Floaty: UIView {
     open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         if isTouched(touches) {
-            setTintLayer()
+            //setTintLayer()
         }
     }
 
     open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesEnded(touches, with: event)
-        tintLayer.removeFromSuperlayer()
+        //tintLayer.removeFromSuperlayer()
         if isTouched(touches) {
             toggle()
         }

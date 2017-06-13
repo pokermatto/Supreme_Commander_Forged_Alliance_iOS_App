@@ -314,7 +314,7 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let l5: [String] =  ["Kills Required: 60", "New HP: 6,000 (+2,000)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                 
-                case "T3 Heavy Gunship: Broadship":
+                case "T3 Heavy Gunship: Broadsword":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     let l1: [String] =  ["Kills Required: 12", "New HP: 6,600 (+600)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
                     let l2: [String] =  ["Kills Required: 24", "New HP: 7,200 (+1,200)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
@@ -787,7 +787,7 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let w3: [String] =  ["Type: Death, Normal", "Damage: 500", "Area Damage Radius: 1", "Firing Tolerance: 2°"]
                     unitSectionCells = [w1, w2, w3]
                 
-                case "T3 Heavy Gunship: Broadship":
+                case "T3 Heavy Gunship: Broadsword":
                     unitSectionNames = ["Heavy Plasma Cannon", "Linked Railgun", "Air Crash"]
                     let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 225", "Range: 0-25", "Projectile: 90 damage", "Muzzle Velocity: 40", "Fire Cycle: 1 projectile every 0.4 seconds", "Firing Randomness: 0.3°", "Firing Tolerance: 2°"]
                     let w2: [String] =  ["Type: Anti-Air, Normal", "DPS: 12.31", "Range: 0-44", "Projectile: 8 damage", "Muzzle Velocity: 45", "Fire Cycle: 2 projectiles every 1.3 seconds", "Firing Tolerance: 2°"]
@@ -1276,7 +1276,7 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let l5: [String] =  ["Kills Required: 60", "New HP: 6,000 (+2,000)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Heavy Gunship: Broadship":
+                case "T3 Heavy Gunship: Broadsword":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     let l1: [String] =  ["Kills Required: 12", "New HP: 6,600 (+600)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
                     let l2: [String] =  ["Kills Required: 24", "New HP: 7,200 (+1,200)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
@@ -1809,7 +1809,7 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let l5: [String] =  ["Kills Required: 60", "New HP: 6,000 (+2,000)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Heavy Gunship: Broadship":
+                case "T3 Heavy Gunship: Broadsword":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     let l1: [String] =  ["Kills Required: 12", "New HP: 6,600 (+600)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
                     let l2: [String] =  ["Kills Required: 24", "New HP: 7,200 (+1,200)", "New Regen Rate: 6 HP/s (+6 HP/s)"]

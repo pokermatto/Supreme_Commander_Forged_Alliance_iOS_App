@@ -185,7 +185,7 @@ open class FloatyItem: UIView {
         tintLayer.frame = CGRect(x: castParent.itemSize/2 - (size/2), y: 0, width: size, height: size)
         tintLayer.backgroundColor = UIColor.white.withAlphaComponent(0.2).cgColor
         tintLayer.cornerRadius = size/2
-        layer.addSublayer(tintLayer)
+        //layer.addSublayer(tintLayer)
     }
 
     fileprivate func setShadow() {

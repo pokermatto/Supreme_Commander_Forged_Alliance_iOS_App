@@ -1041,7 +1041,7 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                     let wreckage: [String] =  ["Health: 3,600 HP", "Mass: 1,890"]
                     let vwe: [String] = ["Veterancy", "Weapons"]
                     unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, airPhysics, wreckage, vwe]
-                case "T3 Heavy Gunship: Broadship":
+                case "T3 Heavy Gunship: Broadsword":
                     //TODO add image
                     //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                     //imageView.image = unitImage
@@ -3780,7 +3780,7 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                     let wreckage: [String] =  ["Health: 3,600 HP", "Mass: 1,890"]
                     let vwe: [String] = ["Veterancy", "Weapons"]
                     unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, airPhysics, wreckage, vwe]
-                case "T3 Heavy Gunship: Broadship":
+                case "T3 Heavy Gunship: Broadsword":
                     //TODO add image
                     //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                     //imageView.image = unitImage
@@ -5247,7 +5247,7 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                     let wreckage: [String] =  ["Health: 3,600 HP", "Mass: 1,890"]
                     let vwe: [String] = ["Veterancy", "Weapons"]
                     unitSectionCells = [bluePrintID, health, abilities, economy, intel, physics, airPhysics, wreckage, vwe]
-                case "T3 Heavy Gunship: Broadship":
+                case "T3 Heavy Gunship: Broadsword":
                     //TODO add image
                     //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                     //imageView.image = unitImage

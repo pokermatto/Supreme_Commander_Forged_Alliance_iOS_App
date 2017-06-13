@@ -112,32 +112,92 @@ class MasterViewController: UITableViewController {
         self.navItem.title = self.faction
         
         
-        Floaty.global.button.size = 75
-
-        //Floaty.global.button.buttonImage = UIImage(named: "uef.png")!
+        Floaty.global.button.size = 100
         
+        Floaty.global.button.tintColor = nil
         
+        //Set UEF as default starting image
+        Floaty.global.button.buttonImage = UIImage(named: "uefCircle.png")!
         
-        //Set items for Floaty
-        Floaty.global.button.addItem("Seraphim",icon: UIImage(named: "uef.png")! , handler: {item in
+    
+        
+        //Set Seraphim item for Floaty
+        Floaty.global.button.addItem("Seraphim",icon: UIImage(named: "seraphimCircle.png")! , handler: {item in
             
+            //Set main button image
+            item.actionButton?.buttonImage = UIImage(named: "seraphimCircle.png")!
+            
+            //Set faction for view
             self.goToRootViewAndSetFaction(faction: "Seraphim")
         })
         
-        Floaty.global.button.addItem("UEF",icon: UIImage(named: "uef.png")! , handler: {item in
+        //Set UEF item for Floaty
+        Floaty.global.button.addItem("UEF",icon: UIImage(named: "uefCircle.png")! , handler: {item in
             
+            //Set main button image
+            item.actionButton?.buttonImage = UIImage(named: "uefCircle.png")!
+            
+            //Set faction for view
             self.goToRootViewAndSetFaction(faction: "UEF")
         })
         
-        Floaty.global.button.addItem("Cybran",icon: UIImage(named: "uef.png")! , handler: {item in
+        //Set Cybran item for Floaty
+        Floaty.global.button.addItem("Cybran",icon: UIImage(named: "cybranCircle.png")! , handler: {item in
             
+            //Set main button image
+            item.actionButton?.buttonImage = UIImage(named: "cybranCircle.png")!
+            
+            //Set faction for view
             self.goToRootViewAndSetFaction(faction: "Cybran")
         })
         
-        Floaty.global.button.addItem("Aeon",icon: UIImage(named: "uef.png")! , handler: {item in
+        //Set Aeon item for Floaty
+        Floaty.global.button.addItem("Aeon",icon: UIImage(named: "aeonCircle.png")! , handler: {item in
             
+            //Set main button image
+            item.actionButton?.buttonImage = UIImage(named: "aeonCircle.png")!
+            
+            //Set faction for view
             self.goToRootViewAndSetFaction(faction: "Aeon")
         })
+        
+        
+        
+        
+        //All button items
+        let items = Floaty.global.button.items
+        
+        //index for loop
+        var index = 0
+        
+        //loop through button items
+        while (index < items.count)
+        {
+            
+            //Button Item
+            let item = items[index]
+            
+            //Increase Size of button item
+            item.size += 10
+        
+            //Increase image size
+            item.imageSize = CGSize(width: item.size + 10, height: item.size + 10)
+            
+        
+            
+            //Make button color transparent
+            item.buttonColor = UIColor.init(red: 1, green: 1, blue: 1, alpha: 0)
+            
+            //TODO SHOULD Make button tint color transparent
+            item.tintColor =  nil
+            
+          
+            
+
+            //Increment index
+            index += 1
+        }
+        
         
         //Show Floaty
         Floaty.global.show()
