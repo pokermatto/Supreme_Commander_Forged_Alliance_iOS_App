@@ -193,7 +193,7 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
                 unitSectionNames = ["Tech 1", "Tech 2", "Tech 3", "Experimental"]
                 
                 let vehicle1: [String] =  ["T1 Combat Scout: Selen", "T1 Mobile Light Artillery: Zthuee", "T1 Mobile Anti-Air Gun: Ia-istle", "T1 Medium Tank: Thaam"]
-                let vehicle2: [String] =  ["T2 Mobile Missile Launcher: Ythisa", "T2 Assault Bot: Ilshavoh", "T2 Hover Tank: Yenzyne", "T2 Mobile Anti-Air Cannon: Iashavoh"]
+                let vehicle2: [String] =  ["T2 Mobile Missile Launcher: Ythisah", "T2 Assault Bot: Ilshavoh", "T2 Hover Tank: Yenzyne", "T2 Mobile Anti-Air Cannon: Iashavoh"]
                 
                 let vehicle3: [String] = ["T3 Siege Tank: Othuum", "T3 Mobile Heavy Artillery: Suthanus", "T3 Sniper Bot: Usha-Ah", "T3 Mobile Shield Generator: Athanah"]
                 

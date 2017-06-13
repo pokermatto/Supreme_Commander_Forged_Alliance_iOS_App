@@ -2252,7 +2252,7 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                     let intel: [String] =  ["Vision Radius: 25", "Sonar Radius: 350"]
                     let wreckage: [String] =  ["Health: 1,800 HP", "Mass: 162"]
                     unitSectionCells = [bluePrintID, health, abilities, economy, intel, wreckage]
-                case "T3 Omni Sensor Array: Aezesel":
+                case "T3 Omni Sensor Suite: Aezesel":
                     //TODO add image
                     //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                     //imageView.image = unitImage
@@ -2629,7 +2629,7 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                     //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
                     //imageView.image = unitImage
                     
-                    unitSectionNames = ["Blueprint ID", "Health", "Shield", "Abilities", "Economy", "Intel", "Physics", "Wreckage", "Veterancy & Weapons"]
+                    unitSectionNames = ["Blueprint ID", "Health", "Shield", "Abilities", "Economy", "Intel", "Physics", "Wreckage"]
                     let bluePrintID = ["XSL0307"]
                     let health: [String] =  ["HP: 400", "Regen Rate: 0 HP/s", "Armor Type: Normal"]
                     let shield: [String] =  ["HP: 10,000", "Size: 20", "Regen Rate: 133 HP/s", "Recharge Time: 45s", "Recharge Rate: 222 HP/s"]
@@ -2638,8 +2638,7 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                     let intel: [String] =  ["Vision Radius: 20"]
                     let physics: [String] =  ["Max Speed: 4.0", "Turn Rate: 150"]
                     let wreckage: [String] =  ["Health: 360 HP", "Mass: 486"]
-                    let vwe: [String] = ["Veterancy", "Weapons"]
-                    unitSectionCells = [bluePrintID, health, shield, abilities, economy, intel, physics, wreckage, vwe]
+                    unitSectionCells = [bluePrintID, health, shield, abilities, economy, intel, physics, wreckage]
                 case "Experimental Assault Bot: Ythotha":
                     //TODO add image
                     //let unitImage : UIImage = UIImage(named:"uel0105_icon")!
