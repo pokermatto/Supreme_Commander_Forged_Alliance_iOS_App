@@ -2846,9 +2846,56 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                 
             }
             //Seraphim Enhancements
+            //UEF Enhancements
             if vweName == "Enhancements"
             {
+                
+                
+                switch unitName
+                {
+                case "ACU":
+                    unitSectionNames = ["Tech 2 Engineering Suite", "Rapid Restoration Field", "Refactoring Chronotron Amplifier", "Nano-Repair System", "Enhanced Nano-Repair System", "Tactical Missile Launcher", "Chronotron Accelerator", "Restoration Field", "Resource Allocation System", "Advanced Resource Allocation System", "Tech 3 Engineering Suite", "Personal Teleporter"]
+                    
+                    let e1: [String] =  ["Section: LCH", "Mass: 720", "Energy: 18,000", "Build Time: 900", "New HP: 14,500 (+3,000)", "New Regen Rate: 30 HP/s (+20 HP/s)", "New Build Rate: 42"]
+                    let e2: [String] =  ["Section: RCH", "Mass: 1,500", "Energy: 31,250", "Build Time: 1,250"]
+                    let e3: [String] =  ["Section: LCH", "Mass: 3,500", "Energy: 300,000", "Build Time: 4,200", "New Projectile Damage: 500 (+400)", "New Damage Radius: 2"]
+                    let e4: [String] =  ["Section: Back", "Mass: 2,000", "Energy: 90,000", "Build Time: 2,800", "New HP: 17,500 (+6,000)", "New Regen Rate: 160 HP/s (+150 HP/s)"]
+                    let e5: [String] =  ["Section: Back", "Mass: 4,500", "Energy: 450,000", "Build Time: 4,200", "New HP: 31,500 (+20,000)", "New Regen Rate: 160 HP/s (+150 HP/s)"]
+                    let e6: [String] =  ["Section: Back", "Mass: 1,000", "Energy: 50,000", "Build Time: 1,400"]
+                    let e7: [String] =  ["Section: RCH", "Mass: 800", "Energy: 24,000", "Build Time: 800", "New Weapons Range: 30", "New Rate of Fire: 2"]
+                    let e8: [String] =  ["Section: RCH", "Mass: 600", "Energy: 4,500", "Build Time: 600"]
+                    let e9: [String] =  ["Section: Back", "Mass: 5,000 (+16)", "Energy: 150,000 (+3,000)", "Build Time: 1,400"]
+                    let e10: [String] =  ["Section: Back", "Mass: 5,000 (+32)", "Energy: 150,000 (+6,000)", "Build Time: 1,400"]
+                    let e11: [String] =  ["Section: LCH", "Mass: 2,400", "Energy: 50,000", "Build Time: 8,400", "New HP: 18,500 (+7,000)", "New Regen Rate: 45 HP/s (+35 HP/s)", "New Build Rate: 126"]
+                    let e12: [String] =  ["Section: Back", "Mass: 15,000", "Energy: 1,500,000 (-10,000)", "Build Time: 4,200"]
+                    unitSectionCells = [e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12]
+                    
+                    
+                    
+                case "T3 Support ACU":
+                    unitSectionNames = ["Nano-Repair System", "Rapid Fabricator", "Enhanced Sensor System", "Tactical Missile Launcher", "Overcharge", "Personal Shield Generator", "Personal Teleporter"]
+                    
+                    let e1: [String] =  ["Section: LCH","Mass: 2,500", "Energy: 75,000", "Build Time: 6,720", "New HP: 29,500 (+14,000)", "New Regen Rate: 265 HP/s (+250 HP/s)"]
+                    let e2: [String] =  ["Section: LCH", "Mass: 800", "Energy: 50,000", "Build Time: 4,200", "New Build Rate: 98"]
+                    let e3: [String] =  ["Section: Back", "Mass: 800", "Energy: 36,000", "Build Time: 3,360", "New Weapons Range: 35", "New Omni Radius: 60", "New Vision Radius: 36"]
+                    let e4: [String] =  ["Section: Back", "Mass: 1,000", "Energy: 50,000", "Build Time: 4,200"]
+                    let e5: [String] =  ["Section: RCH", "Mass: 4,500", "Energy: 270,000", "Build Time: 12,600"]
+                    let e6: [String] =  ["Section: Back", "Mass: 1,500", "Energy: 105,000 (-300)", "Build Time: 6,720", "Shield HP: 25,000", "Shield Size: 0", "Shield Regen Rate: 22 HP/s", "Shield Recharge Time: 160s", "Shield Recharge Rate: 156 HP/s"]
+                    let e7: [String] =  ["Section: RCH", "Mass: 15,000", "Energy: 1,500,000 (-10,000)", "Build Time: 21,000"]
+                    unitSectionCells = [e1, e2, e3, e4, e5, e6, e7]
+                    
+                    
+                default:
+                    print("WeaponsView Error:" + factionName + "/" + unitName + "/" + vweName)
+                    
+                }
+                
+                
+                
+                
+                
             }
+
         }
         
     }
