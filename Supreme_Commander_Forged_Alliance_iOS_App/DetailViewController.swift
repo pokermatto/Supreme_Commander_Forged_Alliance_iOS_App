@@ -367,27 +367,25 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
                 let air4: [String] = ["Experimental Aircraft Carrier: CZAR"]
                 unitSectionCells = [air1, air2, air3, air4]
                 
-                //HERE
             case "Vehicle":
                 unitSectionNames = ["Tech 1", "Tech 2", "Tech 3", "Experimental"]
                 let vehicle1: [String] =  ["T1 Land Scout: Spirit", "T1 Mobile Light Artillery: Fervor", "T1 Mobile Anti-Air Gun: Thistle", "T1 Light Assault Bot: Flare", "T1 Light Tank: Aurora"]
                 let vehicle2: [String] =  ["T2 Mobile Missile Launcher: Evensong", "T2 Heavy Tank: Obsidian", "T2 Mobile AA Flak Artillery: Ascendant", "T2 Mobile Shield Generator: Asylum", "T2 Assault Tank: Blaze"]
                 let vehicle3: [String] = ["T3 Shield Disruptor: Absolver", "T3 Heavy Assault Bot: Harbinger Mark IV", "T3 Mobile Heavy Artillery: Serenity", "T3 Sniper Bot: Sprite Striker"]
-                let vehicle4: [String] = ["Experimental Mobile Factory: Fatboy"]
+                let vehicle4: [String] = ["Experimental Assault Bot: Galactic Colossus"]
                 unitSectionCells = [vehicle1, vehicle2, vehicle3, vehicle4]
             case "Ship":
                 unitSectionNames = ["Tech 1", "Tech 2", "Tech 3", "Experimental"]
-                let ship1: [String] =  ["T1 Frigate: Thunderhead Class", "T1 Attack Submarine: Tigershark"]
-                let ship2: [String] =  ["T2 Destroyer: Valiant Class", "T2 Cruiser: Governor Class", "T2 Torpedo Boat: Cooper", "T2 Shield Boat: Bulwark"]
-                let ship3: [String] = ["T3 Battleship: Summit Class", "T3 Strategic Missile Submarine: Ace", "T3 Battlecruiser: Neptune Class"]
-                let ship4: [String] = ["Experimental Aircraft Carrier: Atlantis"]
+                let ship1: [String] =  ["T1 Air Attack Boat: Shard", "T1 Frigate: Beacon Class", "T1 Attack Submarine: Sylph"]
+                let ship2: [String] =  ["T2 Destroyer: Exodus Class", "T2 Cruiser: Infinity Class", "T2 Submarine Hunter: Vesper"]
+                let ship3: [String] = ["T3 Battleship: Omen Class", "T3 Aircraft Carrier: Keefer Class", "T3 Strategic Missile Submarine: Silencer", "T3 Missile Ship: Torrent Class"]
+                let ship4: [String] = ["Experimental Batteleship: Tempest"]
                 unitSectionCells = [ship1, ship2, ship3, ship4]
             case "Support":
                 unitSectionNames = ["Tech 1", "Tech 2", "Experimental"]
-                let support1: [String] =  ["T1 Wall Section: Calcicrete"]
-                let support2: [String] =  ["T2 Air Staging Facility: Refuel & Repair"]
-                let support4: [String] = ["Experimental Satellite System: Novax Center"]
-                unitSectionCells = [support1, support2, support4]
+                let support1: [String] =  ["T1 Wall Section"]
+                let support2: [String] =  ["T2 Air Staging Facility: Cradle"]
+                unitSectionCells = [support1, support2]
                 
             default:
                 print("Warning: Name of unit Category Not Found in setTableDataForSelectedUnit(_ nameOfUnit: String!)")
