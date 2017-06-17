@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Supreme_Commander_Forged_Alliance_iOS_App/DetailViewController.swift"
-            timestampString = "519030716.073934"
+            timestampString = "519356806.115743"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "445"
-            endingLineNumber = "445"
+            startingLineNumber = "443"
+            endingLineNumber = "443"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
