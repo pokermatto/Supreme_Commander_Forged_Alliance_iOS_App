@@ -1544,6 +1544,46 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
             //Aeon Enhancements
             if vweName == "Enhancements"
             {
+                switch unitName
+                {
+                case "ACU":
+                    unitSectionNames = ["Tech 2 Engineering Suite", "Chrono Dampener", "Enhanced Quantum Disruptor", "Enhanced Sensor System", "Quantum Accelerator", "Resource Allocation System", "Advanced Resource Allocation System", "Personal Shield Generator", "Heavy Personal Shield Generator", "Tech 3 Engineering Suite"]
+                    
+                    let e1: [String] =  ["Section: LCH", "Mass: 720", "Energy: 18,000", "Build Time: 900", "New HP: 14,000 (+3,000)", "New Regen Rate: 30 HP/s (+20 HP/s)", "New Build Rate: 42"]
+                    let e2: [String] =  ["Section: Back", "Mass: 1,750", "Energy: 52,500", "Build Time: 1,225"]
+                    let e3: [String] =  ["Section: LCH", "Mass: 500", "Energy: 15,000", "Build Time: 500", "New Weapons Range: 35"]
+                    let e4: [String] =  ["Section: RCH", "Mass: 400", "Energy: 10,000", "Build Time: 500", "New Omni Radius: 100", "New Vision Radius: 50"]
+                    let e5: [String] =  ["Section: RCH", "Mass: 500", "Energy: 15,000", "Build Time: 500", "New Rate of Fire: 2"]
+                    let e6: [String] =  ["Section: Back", "Mass: 5,000 (+18)", "Energy: 150,000 (+2,700)", "Build Time: 1,400"]
+                    let e7: [String] =  ["Section: Back", "Mass: 5,000 (+36)", "Energy: 150,000 (+5,400)", "Build Time: 1,400"]
+                    let e8: [String] =  ["Section: Back", "Mass: 1,500", "Energy: 93,750 (-250)", "Build Time: 1,750", "Shield HP: 29,000", "Shield Size: 0", "Shield Regen Rate: 37 HP/s", "Shield Recharge Time: 160s", "Shield Recharge Rate: 181 HP/s"]
+                    let e9: [String] =  ["Section: Back", "Mass: 4,500", "Energy: 1,000,000 (-500)", "Build Time: 3,500", "Shield HP: 44,000", "Shield Size: 0", "Shield Regen Rate: 44 HP/s", "Shield Recharge Time: 200s", "Shield Recharge Rate: 220 HP/s"]
+                    let e10: [String] =  ["Section: LCH", "Mass: 2,400", "Energy: 50,000", "Build Time: 8,400", "New HP: 17,000 (+6,000)", "New Regen Rate: 45 HP/s (+35 HP/s)", "New Build Rate: 126"]
+                    let e11: [String] =  ["Section: Back", "Mass: 15,000", "Energy: 1,500,000 (-10,000)", "Build Time: 4,200"]
+                    unitSectionCells = [e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11]
+                    
+                    
+                    
+                case "T3 Support ACU":
+                    unitSectionNames = ["Rapid Fabricator", "Resource Allocation System", "Sacrificial System", "Personal Shield Generator", "Heavy Personal Shield Generator", "Reacton Refactor", "Nano-Repair System", "Personal Teleporter"]
+                    
+                    let e1: [String] =  ["Section: LCH","Mass: 800", "Energy: 50,000", "Build Time: 4,200", "New Build Rate: 98"]
+                    let e2: [String] =  ["Section: RCH", "Mass: 4,500 (+10)", "Energy: 60,000 (+1,000)", "Build Time: 8,400"]
+                    let e3: [String] =  ["Section: LCH", "Mass: 150", "Energy: 2,500", "Build Time: 700"]
+                    let e4: [String] =  ["Section: Back", "Mass: 1,200", "Energy: 60,000 (-300)", "Build Time: 5,040", "Shield HP: 20,000", "Shield Size: 0", "Shield Regen Rate: 40 HP/s", "Shield Recharge Time: 190s", "Shield Recharge Rate: 105 HP/s"]
+                    let e5: [String] =  ["Section: Back", "Mass: 1,500", "Energy: 100,000 (-600)", "Build Time: 7,000", "Shield HP: 35,000", "Shield Size: 0", "Shield Regen Rate: 120 HP/s", "Shield Recharge Time: 180s", "Shield Recharge Rate: 194 HP/s"]
+                    let e6: [String] =  ["Section: RCH", "Mass: 1,250", "Energy: 36,000", "Build Time: 5,040", "New Damage Radius: 3.5", "New Weapons Range: 40"]
+                    let e7: [String] =  ["Section: Back", "Mass: 1,500", "Energy: 75,000", "Build Time: 6,720", "New Regen Rate: 317 HP/s (+300 HP/s)"]
+                    let e8: [String] =  ["Section: Back", "Mass: 15,000", "Energy: 1,500,000 (-10,000)", "Build Time: 21,000"]
+                    unitSectionCells = [e1, e2, e3, e4, e5, e6, e7, e8]
+                    
+                    
+                default:
+                    print("WeaponsView Error:" + factionName + "/" + unitName + "/" + vweName)
+                    
+                }
+                
+
             }
         }
         
