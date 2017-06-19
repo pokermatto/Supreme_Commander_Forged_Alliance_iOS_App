@@ -30,7 +30,7 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
     //Faction Colors
     var uefColor: UIColor? = UIColor(red: 0/255, green: 2/255, blue: 175/255, alpha: 1.0)
     var cybranColor: UIColor? = UIColor(red: 168/255, green: 14/255, blue: 0/255, alpha: 1.0)
-    var seraphimColor: UIColor? = UIColor(red: 255/255, green: 215/255, blue: 125/255, alpha: 1.0)
+    var seraphimColor: UIColor? = UIColor(red: 255/255, green: 229/255, blue: 0/255, alpha: 1.0)
     var aeonColor: UIColor? = UIColor(red: 5/255, green: 150/255, blue: 0/255, alpha: 1.0)
     
     //Current faction color for table cells

@@ -38,7 +38,7 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
     //Faction Colors
     var uefColor: UIColor? = UIColor(red: 0/255, green: 2/255, blue: 175/255, alpha: 1.0)
     var cybranColor: UIColor? = UIColor(red: 168/255, green: 14/255, blue: 0/255, alpha: 1.0)
-    var seraphimColor: UIColor? = UIColor(red: 255/255, green: 215/255, blue: 125/255, alpha: 1.0)
+    var seraphimColor: UIColor? = UIColor(red: 255/255, green: 229/255, blue: 0/255, alpha: 1.0)
     var aeonColor: UIColor? = UIColor(red: 5/255, green: 150/255, blue: 0/255, alpha: 1.0)
     
     //Current faction color for table cells
@@ -1540,8 +1540,8 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 //COMMAND UNITS
                 case "ACU":
                     
-                    let unitImage : UIImage = UIImage(named:"uel0001_icon")!
-                    imageView.image = unitImage
+                    //let unitImage : UIImage = UIImage(named:"uel0001_icon")!
+                    //imageView.image = unitImage
                     
                     unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel" , "Physics", "Wreckage", "Veterancy, Weapons, Enhancements"]
                     let bluePrintID = ["XSL0001"]
@@ -1556,8 +1556,8 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                     
                 case "T3 Support ACU":
                     
-                    let unitImage : UIImage = UIImage(named:"uel0301_icon")!
-                    imageView.image = unitImage
+                    //let unitImage : UIImage = UIImage(named:"uel0301_icon")!
+                    //imageView.image = unitImage
                     
                     unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel" , "Physics", "Wreckage", "Veterancy, Weapons, Enhancements"]
                     let bluePrintID = ["XSL0301"]
@@ -2810,8 +2810,8 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 //COMMAND UNITS
                 case "ACU":
                     
-                    let unitImage : UIImage = UIImage(named:"uel0001_icon")!
-                    imageView.image = unitImage
+                    //let unitImage : UIImage = UIImage(named:"uel0001_icon")!
+                    //imageView.image = unitImage
                     
                     unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel" , "Physics", "Wreckage", "Veterancy, Weapons, Enhancements"]
                     let bluePrintID = ["UEL0001"]
@@ -2826,8 +2826,8 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                     
                 case "T3 Support ACU":
                     
-                    let unitImage : UIImage = UIImage(named:"uel0301_icon")!
-                    imageView.image = unitImage
+                    //let unitImage : UIImage = UIImage(named:"uel0301_icon")!
+                    //imageView.image = unitImage
                     
                     unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel" , "Physics", "Wreckage", "Veterancy, Weapons, Enhancements"]
                     let bluePrintID = ["UEL0301"]
@@ -4277,8 +4277,8 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
                 //COMMAND UNITS
                 case "ACU":
                     
-                    let unitImage : UIImage = UIImage(named:"uel0001_icon")!
-                    imageView.image = unitImage
+                    //let unitImage : UIImage = UIImage(named:"uel0001_icon")!
+                    //imageView.image = unitImage
                     
                     unitSectionNames = ["Blueprint ID","Health", "Abilities", "Economy", "Intel" , "Physics", "Wreckage", "Veterancy, Weapons, Enhancements"]
                     let bluePrintID = ["UAL0001"]
@@ -5783,6 +5783,9 @@ class InfoViewController: UIViewController , UITableViewDataSource, UITableViewD
         factionColor = uefColor
         
         setFactionColor(factionName: factionName!)
+        
+        //Set image view back color
+        imageView.backgroundColor = factionColor
         
         //Set up TableView delegate and datasource as self
         detailTableView.delegate = self
