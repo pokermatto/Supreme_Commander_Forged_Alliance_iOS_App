@@ -224,7 +224,6 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
         
         
         
-        //TODO Edit this info to match Cybran
         if factionName == "Cybran"
         {
             switch nameOfCategory
@@ -238,67 +237,63 @@ class DetailViewController: UIViewController , UITableViewDataSource, UITableVie
             case "Engineer":
                 unitSectionNames = ["Tech 1", "Tech 2", "Tech 3"]
                 let engineer1: [String] =  ["T1 Engineer"]
-                let engineer2: [String] =  ["T2 Engineering Station: The Kennel", "T2 Engineer", "T2 Field Engineer: Sparky"]
-                let engineer3: [String] = ["T3 Engineering Station: The Kennel", "T3 Engineer"]
+                let engineer2: [String] =  ["T2 Engineer", "T2 Engineering Station: The Hive L1", "T2 Engineering Station: The Hive L2","T2 Engineering Station: The Hive L3"]
+                let engineer3: [String] = ["T3 Engineer"]
                 unitSectionCells = [engineer1, engineer2, engineer3]
             case "Factory":
                 unitSectionNames = ["Tech 1", "Tech 2", "Tech 3"]
                 let factory1: [String] =  ["T1 Land Factory", "T1 Air Factory", "T1 Naval Factory"]
                 let factory2: [String] =  ["T2 Land Factory HQ", "T2 Air Factory HQ", "T2 Naval Factory HQ", "T2 Land Factory", "T2 Air Factory", "T2 Naval Factory"]
-                let factory3: [String] = ["T3 Land Factory HQ", "T3 Air Factory HQ", "T3 Naval Factory HQ","T3 Quantum Gateway: QGW R-32", "T3 Land Factory", "T3 Air Factory", "T3 Naval Factory"]
+                let factory3: [String] = ["T3 Land Factory HQ", "T3 Air Factory HQ", "T3 Naval Factory HQ","T3 Quantum Gateway: Summoner", "T3 Land Factory", "T3 Air Factory", "T3 Naval Factory"]
                 unitSectionCells = [factory1, factory2, factory3]
             case "Economy":
                 unitSectionNames = ["Tech 1", "Tech 2", "Tech 3"]
-                let economy1: [String] =  ["T1 Power Generator", "T1 Hydrocarbon Power Plant: HCPP - X1000", "T1 Mass Extractor: Mass Pump 1", "T1 Energy Storage", "T1 Mass Storage"]
-                let economy2: [String] =  ["T2 Mass Fabricator", "T2 Power Generator: EG-200 Fusion Reactor", "T2 Mass Extractor: Mass Pump 2"]
-                let economy3: [String] = ["T3 Power Generator: EG-900 Fusion Reactor", "T3 Mass Extractor: Mass Pump 3", "T3 Mass Fabricator"]
+                let economy1: [String] =  ["T1 Power Generator", "T1 Hydrocarbon Power Plant", "T1 Mass Extractor", "T1 Energy Storage", "T1 Mass Storage"]
+                let economy2: [String] =  ["T2 Mass Fabricator", "T2 Power Generator", "T2 Mass Extractor"]
+                let economy3: [String] = ["T3 Power Generator", "T3 Mass Extractor", "T3 Mass Fabricator"]
                 unitSectionCells = [economy1, economy2, economy3]
             case "Weapon":
-                unitSectionNames = ["Tech 1", "Tech 2", "Tech 3", "Experimental"]
-                let weapon1: [String] =  ["T1 Point Defense: DM1 Plasma Cannon", "T1 Anti-Air Turret: DA1 Railgun", "T1 Torpedo Launcher: DN1"]
-                let weapon2: [String] =  ["T2 Tactical Missile Launcher: Aloha", "T2 Anti-Air Flak Artillery: Air Cleaner", "T2 Torpedo Launcher: Tsunami", "T2 Point Defense: Triad", "T2 Artillery Installation: Klink Hammer"]
-                let weapon3: [String] = ["T3 Heavy Artillery Installation: Duke", "T3 Anti-Air SAM Launcher: Flayer", "T3 Strategic Missile Launcher: Stonager", "T3 Heavy Point Defense: Ravager"]
-                let weapon4: [String] = ["Experimental Artillery: Mavor"]
-                unitSectionCells = [weapon1, weapon2, weapon3, weapon4]
+                unitSectionNames = ["Tech 1", "Tech 2", "Tech 3"]
+                let weapon1: [String] =  ["T1 Point Defense: Auto Gun", "T1 Anti-Air Turret: Tracer", "T1 Torpedo Launcher: Scuttle"]
+                let weapon2: [String] =  ["T2 Tactical Missile Launcher: TML-4", "T2 Anti-Air Flak Artillery: Burst Master", "T2 Torpedo Launcher: Nanite Torpedo Array", "T2 Point Defense: Cerberus", "T2 Artillery Installation: Gunther"]
+                let weapon3: [String] = ["T3 Heavy Artillery Installation: Disruptor", "T3 Anti-Air SAM Launcher: Myrmidon", "T3 Strategic Missile Launcher: Liberator", "T3 Torpedo Ambushing System: HARMS"]
+                unitSectionCells = [weapon1, weapon2, weapon3]
             case "Defense":
                 unitSectionNames = ["Tech 2", "Tech 3"]
-                let defense2: [String] =  ["T2 Tactical Missile Defense: Buzzkill", "T2 Shield Generator: SD-Pulse", "T2 Stealth Field Generator: Scattershield"]
-                let defense3: [String] = ["T3 Heavy Shield Generator: HSD Pulse", "T3 Strategic Missile Defense: Nuke Eliminator"]
+                let defense2: [String] =  ["T2 Tactical Missile Defense: Zapper", "T2 Shield Generator: ED1", "T2 Stealth Field Generator: Twilight", "T2 Shield Generator: ED2", "T2 Shield Generator: ED3", "T2 Shield Generator: ED4", "T2 Shield Generator: ED5"]
+                let defense3: [String] = ["T3 Strategic Missile Defense: Guardian"]
                 unitSectionCells = [defense2, defense3]
             case "Sensor":
                 unitSectionNames = ["Tech 1", "Tech 2", "Tech 3"]
-                let sensor1: [String] =  ["T1 Radar System: SA1-1000", "T1 Sonar System: SP1-1000"]
-                let sensor2: [String] =  ["T2 Radar System: SA2-2000", "T2 Sonar System: SP2-2000"]
-                let sensor3: [String] = ["T3 Omni Sensor Array: SA3-Omni", "T3 Sonar Platform: SP3-3000"]
+                let sensor1: [String] =  ["T1 Radar System: Magno", "T1 Sonar System: Noah"]
+                let sensor2: [String] =  ["T2 Radar System: Magno XR", "T2 Sonar System: Flood"]
+                let sensor3: [String] = ["T3 Omni Sensor Array: Olympus", "T3 Sonar Platform: Flood XR", "T3 Perimeter Monitoring System: Soothsayer"]
                 unitSectionCells = [sensor1, sensor2, sensor3]
             case "Aircraft":
                 unitSectionNames = ["Tech 1", "Tech 2", "Tech 3", "Experimental"]
-                let air1: [String] =  ["T1 Air Scout: Hummingbird", "T1 Interceptor: Cyclone", "T1 Attack Bomber: Scorcher", "T1 Light Air Transport: C-6 Courier"]
-                let air2: [String] =  ["T2 Fighter/Bomber: Janus", "T2 Air Transport: C14 Star Lifter", "T2 Gunship: Stinger" , "T2 Torpedo Bomber: Stork"]
-                let air3: [String] = ["T3 Spy Plane: SR90 Blackbird", "T3 Air-Superiority Fighter: Wasp", "T3 Strategic Bomber: Ambassador", "T3 Heavy Gunship: Broadsword", "T3 Heavy Air Transport: Continental"]
-                //TODO confirm that this unit actually is an experimental
-                let air4: [String] = ["Defense Satellite"]
+                let air1: [String] =  ["T1 Air Scout: Flying Eyes", "T1 Interceptor: Prowler", "T1 Attack Bomber: Zeus", "T1 Light Air Transport: Skyhook", "T1 Light Gunship: Jester"]
+                let air2: [String] =  ["T2 Fighter/Bomber: Corsair", "T2 Air Transport: Dragon Fly", "T2 Gunship: Renegade" , "T2 Torpedo Bomber: Cormorant"]
+                let air3: [String] = ["T3 Spy Plane: Spook", "T3 Air-Superiority Fighter: Gemini", "T3 Strategic Bomber: Revenant", "T3 Heavy Gunship: Wailer"]
+                let air4: [String] = ["Experimental Gunship: Soul Ripper"]
                 unitSectionCells = [air1, air2, air3, air4]
             case "Vehicle":
                 unitSectionNames = ["Tech 1", "Tech 2", "Tech 3", "Experimental"]
-                let vehicle1: [String] =  ["T1 Land Scout: Snoop", "T1 Mobile Light Artillery: Lobo", "T1 Mobile Anti-Air Gun: Archer", "T1 Light Assault Bot: Mech Marine", "T1 Medium Tank: MA12 Striker"]
-                let vehicle2: [String] =  ["T2 Gatling Bot: Mongoose", "T2 Mobile Missile Launcher: Flapjack", "T2 Heavy Tank: Pillar", "T2 Amphibious Tank: Riptide", "T2 Mobile AA Flak Artillery: Sky Boxer", "T2 Mobile Shield Generator: Parashield"]
-                let vehicle3: [String] = ["T3 Heavy Assault Bot: Titan", "T3 Mobile Heavy Artillery: Demolisher", "T3 Armored Assault Bot: Percival", "T3 Mobile Missile Platform: Spearhead"]
-                let vehicle4: [String] = ["Experimental Mobile Factory: Fatboy"]
+                let vehicle1: [String] =  ["T1 Land Scout: Mole", "T1 Mobile Light Artillery: Medusa", "T1 Mobile Anti-Air Gun: Sky Slammer", "T1 Light Assault Bot: Hunter", "T1 Assault Bot: Mantis"]
+                let vehicle2: [String] =  ["T2 Rocket Bot: Hoplite", "T2 Mobile Missile Launcher: Viper", "T2 Heavy Tank: Rhino", "T2 Amphibious Tank: Wagner", "T2 Mobile AA Flak Artillery: Banger", "T2 Mobile Shield Generator: Deceiver", "T2 Mobile Bomb: Fire Beetle"]
+                let vehicle3: [String] = ["T3 Siege Assault Bot: Loyalist", "T3 Mobile Heavy Artillery: Trebuchet", "T3 Armored Assault Bot: The Brick"]
+                let vehicle4: [String] = ["Experimental Mobile Fire Artillery: Scathis", "Experimental Spiderbot: Monkeylord", "Experimental Megabot: Megalith"]
                 unitSectionCells = [vehicle1, vehicle2, vehicle3, vehicle4]
             case "Ship":
-                unitSectionNames = ["Tech 1", "Tech 2", "Tech 3", "Experimental"]
-                let ship1: [String] =  ["T1 Frigate: Thunderhead Class", "T1 Attack Submarine: Tigershark"]
-                let ship2: [String] =  ["T2 Destroyer: Valiant Class", "T2 Cruiser: Governor Class", "T2 Torpedo Boat: Cooper", "T2 Shield Boat: Bulwark"]
-                let ship3: [String] = ["T3 Battleship: Summit Class", "T3 Strategic Missile Submarine: Ace", "T3 Battlecruiser: Neptune Class"]
-                let ship4: [String] = ["Experimental Aircraft Carrier: Atlantis"]
-                unitSectionCells = [ship1, ship2, ship3, ship4]
+                unitSectionNames = ["Tech 1", "Tech 2", "Tech 3"]
+                let ship1: [String] =  ["T1 Frigate: Trident Class", "T1 Attack Submarine: Silver"]
+                let ship2: [String] =  ["T2 Destroyer: Salem Class", "T2 Cruiser: Siren Class", "T2 Submarine Killer: Barracuda", "T2 Counter-Intelligence Boat: CI:18 Mermaid"]
+                let ship3: [String] = ["T3 Battleship: Galaxy Class", "T3 Aircraft Carrier: Command Class", "T3 Strategic Missile Submarine: Plan B"]
+                unitSectionCells = [ship1, ship2, ship3]
             case "Support":
-                unitSectionNames = ["Tech 1", "Tech 2", "Experimental"]
-                let support1: [String] =  ["T1 Wall Section: Calcicrete"]
-                let support2: [String] =  ["T2 Air Staging Facility: Refuel & Repair"]
-                let support4: [String] = ["Experimental Satellite System: Novax Center"]
-                unitSectionCells = [support1, support2, support4]
+                unitSectionNames = ["Tech 1", "Tech 2"]
+                let support1: [String] =  ["T1 Wall Section"]
+                let support2: [String] =  ["T2 Air Staging Facility"]
+                unitSectionCells = [support1, support2]
                 
             default:
                 print("Warning: Name of unit Category Not Found in setTableDataForSelectedUnit(_ nameOfUnit: String!)")
