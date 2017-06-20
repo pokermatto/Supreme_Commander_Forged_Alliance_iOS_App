@@ -1027,35 +1027,26 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                 case "ACU":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
-                    let l1: [String] =  ["Kills Required: 20", "New HP: 13,200 (+1,200)", "New Regen Rate: 13 HP/s (+3 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 40", "New HP: 14,400 (+2,400)", "New Regen Rate: 16 HP/s (+6 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 65", "New HP: 15,600 (+3,600)", "New Regen Rate: 19 HP/s (+9 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 90", "New HP: 16,800 (+4,800)", "New Regen Rate: 22 HP/s (+12 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 120", "New HP: 18,000 (+6,000)", "New Regen Rate: 25 HP/s (+15 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 20", "New HP: 12,100 (+1,100)", "New Regen Rate: 13 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 40", "New HP: 13,200 (+2,200)", "New Regen Rate: 16 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 65", "New HP: 14,300 (+3,300)", "New Regen Rate: 19 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 90", "New HP: 15,400 (+4,400)", "New Regen Rate: 22 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 120", "New HP: 16,500 (+5,500)", "New Regen Rate: 25 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
                 case "T3 Support ACU":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
-                    let l1: [String] =  ["Kills Required: 25", "New HP: 17,600 (+1,600)", "New Regen Rate: 25 HP/s (+5 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 50", "New HP: 19,200 (+3,200)", "New Regen Rate: 30 HP/s (+10 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 75", "New HP: 20,800 (+4,800)", "New Regen Rate: 35 HP/s (+15 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 100", "New HP: 22,400 (+6,400)", "New Regen Rate: 40 HP/s (+20 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 125", "New HP: 24,000 (+8,000)", "New Regen Rate: 45 HP/s (+25 HP/s)"]
-                    unitSectionCells = [l1, l2, l3, l4, l5]
-                    
-                case "T2 Field Engineer: Sparky":
-                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    
-                    let l1: [String] =  ["Kills Required: 6", "New HP: 1,144 (+104)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 12", "New HP: 1,248 (+208)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 18", "New HP: 1,352 (+312)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 24", "New HP: 1,456 (+416)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 30", "New HP: 1,560 (+520)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 25", "New HP: 16,500 (+1,500)", "New Regen Rate: 22 HP/s (+5 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 50", "New HP: 18,000 (+3,000)", "New Regen Rate: 27 HP/s (+10 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 75", "New HP: 19,500 (+4,500)", "New Regen Rate: 32 HP/s (+15 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 100", "New HP: 21,000 (+6,000)", "New Regen Rate: 37 HP/s (+20 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 125", "New HP: 22,500 (+7,500)", "New Regen Rate: 42 HP/s (+25 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
                     
-                case "T1 Point Defense: DM1 Plasma Cannon":
+                    
+                case "T1 Point Defense: Erupter":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
                     let l1: [String] =  ["Kills Required: 6", "New HP: 1,430 (+130)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
@@ -1065,7 +1056,7 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let l5: [String] =  ["Kills Required: 30", "New HP: 1,950 (+650)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T1 Anti-Air Turret: DA1 Railgun":
+                case "T1 Anti-Air Turret: Seeker":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
                     let l1: [String] =  ["Kills Required: 4", "New HP: 880 (+80)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
@@ -1075,17 +1066,17 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let l5: [String] =  ["Kills Required: 20", "New HP: 1,200 (+400)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T1 Torpedo Launcher: DN1":
+                case "T1 Torpedo Launcher: Tide":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
-                    let l1: [String] =  ["Kills Required: 6", "New HP: 1,870 (+170)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 12", "New HP: 2,040 (+340)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 18", "New HP: 2,210 (+510)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 24", "New HP: 2,380 (+680)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 30", "New HP: 2,550 (+850)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 6", "New HP: 1,787 (+162)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 12", "New HP: 1,950 (+325)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 18", "New HP: 2,112 (+487)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 24", "New HP: 2,275 (+650)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 30", "New HP: 2,437 (+812)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T2 Tactical Missile Launcher: Aloha":
+                case "T2 Tactical Missile Launcher: Serpentine":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
                     let l1: [String] =  ["Kills Required: 9", "New HP: 1,650 (+150)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
@@ -1095,59 +1086,59 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let l5: [String] =  ["Kills Required: 45", "New HP: 2,250 (+750)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T2 Anti-Air Flak Artillery: Air Cleaner":
+                case "T2 Anti-Air Flak Artillery: Marr":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
-                    let l1: [String] =  ["Kills Required: 8", "New HP: 2,849 (+259)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 16", "New HP: 3,108 (+518)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 24", "New HP: 3,367 (+777)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 32", "New HP: 3,626 (+1,036)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 40", "New HP: 3,885 (+1,295)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 8", "New HP: 2,695 (+245)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 16", "New HP: 2,940 (+490)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 24", "New HP: 3,185 (+735)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 32", "New HP: 3,430 (+980)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 40", "New HP: 3,675 (+1,225)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T2 Torpedo Launcher: Tsunami":
+                case "T2 Torpedo Launcher: Wave Break":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
-                    let l1: [String] =  ["Kills Required: 12", "New HP: 7,040 (+640)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 24", "New HP: 7,680 (+1,280)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 36", "New HP: 8,320 (+1,920)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 48", "New HP: 8,960 (+2,560)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 60", "New HP: 9,600 (+3,200)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 12", "New HP: 6,710 (+610)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 24", "New HP: 7,320 (+1,220)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 36", "New HP: 7,930 (+1,830)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 48", "New HP: 8,540 (+2,440)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 60", "New HP: 9,150 (+3,050)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T2 Point Defense: Triad":
+                case "T2 Point Defense: Oblivion":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
-                    let l1: [String] =  ["Kills Required: 12", "New HP: 2,475 (+225)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 24", "New HP: 2,700 (+450)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 36", "New HP: 2,925 (+675)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 48", "New HP: 3,150 (+900)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 60", "New HP: 3,375 (+1,125)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
-                    unitSectionCells = [l1, l2, l3, l4, l5]
-                    
-                    
-                case "T2 Artillery Installation: Klink Hammer":
-                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    
-                    let l1: [String] =  ["Kills Required: 15", "New HP: 3,960 (+360)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 30", "New HP: 4,320 (+720)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 45", "New HP: 4,680 (+1,080)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 60", "New HP: 5,040 (+1,440)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 75", "New HP: 5,400 (+1,800)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 12", "New HP: 2,200 (+200)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 24", "New HP: 2,400 (+400)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 36", "New HP: 2,600 (+600)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 48", "New HP: 2,800 (+800)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 60", "New HP: 3,000 (+1,000)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
                     
-                case "T3 Heavy Artillery Installation: Duke":
+                case "T2 Artillery Installation: Miasma":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
-                    let l1: [String] =  ["Kills Required: 30", "New HP: 16,500 (+1,500)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 60", "New HP: 18,000 (+3,000)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 90", "New HP: 19,500 (+4,500)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 120", "New HP: 21,000 (+6,000)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 150", "New HP: 22,500 (+7,500)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 15", "New HP: 2,420 (+220)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 30", "New HP: 2,640 (+440)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 45", "New HP: 2,860 (+660)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 60", "New HP: 3,080 (+880)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 75", "New HP: 3,300 (+1,100)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Anti-Air SAM Launcher: Flayer":
+                    
+                case "T3 Heavy Artillery Installation: Emissary":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    
+                    let l1: [String] =  ["Kills Required: 30", "New HP: 13,200 (+1,200)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 60", "New HP: 14,400 (+2,400)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 90", "New HP: 15,600 (+3,600)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 120", "New HP: 16,800 (+4,800)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 150", "New HP: 18,000 (+6,000)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+                    
+                case "T3 Anti-Air SAM Launcher: Transcender":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
                     let l1: [String] =  ["Kills Required: 24", "New HP: 7,700 (+700)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
@@ -1158,7 +1149,7 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
                     
-                case "T3 Strategic Missile Launcher: Stonager":
+                case "T3 Strategic Missile Launcher: Apocalypse":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
                     let l1: [String] =  ["Kills Required: 30", "New HP: 4,400 (+400)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
@@ -1168,160 +1159,142 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let l5: [String] =  ["Kills Required: 150", "New HP: 6,000 (+2,000)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Heavy Point Defense: Ravager":
+                case "T3 Rapid-Fire Artillery Installation: Salvation":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
-                    let l1: [String] =  ["Kills Required: 24", "New HP: 8,250 (+750)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 48", "New HP: 9,000 (+1,500)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 72", "New HP: 9,750 (+2,250)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 96", "New HP: 10,500 (+3,000)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 120", "New HP: 11,250 (+3,750)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 50", "New HP: 11,000 (+1,000)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 100", "New HP: 12,000 (+2,000)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 150", "New HP: 13,000 (+3,000)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 200", "New HP: 14,000 (+4,000)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 250", "New HP: 15,000 (+5,000)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "Experimental Artillery: Mavor":
+                    
+                case "T1 Interceptor: Conservator":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
-                    let l1: [String] =  ["Kills Required: 50", "New HP: 8,800 (+800)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 100", "New HP: 9,600 (+1,600)", "New Regen Rate: 20 HP/s (+20 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 150", "New HP: 10,400 (+2,400)", "New Regen Rate: 30 HP/s (+30 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 200", "New HP: 11,200 (+3,200)", "New Regen Rate: 40 HP/s (+40 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 250", "New HP: 12,000 (+4,000)", "New Regen Rate: 50 HP/s (+50 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 2", "New HP: 313 (+28)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 4", "New HP: 342 (+57)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 6", "New HP: 370 (+85)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 8", "New HP: 399 (+114)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 10", "New HP: 427 (+142)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Sonar Platform: SP3-3000":
+                case "T1 Attack Bomber: Shimmer":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
-                    let l1: [String] =  ["Kills Required: 16", "New HP: 2,200 (+200)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 32", "New HP: 2,400 (+400)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 48", "New HP: 2,600 (+600)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 64", "New HP: 2,800 (+800)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 80", "New HP: 3,000 (+1,000)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 3", "New HP: 225 (+20)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 6", "New HP: 246 (+41)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 9", "New HP: 266 (+61)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 12", "New HP: 287 (+82)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 15", "New HP: 307 (+102)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T1 Interceptor: Cyclone":
+                    
+                case "T2 Air Transport: Aluminar":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
-                    let l1: [String] =  ["Kills Required: 2", "New HP: 324 (+29)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 4", "New HP: 354 (+59)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 6", "New HP: 383 (+88)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 8", "New HP: 413 (+118)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 10", "New HP: 442 (+147)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 3", "New HP: 1,732 (+157)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 6", "New HP: 1,890 (+315)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 9", "New HP: 2,047 (+472)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 12", "New HP: 2,205 (+630)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 15", "New HP: 2,362 (+787)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T1 Attack Bomber: Scorcher":
+                case "T2 Gunship: Specter":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
-                    let l1: [String] =  ["Kills Required: 3", "New HP: 236 (+21)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 6", "New HP: 258 (+43)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 9", "New HP: 279 (+64)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 12", "New HP: 301 (+86)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 15", "New HP: 322 (+107)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 6", "New HP: 932 (+84)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 12", "New HP: 1,017 (+169)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 18", "New HP: 1,102 (+254)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 24", "New HP: 1,187 (+339)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 30", "New HP: 1,272 (+424)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T2 Fighter/Bomber: Janus":
+                case "T2 Torpedo Bomber: Skimmer":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
-                    let l1: [String] =  ["Kills Required: 6", "New HP: 1,320 (+120)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 12", "New HP: 1,440 (+240)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 18", "New HP: 1,560 (+360)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 24", "New HP: 1,680 (+480)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 30", "New HP: 1,800 (+600)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 2", "New HP: 902 (+82)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 4", "New HP: 984 (+164)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 6", "New HP: 1,066 (+246)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 8", "New HP: 1,148 (+328)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 10", "New HP: 1,230 (+410)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T2 Air Transport: C14 Star Lifter":
+                case "T2 Combat Fighter: Swift Wind":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     
-                    let l1: [String] =  ["Kills Required: 3", "New HP: 1,842 (+167)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 6", "New HP: 2,010 (+335)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 9", "New HP: 2,177 (+502)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 12", "New HP: 2,345 (+670)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 15", "New HP: 2,512 (+837)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 6", "New HP: 880 (+80)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 12", "New HP: 960 (+160)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 18", "New HP: 1,040 (+240)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 24", "New HP: 1,120 (+320)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 30", "New HP: 1,200 (+400)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T2 Gunship: Stinger":
+                case "T3 Air-Superiority Fighter: Corona":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    
-                    let l1: [String] =  ["Kills Required: 6", "New HP: 968 (+88)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 12", "New HP: 1,056 (+176)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 18", "New HP: 1,144 (+264)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 24", "New HP: 1,232 (+352)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 30", "New HP: 1,320 (+440)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 12", "New HP: 1,925 (+175)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 24", "New HP: 2,100 (+350)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 36", "New HP: 2,275 (+525)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 48", "New HP: 2,450 (+700)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 60", "New HP: 2,625 (+875)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T2 Torpedo Bomber: Stork":
+                case "T3 Strategic Bomber: Shocker":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    
-                    let l1: [String] =  ["Kills Required: 2", "New HP: 946 (+86)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 4", "New HP: 1,032 (+172)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 6", "New HP: 1,118 (+258)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 8", "New HP: 1,204 (+344)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 10", "New HP: 1,290 (+430)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 12", "New HP: 4,180 (+380)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 24", "New HP: 4,560 (+760)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 36", "New HP: 4,940 (+1,140)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 48", "New HP: 5,320 (+1,520)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 60", "New HP: 5,700 (+1,900)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Air-Superiority Fighter: Wasp":
+                case "T3 AA Gunship: Restorer":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 12", "New HP: 1,980 (+180)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 24", "New HP: 2,160 (+360)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 36", "New HP: 2,340 (+540)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 48", "New HP: 2,520 (+720)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 60", "New HP: 2,700 (+900)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 15", "New HP: 6,600 (+600)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 30", "New HP: 7,200 (+1,200)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 45", "New HP: 7,800 (+1,800)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 60", "New HP: 8,400 (+2,400)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 75", "New HP: 9,000 (+3,000)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Strategic Bomber: Ambassador":
+                case "T3 Torpedo Bomber: Solace":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 12", "New HP: 4,400 (+400)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 24", "New HP: 4,800 (+800)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 36", "New HP: 5,200 (+1,200)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 48", "New HP: 5,600 (+1,600)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 60", "New HP: 6,000 (+2,000)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 4", "New HP: 4,125 (+375)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 8", "New HP: 4,500 (+750)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 12", "New HP: 4,875 (+1,125)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 16", "New HP: 5,250 (+1,500)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 20", "New HP: 5,625 (+1,875)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Heavy Gunship: Broadsword":
+                case "Experimental Aircraft Carrier: CZAR":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 12", "New HP: 6,600 (+600)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 24", "New HP: 7,200 (+1,200)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 36", "New HP: 7,800 (+1,800)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 48", "New HP: 8,400 (+2,400)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 60", "New HP: 9,000 (+3,000)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 40", "New HP: 63,800 (+5,800)", "New Regen Rate: 25 HP/s (+10 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 80", "New HP: 69,600 (+11,600)", "New Regen Rate: 35 HP/s (+20 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 120", "New HP: 75,400 (+17,400)", "New Regen Rate: 45 HP/s (+30 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 160", "New HP: 81,200 (+23,200)", "New Regen Rate: 55 HP/s (+40 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 200", "New HP: 87,000 (+29,000)", "New Regen Rate: 65 HP/s (+50 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Heavy Air Transport: Continental":
+                case "T1 Land Scout: Spirit":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 12", "New HP: 4,950 (+450)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 24", "New HP: 5,400 (+900)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 36", "New HP: 5,850 (+1,350)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 48", "New HP: 6,300 (+1,800)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 60", "New HP: 6,750 (+2,250)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 2", "New HP: 22 (+2)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 4", "New HP: 24 (+4)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 6", "New HP: 26 (+6)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 8", "New HP: 28 (+8)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 10", "New HP: 30 (+10)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "Defense Satellite":
+                case "T1 Mobile Light Artillery: Fervor":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 25", "New HP: 110 (+10)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 50", "New HP: 120 (+20)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 75", "New HP: 130 (+30)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 100", "New HP: 140 (+40)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 125", "New HP: 150 (+50)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 3", "New HP: 165 (+15)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 6", "New HP: 180 (+30)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 9", "New HP: 195 (+45)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 12", "New HP: 210 (+60)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 15", "New HP: 225 (+75)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T1 Land Scout: Snoop":
-                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 2", "New HP: 31 (+2)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 4", "New HP: 34 (+5)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 6", "New HP: 37 (+8)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 8", "New HP: 40 (+11)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 10", "New HP: 43 (+14)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
-                    unitSectionCells = [l1, l2, l3, l4, l5]
-                    
-                case "T1 Mobile Light Artillery: Lobo":
-                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 3", "New HP: 220 (+20)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 6", "New HP: 240 (+40)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 9", "New HP: 260 (+60)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 12", "New HP: 280 (+80)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 15", "New HP: 300 (+100)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
-                    unitSectionCells = [l1, l2, l3, l4, l5]
-                    
-                case "T1 Mobile Anti-Air Gun: Archer":
+                case "T1 Mobile Anti-Air Gun: Thistle":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     let l1: [String] =  ["Kills Required: 2", "New HP: 220 (+20)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
                     let l2: [String] =  ["Kills Required: 4", "New HP: 240 (+40)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
@@ -1330,61 +1303,44 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let l5: [String] =  ["Kills Required: 10", "New HP: 300 (+100)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T1 Light Assault Bot: Mech Marine":
+                case "T1 Light Assault Bot: Flare":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 2", "New HP: 82 (+7)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 4", "New HP: 90 (+15)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 6", "New HP: 97 (+22)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 8", "New HP: 105 (+30)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 10", "New HP: 112 (+37)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 2", "New HP: 77 (+7)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 4", "New HP: 84 (+14)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 6", "New HP: 91 (+21)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 8", "New HP: 98 (+28)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 10", "New HP: 105 (+35)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T1 Medium Tank: MA12 Striker":
+                case "T1 Light Tank: Aurora":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 3", "New HP: 330 (+30)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 6", "New HP: 360 (+60)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 9", "New HP: 390 (+90)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 12", "New HP: 420 (+120)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 15", "New HP: 450 (+150)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 3", "New HP: 154 (+14)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 6", "New HP: 168 (+28)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 9", "New HP: 182 (+42)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 12", "New HP: 196 (+56)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 15", "New HP: 210 (+70)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T2 Gatling Bot: Mongoose":
+                    
+                case "T2 Mobile Missile Launcher: Evensong":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 6", "New HP: 715 (+65)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 12", "New HP: 780 (+130)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 18", "New HP: 845 (+195)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 24", "New HP: 910 (+260)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 30", "New HP: 975 (+325)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 3", "New HP: 825 (+75)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 6", "New HP: 900 (+150)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 9", "New HP: 975 (+225)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 12", "New HP: 1,050 (+300)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 15", "New HP: 1,125 (+375)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T2 Mobile Missile Launcher: Flapjack":
+                case "T2 Heavy Tank: Obsidian":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 3", "New HP: 907 (+82)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 6", "New HP: 990 (+165)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 9", "New HP: 1,072 (+247)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 12", "New HP: 1,155 (+330)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 15", "New HP: 1,237 (+412)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 9", "New HP: 1,375 (+125)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 18", "New HP: 1,500 (+250)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 27", "New HP: 1,625 (+375)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 35", "New HP: 1,750 (+500)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 42", "New HP: 1,875 (+625)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T2 Heavy Tank: Pillar":
-                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 6", "New HP: 1,650 (+150)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 12", "New HP: 1,800 (+300)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 18", "New HP: 1,950 (+450)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 24", "New HP: 2,100 (+600)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 30", "New HP: 2,250 (+750)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
-                    unitSectionCells = [l1, l2, l3, l4, l5]
-                    
-                case "T2 Amphibious Tank: Riptide":
-                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 7", "New HP: 1,870 (+170)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 14", "New HP: 2,040 (+340)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 21", "New HP: 2,210 (+510)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 28", "New HP: 2,380 (+680)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 35", "New HP: 2,550 (+850)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
-                    unitSectionCells = [l1, l2, l3, l4, l5]
-                    
-                case "T2 Mobile AA Flak Artillery: Sky Boxer":
+                case "T2 Mobile AA Flak Artillery: Ascendant":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
                     let l1: [String] =  ["Kills Required: 4", "New HP: 1,100 (+100)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
                     let l2: [String] =  ["Kills Required: 8", "New HP: 1,200 (+200)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
@@ -1393,141 +1349,163 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let l5: [String] =  ["Kills Required: 20", "New HP: 1,500 (+500)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Heavy Assault Bot: Titan":
+                case "T2 Assault Tank: Blaze":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 9", "New HP: 2,420 (+220)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 18", "New HP: 2,640 (+440)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 27", "New HP: 2,860 (+660)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 36", "New HP: 3,080 (+880)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 45", "New HP: 3,300 (+1,100)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 6", "New HP: 1,155 (+105)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 12", "New HP: 1,260 (+210)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 18", "New HP: 1,365 (+315)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 24", "New HP: 1,470 (+420)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 30", "New HP: 1,575 (+525)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Mobile Heavy Artillery: Demolisher":
+                    
+                case "T3 Shield Disruptor: Absolver":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 9", "New HP: 1,045 (+95)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 18", "New HP: 1,140 (+190)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 27", "New HP: 1,235 (+285)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 36", "New HP: 1,330 (+380)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 45", "New HP: 1,425 (+475)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 9", "New HP: 1,320 (+120)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 18", "New HP: 1,440 (+240)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 27", "New HP: 1,560 (+360)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 36", "New HP: 1,680 (+480)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 45", "New HP: 1,800 (+600)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Armored Assault Bot: Percival":
+                case "T3 Heavy Assault Bot: Harbinger Mark IV":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 20", "New HP: 10,230 (+930)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 40", "New HP: 11,160 (+1,860)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 60", "New HP: 12,090 (+2,790)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 80", "New HP: 13,020 (+3,720)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 100", "New HP: 13,950 (+4,650)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 15", "New HP: 5,060 (+460)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 30", "New HP: 5,520 (+920)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 45", "New HP: 5,980 (+1,380)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 60", "New HP: 6,440 (+1,840)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 75", "New HP: 6,900 (+2,300)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Mobile Missile Platform: Spearhead":
+                case "T3 Mobile Heavy Artillery: Serenity":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 6", "New HP: 1,870 (+170)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 12", "New HP: 2,040 (+340)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 18", "New HP: 2,210 (+510)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 24", "New HP: 2,380 (+680)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 30", "New HP: 2,550 (+850)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 9", "New HP: 990 (+90)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 18", "New HP: 1,080 (+180)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 27", "New HP: 1,170 (+270)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 36", "New HP: 1,260 (+360)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 45", "New HP: 1,350 (+450)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "Experimental Mobile Factory: Fatboy":
+                case "T3 Sniper Bot: Sprite Striker":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 40", "New HP: 13,750 (+1,250)", "New Regen Rate: 35 HP/s (+35 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 80", "New HP: 15,000 (+2,500)", "New Regen Rate: 50 HP/s (+50 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 120", "New HP: 16,250 (+3,750)", "New Regen Rate: 65 HP/s (+65 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 160", "New HP: 17,500 (+5,000)", "New Regen Rate: 80 HP/s (+80 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 200", "New HP: 18,750 (+6,250)", "New Regen Rate: 95 HP/s (+95 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 12", "New HP: 495 (+45)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 24", "New HP: 540 (+90)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 36", "New HP: 585 (+135)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 48", "New HP: 630 (+180)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 60", "New HP: 675 (+225)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
+
+                    
+                case "Experimental Assault Bot: Galactic Colossus":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 90", "New HP: 109,998 (+9,999)", "New Regen Rate: 20 HP/s (+10 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 180", "New HP: 199,998 (+19,999)", "New Regen Rate: 30 HP/s (+20 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 270", "New HP: 129,998 (+29,999)", "New Regen Rate: 40 HP/s (+30 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 360", "New HP: 139,998 (+39,999)", "New Regen Rate: 50 HP/s (+40 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 450", "New HP: 149,998 (+49,999)", "New Regen Rate: 60 HP/s (+50 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T1 Frigate: Thunderhead Class":
+                    
+                    
+                case "T1 Air Attack Boat: Shard":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 6", "New HP: 2,332 (+212)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 12", "New HP: 2,544 (+424)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 18", "New HP: 2,756 (+636)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 24", "New HP: 2,968 (+848)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 30", "New HP: 3,180 (+1,060)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 2", "New HP: 825 (+75)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 4", "New HP: 900 (+150)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 6", "New HP: 975 (+225)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 8", "New HP: 1,050 (+300)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 10", "New HP: 1,125 (+375)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T1 Attack Submarine: Tigershark":
+                case "T1 Frigate: Beacon Class":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 4", "New HP: 660 (+60)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 8", "New HP: 720 (+120)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 12", "New HP: 780 (+180)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 16", "New HP: 840 (+240)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 20", "New HP: 900 (+300)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 6", "New HP: 1,980 (+180)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 12", "New HP: 2,160 (+360)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 18", "New HP: 2,340 (+540)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 24", "New HP: 2,520 (+720)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 30", "New HP: 2,700 (+900)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T2 Destroyer: Valiant Class":
+                case "T1 Attack Submarine: Sylph":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 16", "New HP: 7,920 (+720)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 32", "New HP: 8,640 (+1,440)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 48", "New HP: 9,360 (+2,160)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 64", "New HP: 10,080 (+2,880)", "New Regen Rate: 20 HP/s (+20 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 80", "New HP: 10,800 (+3,600)", "New Regen Rate: 25 HP/s (+25 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 4", "New HP: 605 (+55)", "New Regen Rate: 1 HP/s (+1 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 8", "New HP: 660 (+110)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 12", "New HP: 715 (+165)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 16", "New HP: 770 (+220)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 20", "New HP: 825 (+275)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T2 Cruiser: Governor Class":
+                case "T2 Destroyer: Exodus Class":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 16", "New HP: 2,750 (+250)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 32", "New HP: 3,000 (+500)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 48", "New HP: 3,250 (+750)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 64", "New HP: 3,500 (+1,000)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 80", "New HP: 3,750 (+1,250)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 16", "New HP: 8,250 (+750)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 32", "New HP: 9,000 (+1,500)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 48", "New HP: 9,750 (+2,250)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 64", "New HP: 10,500 (+3,000)", "New Regen Rate: 20 HP/s (+20 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 80", "New HP: 11,250 (+3,750)", "New Regen Rate: 25 HP/s (+25 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T2 Torpedo Boat: Cooper":
+                case "T2 Cruiser: Infinity Class":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 4", "New HP: 1,925 (+175)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 8", "New HP: 2,100 (+350)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 12", "New HP: 2,275 (+525)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 16", "New HP: 2,450 (+700)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 20", "New HP: 2,625 (+875)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 16", "New HP: 3,575 (+325)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 32", "New HP: 3,900 (+650)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 48", "New HP: 4,225 (+975)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 64", "New HP: 4,550 (+1,300)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 80", "New HP: 4,875 (+1,625)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Battleship: Summit Class":
+                case "T2 Submarine Hunter: Vesper":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 32", "New HP: 56,100 (+5,100)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 64", "New HP: 61,200 (+10,200)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 96", "New HP: 66,300 (+15,300)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 128", "New HP: 71,400 (+20,400)", "New Regen Rate: 20 HP/s (+20 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 160", "New HP: 76,500 (+25,500)", "New Regen Rate: 25 HP/s (+25 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 8", "New HP: 1,980 (+180)", "New Regen Rate: 2 HP/s (+2 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 16", "New HP: 2,160 (+360)", "New Regen Rate: 4 HP/s (+4 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 24", "New HP: 2,340 (+540)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 32", "New HP: 2,520 (+720)", "New Regen Rate: 8 HP/s (+8 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 40", "New HP: 2,700 (+900)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Strategic Missile Submarine: Ace":
+                case "T3 Battleship: Omen Class":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 12", "New HP: 4,400 (+400)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 24", "New HP: 4,800 (+800)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 36", "New HP: 5,200 (+1,200)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 48", "New HP: 5,600 (+1,600)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 60", "New HP: 6,000 (+2,000)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 32", "New HP: 52,800 (+4,800)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 64", "New HP: 57,600 (+9,600)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 96", "New HP: 62,400 (+14,400)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 128", "New HP: 67,200 (+19,200)", "New Regen Rate: 20 HP/s (+20 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 160", "New HP: 72,000 (+24,000)", "New Regen Rate: 25 HP/s (+25 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "T3 Battlecruiser: Neptune Class":
+                case "T3 Aircraft Carrier: Keefer Class":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 25", "New HP: 27,500 (+2,500)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 50", "New HP: 30,000 (+5,000)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 75", "New HP: 32,500 (+7,500)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 100", "New HP: 35,000 (+10,000)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 125", "New HP: 37,500 (+12,500)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 32", "New HP: 24,200 (+2,200)", "New Regen Rate: 5 HP/s (+5 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 64", "New HP: 26,400 (+4,400)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 96", "New HP: 28,600 (+6,600)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 128", "New HP: 30,800 (+8,800)", "New Regen Rate: 20 HP/s (+20 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 160", "New HP: 33,000 (+11,000)", "New Regen Rate: 25 HP/s (+25 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "Experimental Aircraft Carrier: Atlantis":
+                case "T3 Strategic Missile Submarine: Silencer":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 30", "New HP: 44,000 (+4,000)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 60", "New HP: 48,000 (+8,000)", "New Regen Rate: 20 HP/s (+20 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 90", "New HP: 52,000 (+12,000)", "New Regen Rate: 30 HP/s (+30 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 120", "New HP: 56,000 (+16,000)", "New Regen Rate: 40 HP/s (+40 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 150", "New HP: 60,000 (+20,000)", "New Regen Rate: 50 HP/s (+50 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 12", "New HP: 4,125 (+375)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 24", "New HP: 4,500 (+750)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 36", "New HP: 4,875 (+1,125)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 48", "New HP: 5,250 (+1,500)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 60", "New HP: 5,625 (+1,875)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
-                case "Experimental Satellite System: Novax Center":
+                case "T3 Missile Ship: Torrent Class":
                     unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
-                    let l1: [String] =  ["Kills Required: 25", "New HP: 9,900 (+900)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
-                    let l2: [String] =  ["Kills Required: 50", "New HP: 10,800 (+1,800)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
-                    let l3: [String] =  ["Kills Required: 75", "New HP: 11,700 (+2,700)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
-                    let l4: [String] =  ["Kills Required: 100", "New HP: 12,600 (+3,600)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
-                    let l5: [String] =  ["Kills Required: 125", "New HP: 13,500 (+4,500)", "New Regen Rate: 0 HP/s (+0 HP/s)"]
+                    let l1: [String] =  ["Kills Required: 32", "New HP: 16,500 (+1,500)", "New Regen Rate: 3 HP/s (+3 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 64", "New HP: 18,000 (+3,000)", "New Regen Rate: 6 HP/s (+6 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 96", "New HP: 19,500 (+4,500)", "New Regen Rate: 9 HP/s (+9 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 128", "New HP: 21,000 (+6,000)", "New Regen Rate: 12 HP/s (+12 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 160", "New HP: 22,500 (+7,500)", "New Regen Rate: 15 HP/s (+15 HP/s)"]
                     unitSectionCells = [l1, l2, l3, l4, l5]
                     
+                    
+                case "Experimental Battleship: Tempest":
+                    unitSectionNames = ["Level 1", "Level 2", "Level 3", "Level 4", "Level 5"]
+                    let l1: [String] =  ["Kills Required: 32", "New HP: 66,000 (+6,000)", "New Regen Rate: 10 HP/s (+10 HP/s)"]
+                    let l2: [String] =  ["Kills Required: 64", "New HP: 72,000 (+12,000)", "New Regen Rate: 20 HP/s (+20 HP/s)"]
+                    let l3: [String] =  ["Kills Required: 96", "New HP: 78,000 (+18,000)", "New Regen Rate: 30 HP/s (+30 HP/s)"]
+                    let l4: [String] =  ["Kills Required: 128", "New HP: 84,000 (+24,000)", "New Regen Rate: 40 HP/s (+40 HP/s)"]
+                    let l5: [String] =  ["Kills Required: 160", "New HP: 90,000 (+30,000)", "New Regen Rate: 50 HP/s (+50 HP/s)"]
+                    unitSectionCells = [l1, l2, l3, l4, l5]
                     
                     
                 default:
