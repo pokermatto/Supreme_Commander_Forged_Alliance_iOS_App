@@ -2507,14 +2507,17 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                 case "T3 Support ACU":
                     unitSectionNames = ["Personal Cloaking Generator", "EMP Burst", "Disintegrator Amplifier", "Nanite Missile System", "Resource Allocation System", "Nano-Repair System", "Personal Stealth Generator", "Rapid Fabricator"]
                     
-                    let e1: [String] =  ["Section: Back","Mass: 1,000", "Energy: 45,000", "Build Time: 5,040", "New Rate of Fire: 2.5"]
-                    let e2: [String] =  ["Section: RCH", "Mass: 800", "Energy: 30,000", "Build Time: 3,360", "New Damage Radius: 2.5", "New Weapons Range: 35"]
-                    let e3: [String] =  ["Section: Back", "Mass: 380", "Energy: 9,000", "Build Time: 2,520"]
-                    let e4: [String] =  ["Section: Back", "Mass: 600", "Energy: 18,000 (+100)", "Build Time: 2,520"]
+                    let e1: [String] =  ["Section: Back", "Mass: 5,000", "Energy: 500,000 (-3,500)", "Build Time: 14,000", "New HP: 34,000 (+15,000)"]
+                    let e2: [String] =  ["Section: LCH", "Mass: 1,000", "Energy: 60,000", "Build Time: 3,360"]
+                    let e3: [String] =  ["Section: RCH", "Mass: 800", "Energy: 24,000", "Build Time: 3,360", "New Weapons Range: 35"]
+                    
+                    let e4: [String] =  ["Section: Back", "Mass: 800", "Energy: 30,000", "Build Time: 3,360"]
                     let e5: [String] =  ["Section: RCH", "Mass: 4,500 (+10)", "Energy: 60,000 (+1,000)", "Build Time: 8,400"]
-                    let e6: [String] =  ["Section: LCH", "Mass: 1,000", "Energy: 20,000", "Build Time: 3,360", "New Omni Radius: 80", "New Vision Radius: 45"]
-                    let e7: [String] =  ["Section: Back", "Mass: 2,000", "Energy: 93,750 (-500)", "Build Time: 7,000", "Shield HP: 32,000", "Shield Size: 3", "Shield Regen Rate: 50 HP/s", "Shield Recharge Time: 170s", "Shield Recharge Rate: 188 HP/s"]
-                    let e8: [String] =  ["Section: Back", "Mass: 3,500", "Energy: 400,000 (-1,000)", "Build Time: 11,200", "Shield HP: 52,000", "Shield Size: 20", "Shield Regen Rate: 150 HP/s", "Shield Recharge Time: 215s", "Shield Recharge Rate: 241 HP/s"]
+                    let e6: [String] =  ["Section: Back", "Mass: 2,000", "Energy: 105,000", "Build Time: 6,720", "New Regen Rate: 425 HP/s (+400 HP/s)"]
+                    
+                    let e7: [String] =  ["Section: Back", "Mass: 600", "Energy: 18,000 (-100)", "Build Time: 2,240"]
+                    
+                    let e8: [String] =  ["Section: LCH", "Mass: 800", "Energy: 50,000", "Build Time: 4,200", "New Build Rate: 98"]
                     unitSectionCells = [e1, e2, e3, e4, e5, e6, e7, e8]
                     
                     
