@@ -2482,6 +2482,47 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
             //Cybran Enhancements
             if vweName == "Enhancements"
             {
+                
+                switch unitName
+                {
+                case "ACU":
+                    unitSectionNames = ["Tech 2 Engineering Suite", "Personal Cloaking Generator", "Microwave Accelerator", "Microwave Laser Generator", "Nanite Torpedo Launcher", "Resource Allocation System", "Personal Stealth Generator", "Tech 3 Engineering Suite", "Personal Teleporter"]
+                    
+                    let e1: [String] =  ["Section: LCH", "Mass: 720", "Energy: 18,000", "Build Time: 900", "New HP: 13,500 (+3,500)", "New Regen Rate: 37 HP/s (+20 HP/s)", "New Build Rate: 42"]
+                    let e2: [String] =  ["Section: Back", "Mass: 6,000", "Energy: 750,000 (-3,000)", "Build Time: 4,200", "New HP: 25,000 (+15,000)"]
+                    let e3: [String] =  ["Section: LCH", "Mass: 800", "Energy: 24,000", "Build Time: 800", "New Weapons Range: 30", "New Rate of Fire: 2"]
+    
+                    let e4: [String] =  ["Section: RCH", "Mass: 4,000", "Energy: 500,000", "Build Time: 2,800"]
+                    let e5: [String] =  ["Section: RCH", "Mass: 1,500", "Energy: 37,500", "Build Time: 1,500"]
+                    let e6: [String] =  ["Section: Back", "Mass: 5,000 (+12)", "Energy: 150,000 (+3,500)", "Build Time: 1,400"]
+                    
+                    let e7: [String] =  ["Section: Back", "Mass: 350", "Energy: 5,250 (-50)", "Build Time: 350"]
+                    let e8: [String] =  ["Section: LCH", "Mass: 2,400", "Energy: 50,000", "Build Time: 8,400", "New HP: 17,000 (+7,000)", "New Regen Rate: 52 HP/s (+35 HP/s)", "New Build Rate: 126"]
+                    
+                    let e9: [String] =  ["Section: Back", "Mass: 15,000", "Energy: 1,500,000 (-10,000)", "Build Time: 4,200"]
+                    unitSectionCells = [e1, e2, e3, e4, e5, e6, e7, e8, e9]
+                    
+                    
+                    
+                case "T3 Support ACU":
+                    unitSectionNames = ["Personal Cloaking Generator", "EMP Burst", "Disintegrator Amplifier", "Nanite Missile System", "Resource Allocation System", "Nano-Repair System", "Personal Stealth Generator", "Rapid Fabricator"]
+                    
+                    let e1: [String] =  ["Section: Back","Mass: 1,000", "Energy: 45,000", "Build Time: 5,040", "New Rate of Fire: 2.5"]
+                    let e2: [String] =  ["Section: RCH", "Mass: 800", "Energy: 30,000", "Build Time: 3,360", "New Damage Radius: 2.5", "New Weapons Range: 35"]
+                    let e3: [String] =  ["Section: Back", "Mass: 380", "Energy: 9,000", "Build Time: 2,520"]
+                    let e4: [String] =  ["Section: Back", "Mass: 600", "Energy: 18,000 (+100)", "Build Time: 2,520"]
+                    let e5: [String] =  ["Section: RCH", "Mass: 4,500 (+10)", "Energy: 60,000 (+1,000)", "Build Time: 8,400"]
+                    let e6: [String] =  ["Section: LCH", "Mass: 1,000", "Energy: 20,000", "Build Time: 3,360", "New Omni Radius: 80", "New Vision Radius: 45"]
+                    let e7: [String] =  ["Section: Back", "Mass: 2,000", "Energy: 93,750 (-500)", "Build Time: 7,000", "Shield HP: 32,000", "Shield Size: 3", "Shield Regen Rate: 50 HP/s", "Shield Recharge Time: 170s", "Shield Recharge Rate: 188 HP/s"]
+                    let e8: [String] =  ["Section: Back", "Mass: 3,500", "Energy: 400,000 (-1,000)", "Build Time: 11,200", "Shield HP: 52,000", "Shield Size: 20", "Shield Regen Rate: 150 HP/s", "Shield Recharge Time: 215s", "Shield Recharge Rate: 241 HP/s"]
+                    unitSectionCells = [e1, e2, e3, e4, e5, e6, e7, e8]
+                    
+                    
+                default:
+                    print("WeaponsView Error:" + factionName + "/" + unitName + "/" + vweName)
+                    
+                }
+
             }
         }
         
