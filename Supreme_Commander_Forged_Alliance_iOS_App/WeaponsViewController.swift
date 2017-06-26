@@ -2696,148 +2696,162 @@ class WeaponsViewController: UIViewController , UITableViewDataSource, UITableVi
                     let w4: [String] =  ["Type: Death, Normal", "Damage: 5,000", "Area Damage Radius: 4", "Firing Tolerance: 2°"]
                     unitSectionCells = [w1, w2, w3, w4]
                     
-                case "T1 Land Scout: Snoop":
-                    unitSectionNames = ["Tom Cat Machinegun"]
-                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 2", "Range: 0-25", "Projectile: 4 damage", "Muzzle Velocity: 25", "Fire Cycle: 1 projectile every 2 seconds", "Firing Tolerance: 2°"]
+                    
+                case "T1 Mobile Light Artillery: Medusa":
+                    unitSectionNames = ["EMP Grenade Launcher"]
+                    let w1: [String] =  ["Type: Artillery, Normal", "DPS: 38.33", "Range: 5-30", "Area Damage Radius: 2", "Projectile: 230 damage", "Muzzle Velocity: 14", "Fire Cycle: 1 projectile every 6 seconds", "Firing Randomness: 1.35°", "Firing Tolerance: 1°"]
                     unitSectionCells = [w1]
                     
-                case "T1 Mobile Light Artillery: Lobo":
-                    unitSectionNames = ["Fragmentation Artillery"]
-                    let w1: [String] =  ["Type: Artillery, Normal", "DPS: 60.24", "Range: 5-30", "Area Damage Radius: 1", "Projectile: 100 damage", "Muzzle Velocity: 14", "Fire Cycle: 5 projectiles every 8.3 seconds", "Firing Randomness: 0.5°", "Firing Tolerance: 2°"]
-                    unitSectionCells = [w1]
-                    
-                case "T1 Mobile Anti-Air Gun: Archer":
-                    unitSectionNames = ["Linked Railgun"]
-                    let w1: [String] =  ["Type: Anti-Air, Normal", "DPS: 16", "Range: 0-32", "Projectile: 8 damage", "Muzzle Velocity: 45", "Fire Cycle: 2 projectiles per second", "Firing Tolerance: 1°"]
-                    unitSectionCells = [w1]
-                    
-                case "T1 Light Assault Bot: Mech Marine":
-                    unitSectionNames = ["Tom Cat Machinegun"]
-                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 23.33", "Range: 0-14", "Projectile: 7 damage", "Muzzle Velocity: 25", "Fire Cycle: 1 projectile every 0.3 seconds", "Firing Tolerance: 2°"]
-                    unitSectionCells = [w1]
-                    
-                case "T1 Medium Tank: MA12 Striker":
-                    unitSectionNames = ["Gauss Cannon"]
-                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 24", "Range: 0-18", "Area Damage Radius: 0", "Projectile: 24 damage", "Muzzle Velocity: 25", "Fire Cycle: 1 projectile per second", "Firing Tolerance: 2°"]
-                    unitSectionCells = [w1]
-                    
-                case "T2 Gatling Bot: Mongoose":
-                    unitSectionNames = ["Gatling Plasma Cannon", "Heavy Fragmentation Grenade Launcher"]
-                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 32.14", "Range: 0-34", "Projectile: 15 damage", "Muzzle Velocity: 25", "Fire Cycle: 15 times 1 projectile every 0.2s","Reload: 4.2 seconds", "Firing Randomness: 0.4°", "Firing Tolerance: 1°"]
-                    let w2: [String] =  ["Type: Direct Fire, Normal", "DPS: 29.85", "Range: 0-34", "Area Damage Radius: 2", "Projectile: 50 damage", "Muzzle Velocity: 12.8", "Fire Cycle: 4 times 1 projectile every 0.2s", "Reload: 6.1s", "Firing Randomness: 2.5°", "Firing Tolerance: 1°"]
+                case "T1 Mobile Anti-Air Gun: Sky Slammer":
+                    unitSectionNames = ["Nanodart Launcher"]
+                    let w1: [String] =  ["Type: Anti-Air, Normal", "DPS: 16", "Range: 0-32", "Projectile: 8 damage", "Muzzle Velocity: 15", "Lifetime: 3.5", "Fire Cycle: 1 projectile every 0.5 seconds", "Firing Randomness: 1.5°", "Firing Tolerance: 2°"]
+                    let w2: [String] =  ["Type: Direct Fire, Normal", "DPS: 20", "Range: 0-18", "Projectile: 10 damage", "Muzzle Velocity: 20", "Lifetime: 1.6", "Fire Cycle: 1 projectile every 0.5 seconds", "Firing Randomness: 1.5°", "Firing Tolerance: 2°"]
                     unitSectionCells = [w1, w2]
                     
-                case "T2 Mobile Missile Launcher: Flapjack":
-                    unitSectionNames = ["Long Range Cruise Missile"]
-                    let w1: [String] =  ["Type: Missile, Normal", "DPS: 60", "Range: 5-60", "Area Damage Radius: 0.5", "Projectile: 300 damage", "Muzzle Velocity: 3", "Lifetime: 20", "Fire Cycle: 1 projectile every 5 seconds", "Firing Tolerance: 5°"]
+                case "T1 Light Assault Bot: Hunter":
+                    unitSectionNames = ["Light Pulse Laser"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 21", "Range: 0-14", "Projectile: 7 damage", "Muzzle Velocity: 25", "Fire Cycle: 3 projectile every second", "Firing Tolerance: 2°"]
                     unitSectionCells = [w1]
                     
-                case "T2 Heavy Tank: Pillar":
-                    unitSectionNames = ["Gauss Cannon"]
-                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 53.85", "Range: 0-23", "Area Damage Radius: 0", "Projectile: 35 damage", "Muzzle Velocity: 30", "Fire Cycle: 2 projectiles every 1.3 seconds", "Firing Tolerance: 1°"]
+                case "T1 Assault Bot: Mantis":
+                    unitSectionNames = ["Light Pulse Laser"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 26.67", "Range: 0-18", "Area Damage Radius: 0", "Projectile: 8 damage", "Muzzle Velocity: 25", "Fire Cycle: 1 projectile every 0.3 seconds", "Firing Tolerance: 2°"]
                     unitSectionCells = [w1]
                     
-                case "T2 Amphibious Tank: Riptide":
-                    unitSectionNames = ["Hell's Fury Riot Gun"]
-                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 90", "Range 0-18", "Projectile: 13.5 damage", "Muzzle Velocity: 40", "Fire Cycle: 2 projectiles every 0.3 seconds", "Firing Tolerance: 2°"]
+                case "T2 Rocket Bot: Hoplite":
+                    unitSectionNames = ["Iridium Rocket Pack"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 45", "Range: 0-37", "Area Damage Radius: 2", "Projectile: 60 damage", "Muzzle Velocity: 15", "Fire Cycle: 3 times 1 projectile every 0.1s","Reload: 3.8 seconds", "Firing Tolerance: 0.1°"]
                     unitSectionCells = [w1]
                     
-                case "T2 Mobile AA Flak Artillery: Sky Boxer":
-                    unitSectionNames = ["Fragmentation Flank"]
-                    let w1: [String] =  ["Type: Anti-Air, Normal", "DPS: 144", "Range 0-40", "Area Damage Radius: 4", "Projectile: 36 damage", "Muzzle Velocity: 20", "Fire Cycle: 2 projectiles every 0.5 seconds", "Firing Randomness: 2.5°", "Firing Tolerance: 2°"]
+                case "T2 Mobile Missile Launcher: Viper":
+                    unitSectionNames = ["Loa Tactical Missile"]
+                    let w1: [String] =  ["Type: Missile, Normal", "DPS: 60.61", "Range: 4-60", "Area Damage Radius: 0.5", "Projectile: 200 damage", "Muzzle Velocity: 3", "Lifetime: 20", "Fire Cycle: 1 projectile every 3.3 seconds", "Firing Tolerance: 2°"]
                     unitSectionCells = [w1]
                     
-                case "T3 Heavy Assault Bot: Titan":
-                    unitSectionNames = ["Heavy Plasma Cannon"]
-                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 166.67", "Range 0-20", "Projectile: 50 damage", "Muzzle Velocity: 30", "Fire Cycle: 1 projectile every 0.3 seconds", "Firing Tolerance: 2°"]
+                case "T2 Heavy Tank: Rhino":
+                    unitSectionNames = ["Particle Cannon"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 83.33", "Range: 0-23", "Projectile: 25 damage", "Muzzle Velocity: 100", "Fire Cycle: 2 projectiles every 0.6 seconds", "Firing Tolerance: 2°"]
                     unitSectionCells = [w1]
                     
-                case "T3 Mobile Heavy Artillery: Demolisher":
-                    unitSectionNames = ["Anti-Matter Artillery"]
-                    let w1: [String] =  ["Type: Artillery, Normal", "DPS: 75", "Range 0-90", "Area Damage Radius: 4", "Projectile: 750 damage", "Muzzle Velocity: 22", "Lifetime: 20", "Fire Cycle: 1 projectile every 10 seconds", "Firing Randomness: 1.25°", "Firing Tolerance: 2°"]
-                    unitSectionCells = [w1]
-                    
-                case "T3 Armored Assault Bot: Percival":
-                    unitSectionNames = ["Ionized Plasma Cannon"]
-                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 400", "Range 0-35", "Area Damage Radius: 0", "Projectile: 160 damage", "Muzzle Velocity: 35", "Fire Cycle: 1 projectile every 4 seconds", "Firing Tolerance: 2°"]
-                    unitSectionCells = [w1]
-                    
-                case "T3 Mobile Missile Platform: Spearhead":
-                    unitSectionNames = ["Long Range Cruise Missile"]
-                    let w1: [String] =  ["Type: Missile, Normal", "DPS: 240", "Range: 5-80", "Area Damage Radius: 0.5", "Projectile: 800 damage", "Muzzle Velocity: 3", "Lifetime: 20", "Fire Cycle: 3 projectile every 10 seconds", "Firing Tolerance: 5°"]
-                    unitSectionCells = [w1]
-                    
-                case "Experimental Mobile Factory: Fatboy":
-                    unitSectionNames = ["Gauss Cannon (4)", "Hell's Fury Riot Gun (2)", "Linked Railgun (2)", "Angler Torpedo", "Death Weapon"]
-                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 750", "Range: 0-100", "Area Damage Radius: 1.5", "Projectile: 250 damage", "Muzzle Velocity: 25", "Fire Cycle: 3 projectiles per second", "Firing Randomness: 1.1°", "Firing Tolerance: 2°"]
-                    let w2: [String] =  ["Type: Direct Fire, Normal", "DPS: 500", "Range: 0-45", "Projectile: 150 damage", "Muzzle Velocity: 45", "Fire Cycle: 1 projectile every 0.3 seconds", "Firing Tolerance: 2°"]
-                    let w3: [String] =  ["Type: Anti-Air, Normal", "DPS: 57.14", "Range: 0-45", "Projectile: 20 damage", "Muzzle Velocity: 90", "Fire Cycle: 2 projectiles every 0.7 seconds", "Firing Randomness: 0.01°", "Firing Tolerance: 0.05°"]
-                    let w4: [String] =  ["Type: Anti-Navy, Normal", "DPS: 75", "Range: 0-40", "Projectile: 75 damage", "Muzzle Velocity: 5", "Lifetime: 9", "Fire Cycle: 4 projectiles every 4 seconds", "Firing Tolerance: 2°"]
-                    let w5: [String] =  ["Type: Death, Normal", "Damage: 4,000", "Area Damage Radius: 7"]
-                    unitSectionCells = [w1, w2, w3, w4, w5]
-                    
-                    
-                case "T1 Frigate: Thunderhead Class":
-                    unitSectionNames = ["Gauss Cannon", "Linked Railgun"]
-                    let w1: [String] =  ["Type: Direct Fire Naval, Normal", "DPS: 50", "Range: 0-28", "Area Damage Radius: 1", "Projectile: 85 damage", "Muzzle Velocity: 30", "Fire Cycle: 1 projectile every 1.7 seconds", "Firing Randomness: 0.2°", "Firing Tolerance: 2°"]
-                    let w2: [String] =  ["Type: Anti-Air, Normal", "DPS: 10", "Range: 0-48", "Projectile: 5 damage", "Muzzle Velocity: 45", "Fire Cycle: 2 projectiles every second", "Firing Tolerance: 1°"]
-                    unitSectionCells = [w1, w2]
-                    
-                case "T1 Attack Submarine: Tigershark":
-                    unitSectionNames = ["Angler Torpedo", "Light Plasma Cannon"]
-                    let w1: [String] =  ["Type: Anti-Navy, Normal", "DPS: 37.5", "Range: 0-32", "Projectile: 75 damage", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 2 times 1 projectile every 0.7s","Reload: 3.3 seconds", "Firing Tolerance: 2°"]
-                    let w2: [String] =  ["Type: Direct Fire Naval, Normal", "DPS: 25", "Range: 0-32", "Projectile: 25 damage", "Muzzle Velocity: 30", "Lifetime: 1.6", "Fire Cycle: 1 projectile every second", "Firing Tolerance: 2°"]
-                    unitSectionCells = [w1, w2]
-                    
-                case "T2 Destroyer: Valiant Class":
-                    unitSectionNames = ["Gauss Cannon (2)", "Linked Railgun", "Angler Torpedo", "Smart Charge Anti-Torpedo"]
-                    let w1: [String] =  ["Type: Direct Fire Naval, Normal", "DPS: 137.5", "Range: 0-60", "Area Damage Radius: 1", "Projectile: 275 damage", "Muzzle Velocity: 30", "Fire Cycle: 2 projectiles every 4 seconds", "Firing Randomness: 0.35°", "Firing Tolerance: 2°"]
-                    let w2: [String] =  ["Type: Anti-Air, Normal", "DPS: 14.29", "Range: 0-60", "Projectile: 10 damage", "Muzzle Velocity: 60", "Fire Cycle: 2 projectiles every 1.4 seconds", "Firing Tolerance: 1°"]
-                    let w3: [String] =  ["Type: Anti-Navy, Normal", "DPS: 30", "Range: 0-45", "Projectile: 150 damage", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 2 times 1 projectiles every 0.7s","Reload: 9.3 seconds", "Firing Tolerance: 2°"]
-                    let w4: [String] =  ["Type: Defense, Normal", "DPS: 0.4", "Range: 15-30", "Projectile: 2 damage", "Muzzle Velocity: 5", "Lifetime: 3", "Fire Cycle: 2 projectiles every 10 seconds", "Firing Tolerance: 15°"]
-                    unitSectionCells = [w1, w2, w3, w4]
-                    
-                case "T2 Cruiser: Governor Class":
-                    unitSectionNames = ["Long Range Cruise Missile", "Gauss Cannon", "Flayer SAM Launcher", "Phalanx Anti-Missile"]
-                    let w1: [String] =  ["Type: Missile, Normal", "DPS: 120", "Range: 12.5-150", "Area Damage Radius: 3", "Projectile: 300 damage", "Muzzle Velocity: 5", "Lifetime: 20", "Fire Cycle: 4 times 1 projectile every 1.4s", "Reload: 5.8 seconds", "Firing Tolerance: 2°"]
-                    let w2: [String] =  ["Type: Direct Fire Naval, Normal", "DPS: 50", "Range: 0-60", "Area Damage Radius: 1", "Projectile: 200 damage", "Muzzle Velocity: 30", "Fire Cycle: 1 projectile every 4 seconds", "Firing Randomness: 0.5°", "Firing Tolerance: 2°"]
-                    let w3: [String] =  ["Type: Anti-Air, Normal", "DPS: 500", "Range: 0-75", "Projectile: 250 damage", "Muzzle Velocity: 30", "Lifetime: 4", "Fire Cycle: 4 times 1 projectile every 0.3s","Reload: 9.3 seconds", "Firing Tolerance: 10°"]
-                    let w4: [String] =  ["Type: Defense, Normal", "DPS: 0.5", "Range: 0-50", "Projectile: 1 damage", "Muzzle Velocity: 100", "Fire Cycle: 1 projectile every 2 seconds", "Firing Tolerance: 5°"]
-                    unitSectionCells = [w1, w2, w3, w4]
-                    
-                case "T2 Torpedo Boat: Cooper":
-                    unitSectionNames = ["Angler Torpedo", "Smart Charge Anti-Torpedo"]
-                    let w1: [String] =  ["Type: Anti-Navy, Normal", "DPS: 96.97", "Range: 0-50", "Projectile: 80 damage", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 4 times 1 projectile every 0.3s","Reload: 2.4 seconds", "Firing Tolerance: 2°"]
-                    let w2: [String] =  ["Type: Defense, Normal", "DPS: 1.6", "Range: 10-25", "Projectile: 2 damage", "Muzzle Velocity: 5", "Lifetime: 2.5", "Fire Cycle: 2 projectiles every 2.5 seconds", "Firing Tolerance: 15°"]
-                    unitSectionCells = [w1, w2]
-                    
-                case "T3 Battleship: Summit Class":
-                    unitSectionNames = ["Gauss Cannon (3)", "Linked Railgun (4)", "Phalanx Anti-Missile (2)"]
-                    let w1: [String] =  ["Type: Direct Fire Naval, Normal", "DPS: 150", "Range: 0-150", "Area Damage Radius: 3", "Projectile: 1,000 damage", "Muzzle Velocity: 30", "Fire Cycle: 3 projectiles every 20 seconds", "Firing Randomness: 0.3°", "Firing Tolerance: 2°"]
-                    let w2: [String] =  ["Type: Anti-Air, Normal", "DPS: 14.12", "Range: 0-60", "Projectile: 12 damage", "Muzzle Velocity: 90", "Fire Cycle: 2 projectiles every 1.7 seconds", "Firing Tolerance: 1°"]
-                    let w3: [String] =  ["Type: Defense, Normal", "DPS: 0.5", "Range: 0-50", "Projectile: 1 damage", "Muzzle Velocity: 100", "Fire Cycle: 1 projectile every 2 seconds", "Firing Tolerance: 5°"]
+                case "T2 Amphibious Tank: Wagner":
+                    unitSectionNames = ["Meson Rocket", "Heavy Electron Bolter", "Meson Torpedo"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 50", "Range 0-22", "Area Damage Radius: 0", "Projectile: 200 damage", "Muzzle Velocity: 15", "Fire Cycle: 1 projectile every 4 seconds", "Firing Tolerance: 2°"]
+                    let w2: [String] =  ["Type: Direct Fire, Normal", "DPS: 50", "Range 0-22", "Projectile: 50 damage", "Muzzle Velocity: 30", "Fire Cycle: 2 projectiles every 2 seconds", "Firing Tolerance: 2°"]
+                    let w3: [String] =  ["Type: Direct Fire, Normal", "DPS: 3", "Range 0-32", "Projectile: 6 damage", "Muzzle Velocity: 5", "Lifetime: 6", "Fire Cycle: 2 times 1 projectile every 0.7 seconds", "Reload: 3.3 seconds", "Firing Tolerance: 2°"]
                     unitSectionCells = [w1, w2, w3]
                     
-                case "T3 Strategic Missile Submarine: Ace":
-                    unitSectionNames = ["Long Range Cruise Missile", "Nuclear Warhead"]
-                    let w1: [String] =  ["Type: Missile, Normal", "DPS: 200", "Range: 15-256", "Area Damage Radius: 3", "Projectile: 2,000 damage", "Muzzle Velocity: 5", "Lifetime: 50", "Fire Cycle: 1 projectile every 10 seconds", "Firing Tolerance: 2°"]
-                    let w2: [String] =  ["Type: Missile, Normal", "Range: 128-410", "Area Damage Radius: 0", "Nuke Inner-Ring Damage: 22,000", "Nuke Inner-Ring Radius: 30", "Nuke Outer-Ring Damage: 3,000", "Nuke Outer-Ring Radius: 40", "Firing Tolerance: 2°"]
+                case "T2 Mobile AA Flak Artillery: Banger":
+                    unitSectionNames = ["Electron Flak"]
+                    let w1: [String] =  ["Type: Anti-Air, Normal", "DPS: 150", "Range 0-40", "Area Damage Radius: 4", "Projectile: 90 damage", "Muzzle Velocity: 20", "Fire Cycle: 1 projectile every 0.6 seconds", "Firing Randomness: 2.5°", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                    
+                case "T2 Mobile Bomb: Fire Beetle":
+                    unitSectionNames = ["Suicide"]
+                    let w1: [String] =  ["Type: Kamikaze, FireBeetleExplosion", "Damage: 3,500", "Range 0-4", "Area Damage Radius: 4.5", "Firing Tolerance: 180°"]
+                    unitSectionCells = [w1]
+                    
+                case "T3 Siege Assault Bot: Loyalist":
+                    unitSectionNames = ["Disintegrator Pulse Laser", "Heavy Electron Bolter", "EMP"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 159.09", "Range: 0-25", "Projectile: 175 damage", "Muzzle Velocity: 30", "Fire Cycle: 3 times 1 projectile every 0.2s", "Reload: 2.9 seconds", "Firing Tolerance: 2°"]
+                    let w2: [String] =  ["Type: Direct Fire, Normal", "DPS: 30", "Range: 0-25", "Projectile: 12 damage", "Muzzle Velocity: 40", "Fire Cycle: 1 projectile every 0.4 seconds", "Firing Tolerance: 2°"]
+                    let w3: [String] =  ["Type: Direct Fire, EMP", "DPS: 0.5", "Range: 0-3", "Area Damage Radius: 10", "Projectile: 1 damage", "Muzzle Velocity: 0", "Fire Cycle: 1 times 1 projectile every 0.9s", "Reload: 2 seconds", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1, w2, w3]
+                    
+                case "T3 Mobile Heavy Artillery: Trebuchet":
+                    unitSectionNames = ["Proton Artillery"]
+                    let w1: [String] =  ["Type: Artillery, Normal", "DPS: 67,16", "Range 0-90", "Area Damage Radius: 7", "Projectile: 450 damage", "Muzzle Velocity: 22", "Fire Cycle: 1 projectile every 6.7 seconds", "Firing Randomness: 2°", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                    
+                case "T3 Armored Assault Bot: The Brick":
+                    unitSectionNames = ["Heavy Disintegrator Pulse Laser", "Nanite Torpedo Launcher", "Anti-Torpedo Flare"]
+                    let w1: [String] =  ["Type: Direct Fire, Normal", "DPS: 375", "Range: 0-35", "Projectile: 150 damage", "Muzzle Velocity: 35", "Fire Cycle: 1 projectile every 0.4s", "Firing Tolerance: 1°"]
+                    let w2: [String] =  ["Type: Anti Navy, Normal", "DPS: 10", "Range: 0-32", "Projectile: 5 times 4 dmg every 0.05s", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 2 times 1 projectile every 0.7s", "Reload: 3.3 seconds", "Firing Tolerance: 2°"]
+                    let w3: [String] =  ["Type: Defense, Normal", "DPS: 0.19", "Range: 15-32", "Projectile: 3 damage", "Muzzle Velocity: 5", "Lifetime: 4", "Fire Cycle: 1 projectile every 15.4s", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1, w2, w3]
+                    
+                    
+                case "Experimental Mobile Rapid-Fire Artillery: Scathis":
+                    unitSectionNames = ["Proton Artillery"]
+                    let w1: [String] =  ["Type: Artillery, Normal", "DPS: 1,578.95", "Range: 50-330", "Area Damage Radius: 7", "Projectile: 3,000 damage", "Muzzle Velocity: 160", "Lifetime: 100", "Fire Cycle: 1 projectile every 1.9 seconds", "Energy Required: 2,000 (-2,000)", "Firing Randomness: 0.3°"]
+                    unitSectionCells = [w1]
+                case "Experimental Spiderbot: Monkeylord":
+                    unitSectionNames = ["Heavy Microwave Laser", "Heavy Electron Bolter (2)", "Nanite Missile System (2)", "Meson Torpedo", "Death Weapon"]
+                    let w1: [String] =  ["Type: Direct Fire Experimental, Normal", "DPS: 4,000", "Range: 4-30", "Area Damage Radius: 0.5", "Continuous Beam: 400 damage"]
+                    let w2: [String] =  ["Type: Direct Fire, Normal", "DPS: 214.29", "Range: 0-64", "Projectile: 150 damage", "Muzzle Velocity: 35", "Fire Cycle: 1 projectile every 0.7 seconds", "Firing Tolerance: 2°"]
+                    let w3: [String] =  ["Type: Anti Air, Normal", "DPS: 40", "Range: 0-64", "Area Damage Radius: 0", "Projectile: 40 damage", "Muzzle Velocity: 30", "Lifetime: 7", "Fire Cycle: 2 projectiles every 2 seconds", "Firing Tolerance: 2°"]
+                    let w4: [String] =  ["Type: Anti Navy, Normal", "DPS: 50", "Range: 0-45", "Projectile: 50 damage", "Muzzle Velocity: 5", "Lifetime: 9", "Fire Cycle: 4 projectiles every 4 seconds", "Firing Tolerance: 2°"]
+                    let w5: [String] =  ["Type: Death, Normal", "Damage: 4,000", "Area Damage Radius: 7"]
+                    unitSectionCells = [w1, w2, w3, w4, w5]
+                case "Experimental Megabot: Megalith":
+                    unitSectionNames = ["Proton Cannon (2)", "Nanite Torpedo Launcher", "Anti-Torpedo Flare", "Electron Flak", "Brackman Hack Peg Launcher", "Megalith Death"]
+                    let w1: [String] =  ["Type: Direct Fire Naval, Normal", "DPS: 1,153.85", "Range: 4-64", "Area Damage Radius: 2", "Projectile: 750 damage", "Muzzle Velocity: 65", "Lifetime: 0.9", "Fire Cycle: 2 projectiles every 1.3 seconds", "Firing Randomness: 0.3°", "Firing Tolerance: 2°"]
+                    let w2: [String] =  ["Type: Anti Navy, Normal", "DPS: 307.69", "Range: 0-45", "Projectile: 5 times 20 dmg every 0.05s", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 4 projectiles every 1.3 seconds", "Firing Tolerance: 2°"]
+                    let w3: [String] =  ["Type: Defense, Normal", "DPS: 1.56", "Range: 0-25", "Projectile: 2 damage", "Muzzle Velocity: 5", "Lifetime: 3", "Fire Cycle: 6 projectiles every 7.7 seconds", "Firing Tolerance: 2°"]
+                    let w4: [String] =  ["Type: Anti Air, Normal", "DPS: 30", "Range: 0-40", "Area Damage Radius: 2", "Projectile: 18 damage", "Muzzle Velocity: 20", "Fire Cycle: 1 projectile every 0.6 seconds", "Firing Tolerance: 2°"]
+                    let w5: [String] =  ["Type: Artillery, Normal", "DPS: 0", "Range: 6-30", "Area Damage Radius: 0", "Projectile: 0 damage", "Muzzle Velocity: 14", "Fire Cycle: 1 projectile every 33.3 seconds"]
+                    let w6: [String] =  ["Type: Death, Normal", "Damage: 7,500", "Area Damage Radius: 4"]
+                    unitSectionCells = [w1, w2, w3, w4, w5, w6]
+                    
+                    
+                case "T1 Frigate: Trident Class":
+                    unitSectionNames = ["Proton Cannon", "Electron Autocannon"]
+                    let w1: [String] =  ["Type: Direct Fire Naval, Normal", "DPS: 64.29", "Range: 0-28", "Area Damage Radius: 1", "Projectile: 45 damage", "Muzzle Velocity: 30", "Lifetime: 1.5", "Fire Cycle: 1 projectile every 0.7 seconds", "Firing Randomness: 0.2°", "Firing Tolerance: 2°"]
+                    let w2: [String] =  ["Type: Anti-Air, Normal", "DPS: 16", "Range: 0-48", "Projectile: 4 damage", "Muzzle Velocity: 60", "Fire Cycle: 2 projectiles every 0.5 seconds", "Firing Tolerance: 1°"]
                     unitSectionCells = [w1, w2]
                     
-                case "T3 Battlecruiser: Neptune Class":
-                    unitSectionNames = ["Dual-Barreled Hiro Plasma Cannon (2)", "Angler Torpedo", "Phalanx Anti-Missile", "Smart Charge Anti-Torpedo"]
-                    let w1: [String] =  ["Type: Direct Fire Naval, Normal", "DPS: 282.09", "Range: 0-80", "Area Damage Radius: 1", "Beam: 9 times every 0.1 seconds 105 dmg", "Fire Cycle: 2 beams every 6.7 seconds"]
-                    let w2: [String] =  ["Type: Anti-Navy, Normal", "DPS: 20", "Range: 0-60", "Projectile: 50 damage", "Muzzle Velocity: 8", "Lifetime: 7", "Fire Cycle: 4 times 1 projectile every 0.7s", "Reload: 7.9 seconds", "Firing Tolerance: 2°"]
-                    let w3: [String] =  ["Type: Defense, Normal", "DPS: 0.5", "Range: 0-50", "Projectile: 1 damage", "Muzzle Velocity: 100", "Fire Cycle: 1 projectile every 2 seconds", "Firing Tolerance: 5°"]
-                    let w4: [String] =  ["Type: Defense, Normal", "DPS: 0.4", "Range: 10-30", "Projectile: 2 damage", "Muzzle Velocity: 5", "Lifetime: 6", "Fire Cycle: 2 projectiles every 10 seconds", "Firing Tolerance: 15°"]
+                case "T1 Attack Submarine: Sliver":
+                    unitSectionNames = ["Nanite Torpedo", "Light Pulse Laser"]
+                    let w1: [String] =  ["Type: Anti-Navy, Normal", "DPS: 37.5", "Range: 0-32", "Projectile: 5 times 10 dmg every 0.1s", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 3 times 1 projectile every 0.7s","Reload: 2.6 seconds", "Firing Tolerance: 2°"]
+                    let w2: [String] =  ["Type: Direct Fire Naval, Normal", "DPS: 20", "Range: 0-32", "Projectile: 10 damage", "Muzzle Velocity: 30", "Lifetime: 1.6", "Fire Cycle: 1 projectile every 0.5 seconds", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1, w2]
+                    
+                case "T2 Destroyer: Salem Class":
+                    unitSectionNames = ["Proton Cannon", "Electron Autocannon", "Nanite Torpedo", "Anti Torpedo Solution"]
+                    let w1: [String] =  ["Type: Direct Fire Naval, Normal", "DPS: 230", "Range: 0-80", "Area Damage Radius: 1", "Projectile: 115 damage", "Muzzle Velocity: 30", "Fire Cycle: 2 projectiles every 1 seconds", "Firing Randomness: 0.3°", "Firing Tolerance: 2°"]
+                    let w2: [String] =  ["Type: Anti-Air, Normal", "DPS: 57.14", "Range: 0-60", "Projectile: 10 damage", "Muzzle Velocity: 60", "Fire Cycle: 4 projectiles every 0.7 seconds", "Firing Tolerance: 1°"]
+                    let w3: [String] =  ["Type: Anti-Navy, Normal", "DPS: 100", "Range: 0-45", "Projectile: 5 times 40 dmg every 0.05s", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 2 times 1 projectile every 0.7s", "Reload: 3.3 seconds", "Firing Tolerance: 2°"]
+                    let w4: [String] =  ["Type: Defense, Normal", "DPS: 1.05", "Range: 15-30", "Projectile: 2 damage", "Muzzle Velocity: 5", "Lifetime: 3", "Fire Cycle: 2 projectiles every 3.8 seconds", "Firing Tolerance: 2°"]
                     unitSectionCells = [w1, w2, w3, w4]
                     
-                case "Experimental Aircraft Carrier: Atlantis":
-                    unitSectionNames = ["Angler Torpedo", "Flayer SAM Launcher (4)"]
-                    let w1: [String] =  ["Type: Anti-Navy, Normal", "DPS: 400", "Range: 0-80", "Projectile: 200 damage", "Muzzle Velocity: 5", "Lifetime: 9", "Fire Cycle: 4 projectiles every 2 seconds", "Firing Tolerance: 60°"]
-                    let w2: [String] =  ["Type: Anti-Air, Normal", "DPS: 80", "Range: 0-100", "Area Damage Radius: 1.5",  "Projectile: 280 damage", "Muzzle Velocity: 30", "Lifetime: 6", "Fire Cycle: 1 projectile every 3.5 seconds", "Firing Tolerance: 100°"]
+                case "T2 Cruiser: Siren Class":
+                    unitSectionNames = ["Proton Cannon", "Nanodart Launcher", "Zapper Anti Missile", "Nanodart Launcher"]
+                    let w1: [String] =  ["Type: Direct Fire Naval, Normal", "DPS: 184", "Range: 0-80", "Area Damage Radius: 1", "Projectile: 92 damage", "Muzzle Velocity: 30", "Lifetime: 2.6", "Fire Cycle: 2 projectiles every second", "Firing Randomness: 0.3°", "Firing Tolerance: 2°"]
+                    let w2: [String] =  ["Type: Anti Air, Normal", "DPS: 530.77", "Range: 0-75", "Projectile: 115 damage", "Muzzle Velocity: 20", "Lifetime: 5.5", "Fire Cycle: 6 projectiles every 1.3 seconds", "Firing Tolerance: 10°"]
+                    let w3: [String] =  ["Type: Defense, Normal", "DPS: 0.5", "Range: 0-50", "Beam: 1 damage", "Fire Cycle: 1 beam every 2 seconds", "Firing Tolerance: 5°"]
+                    let w4: [String] =  ["Type: Direct Fire Naval, Normal", "DPS: 180", "Range: 0-80", "Projectile: 60 damage", "Muzzle Velocity: 30", "Lifetime: 5.5", "Fire Cycle: 6 times 1 projectile every 0.2 seconds", "Reload: 1 second", "Firing Randomness: 0.3°", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1, w2, w3, w4]
+                    
+                case "T2 Submarine Killer: Barracuda":
+                    unitSectionNames = ["Nanite Torpedo", "Anti-Torpedo Flare"]
+                    let w1: [String] =  ["Type: Anti-Navy, Normal", "DPS: 112.5", "Range: 0-45", "Projectile: 5 times 15 dmg every 0.05 seconds", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 6 times 1 projectile every 0.3s", "Reload: 2.5 seconds", "Firing Tolerance: 2°"]
+                    let w2: [String] =  ["Type: Defense, Normal", "DPS: 0.2", "Range: 0-25", "Projectile: 2 damage", "Muzzle Velocity: 5", "Lifetime: 6", "Fire Cycle: 2 projectiles every 20 seconds", "Firing Tolerance: 2°"]
                     unitSectionCells = [w1, w2]
                     
+                case "T2 Counter-Intelligence Boat: CI:18 Mermaid":
+                    unitSectionNames = ["Anti-Torpedo Flare"]
+                    let w1: [String] =  ["Type: Defense, Normal", "DPS: 1.05", "Range: 15-30", "Projectile: 2 damage", "Muzzle Velocity: 5", "Lifetime: 6", "Fire Cycle: 2 projectiles every 3.8 seconds", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1]
+                    
+                case "T3 Battleship: Galaxy Class":
+                    unitSectionNames = ["Proton Cannon (2)", "Electron Autocannon (2)", "Nanite Torpedo", "Zapper Anti Missile (2)"]
+                    let w1: [String] =  ["Type: Direct Fire Naval, Normal", "DPS: 225", "Range: 0-128", "Area Damage Radius: 2", "Projectile: 900 damage", "Muzzle Velocity: 30", "Fire Cycle: 1 projectile every 4 seconds", "Firing Randomness: 0.3°", "Firing Tolerance: 2°"]
+                    let w2: [String] =  ["Type: Anti-Air, Normal", "DPS: 30", "Range: 0-45", "Projectile: 6 damage", "Muzzle Velocity: 90", "Fire Cycle: 4 projectiles every 0.8 seconds", "Firing Tolerance: 1°"]
+                    let w3: [String] =  ["Type: Anti Navy, Normal", "DPS: 20", "Range: 0-60", "Projectile: 5 times 10 dmg every 0.05s", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 4 times 1 projectile every 0.7 seconds", "Reload: 7.9 seconds", "Firing Tolerance: 2°"]
+                    let w4: [String] =  ["Type: Defense, Normal", "DPS: 0.5", "Range: 0-50", "Beam: 1 damage", "Fire Cycle: 1 times 1 projectile every 0.7s", "Reload: 2 seconds", "Firing Tolerance: 5°"]
+                    unitSectionCells = [w1, w2, w3, w4]
+                
+                case "T3 Aircraft Carrier: Command Class":
+                    unitSectionNames = ["Electron Autocannon (4)", "Zapper Anti Missile"]
+                    let w1: [String] =  ["Type: Anti-Air, Normal", "DPS: 160", "Range: 0-100", "Projectile: 20 damage", "Muzzle Velocity: 90", "Fire Cycle: 4 projectiles every 0.5 seconds", "Firing Tolerance: 0.1°"]
+                    let w2: [String] =  ["Type: Defense, Normal", "DPS: 0.5", "Range: 0-50", "Beam: 1 damage", "Fire Cycle: 1 beam every 2 seconds", "Firing Tolerance: 5°"]
+                    unitSectionCells = [w1, w2]
+                    
+                case "T3 Strategic Missile Submarine: Plan B":
+                    unitSectionNames = ["Loa Tactical Missile", "Nanite Torpedo", "EMP Flux Warhead"]
+                    let w1: [String] =  ["Type: Missile, Normal", "DPS: 200", "Range: 15-256", "Area Damage Radius: 4", "Projectile: 2,000 damage", "Muzzle Velocity: 5", "Lifetime: 50", "Fire Cycle: 1 projectile every 10 seconds", "Firing Tolerance: 2°"]
+                    let w2: [String] =  ["Type: Anti Navy, Normal", "DPS: 225", "Range: 0-80", "Projectile: 5 times 45 dmg every 0.05s", "Muzzle Velocity: 5", "Lifetime: 7", "Fire Cycle: 2 projectiles every 2 seconds", "Firing Tolerance: 2°"]
+                    let w3: [String] =  ["Type: Missile, Normal", "Range: 128-410", "Nuke Inner-Ring Damage: 22,000", "Nuke Inner-Ring Radius: 30", "Nuke Outer-Ring Damage: 3,000", "Nuke Outer-Ring Radius: 40", "Firing Tolerance: 2°"]
+                    unitSectionCells = [w1, w2, w3]
                     
                     
                 default:
