@@ -13,6 +13,8 @@ import Floaty
 var floatyClicked: Bool? = false
 var movingToNextView : Bool? = false
 
+var firstTimingLoading = 1;
+var cellsLoaded = 0;
 
 class MasterViewController: UITableViewController {
 
@@ -22,6 +24,8 @@ class MasterViewController: UITableViewController {
     //Selected cell's label, used to pass to detail view
     var selectedLabel:String?
     
+    //Current gradient layer
+    var currentGradientLayer: CAGradientLayer? = nil
     
     //Current faction
     var faction: String? = "UEF"
@@ -315,10 +319,10 @@ class MasterViewController: UITableViewController {
             {
                 
                 //The user-selected cell
-                let currentCell = tableView.cellForRow(at: tableView.indexPathForSelectedRow!)!
+                let currentCell = tableView.cellForRow(at: tableView.indexPathForSelectedRow!)! as! CustomTableViewCell
                 
                 //The text of the user-selected cell
-                selectedLabel = currentCell.textLabel!.text
+                selectedLabel = currentCell.mainLabel!.text
              
                 //Storyboard Table2 DetailViewController
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
@@ -385,12 +389,21 @@ class MasterViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         //Create cell based on prototype
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
-        //Set new cell's label based on row/section location (i.e. indexPath)
-        cell.textLabel?.text = sectionArray[indexPath.section].sectionCategories[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomTableViewCell
         
-        cell.backgroundColor = factionColor
+        /*print("Sublayers for basic cell: ")
+        print(cell.layer.sublayers?.count ?? 0)*/
+       
+        //Set new cell's label based on row/section location (i.e. indexPath)
+        cell.mainLabel?.text = sectionArray[indexPath.section].sectionCategories[indexPath.row]
+        
+        
+        
+        //set the new layer to the cell
+        cell.setGradientSublayer(color: factionColor!)
+    
+        //cell.backgroundColor = factionColor
+        
         
         //Return the newly-created cell
         return cell
