@@ -290,6 +290,13 @@ class MasterViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
         super.viewWillAppear(animated)
+        
+        //Make status bar have black background
+        let statWindow = UIApplication.shared.value(forKey:"statusBarWindow") as! UIView
+        let statusBar = statWindow.subviews[0] as UIView
+        statusBar.backgroundColor = UIColor.black.withAlphaComponent(0.45)
+        
+        
     }
     
 
@@ -413,20 +420,66 @@ class MasterViewController: UITableViewController {
     
     
     //Returns name of the section
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    /*override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         //Return section name based on section number (called 'section')
         return sectionArray[section].sectionName
+    }*/
+    
+    
+    
+    
+    override func tableView(_: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        /*let view = UIView()
+        view.backgroundColor = UIColor.red
+        
+        
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        
+        
+        let label = UILabel()
+        label.frame = CGRect(x: 0, y: 0, width: screenWidth, height: 200)
+        label.adjustsFontSizeToFitWidth = true
+        
+        //label.center = CGPoint(x: view.frame.size.width/2,y: view.frame.size.height/2);
+        
+        label.textAlignment = .center
+        label.textAlignment = NSTextAlignment.center
+        label.text = sectionArray[section].sectionName
+        
+        
+       
+        
+        view.addSubview(label)
+        return view
+        
+        let headerText = UILabel()
+        headerText.text = sectionArray[section].sectionName
+        headerText.textColor = UIColor.lightGray
+        headerText.adjustsFontSizeToFitWidth = true
+        
+        headerText.textAlignment = .center
+        return headerText*/
+        
+        
+        let headerView = Bundle.main.loadNibNamed("HeaderViewTableViewCell", owner: self, options: nil)?.first as! HeaderViewTableViewCell
+        
+        headerView.headerLabel.text = sectionArray[section].sectionName
+        
+        return headerView
+        
     }
     
-    
+
     
     
     //Returns the height of the section
     public override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
         //Return preferred height value for all sections
-        return 61.0
+        return 52.0
     }
     
  

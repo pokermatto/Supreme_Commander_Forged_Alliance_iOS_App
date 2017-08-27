@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		37ADA91F61BF72A8CE81CD83 /* Pods_Supreme_Commander_Forged_Alliance_iOS_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE557BD863678A72E1E5BDC /* Pods_Supreme_Commander_Forged_Alliance_iOS_App.framework */; };
 		BF0209071F4FA957001250A7 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0209061F4FA957001250A7 /* CustomTableViewCell.swift */; };
+		BF0209091F51EB54001250A7 /* CustomSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0209081F51EB54001250A7 /* CustomSectionHeader.swift */; };
+		BF02090C1F538A8B001250A7 /* HeaderViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF02090A1F538A8B001250A7 /* HeaderViewTableViewCell.swift */; };
+		BF02090D1F538A8B001250A7 /* HeaderViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF02090B1F538A8B001250A7 /* HeaderViewTableViewCell.xib */; };
 		BF829EC11ED8D2F3006BBD20 /* WeaponsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF829EC01ED8D2F3006BBD20 /* WeaponsViewController.swift */; };
 		BFCD45671ECAB7FA004EBC5E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD45661ECAB7FA004EBC5E /* InfoViewController.swift */; };
 		BFE7E7C51EC53A8300D3BF65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE7E7C41EC53A8300D3BF65 /* AppDelegate.swift */; };
@@ -42,6 +45,9 @@
 		3A87B0DF44BBF04C9556753C /* Pods-Supreme_Commander_Forged_Alliance_iOS_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Supreme_Commander_Forged_Alliance_iOS_App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Supreme_Commander_Forged_Alliance_iOS_App/Pods-Supreme_Commander_Forged_Alliance_iOS_App.release.xcconfig"; sourceTree = "<group>"; };
 		BB25F9DACDC1B1416E902AA0 /* Pods-Supreme_Commander_Forged_Alliance_iOS_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Supreme_Commander_Forged_Alliance_iOS_App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Supreme_Commander_Forged_Alliance_iOS_App/Pods-Supreme_Commander_Forged_Alliance_iOS_App.debug.xcconfig"; sourceTree = "<group>"; };
 		BF0209061F4FA957001250A7 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		BF0209081F51EB54001250A7 /* CustomSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSectionHeader.swift; sourceTree = "<group>"; };
+		BF02090A1F538A8B001250A7 /* HeaderViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderViewTableViewCell.swift; sourceTree = "<group>"; };
+		BF02090B1F538A8B001250A7 /* HeaderViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderViewTableViewCell.xib; sourceTree = "<group>"; };
 		BF829EC01ED8D2F3006BBD20 /* WeaponsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponsViewController.swift; sourceTree = "<group>"; };
 		BFCD45661ECAB7FA004EBC5E /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		BFE557BD863678A72E1E5BDC /* Pods_Supreme_Commander_Forged_Alliance_iOS_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Supreme_Commander_Forged_Alliance_iOS_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,11 +131,14 @@
 				BFE7E7C81EC53A8300D3BF65 /* DetailViewController.swift */,
 				BFCD45661ECAB7FA004EBC5E /* InfoViewController.swift */,
 				BFE7E7C61EC53A8300D3BF65 /* MasterViewController.swift */,
+				BF02090A1F538A8B001250A7 /* HeaderViewTableViewCell.swift */,
+				BF02090B1F538A8B001250A7 /* HeaderViewTableViewCell.xib */,
 				BF829EC01ED8D2F3006BBD20 /* WeaponsViewController.swift */,
 				BFE7E7CD1EC53A8300D3BF65 /* Assets.xcassets */,
 				BFE7E7CF1EC53A8400D3BF65 /* LaunchScreen.storyboard */,
 				BFE7E7CA1EC53A8300D3BF65 /* Main.storyboard */,
 				BF0209061F4FA957001250A7 /* CustomTableViewCell.swift */,
+				BF0209081F51EB54001250A7 /* CustomSectionHeader.swift */,
 			);
 			path = Supreme_Commander_Forged_Alliance_iOS_App;
 			sourceTree = "<group>";
@@ -275,6 +284,7 @@
 				BFE7E7D11EC53A8400D3BF65 /* LaunchScreen.storyboard in Resources */,
 				BFE7E7CE1EC53A8300D3BF65 /* Assets.xcassets in Resources */,
 				BFE7E7CC1EC53A8300D3BF65 /* Main.storyboard in Resources */,
+				BF02090D1F538A8B001250A7 /* HeaderViewTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +362,9 @@
 				BFE7E7C71EC53A8300D3BF65 /* MasterViewController.swift in Sources */,
 				BFCD45671ECAB7FA004EBC5E /* InfoViewController.swift in Sources */,
 				BF829EC11ED8D2F3006BBD20 /* WeaponsViewController.swift in Sources */,
+				BF0209091F51EB54001250A7 /* CustomSectionHeader.swift in Sources */,
 				BFE7E7C51EC53A8300D3BF65 /* AppDelegate.swift in Sources */,
+				BF02090C1F538A8B001250A7 /* HeaderViewTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
